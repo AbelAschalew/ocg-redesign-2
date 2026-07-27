@@ -126,3 +126,14 @@ footer h5{
     margin-bottom:10px;
     color:#555;
 }
+
+.ceo-photo{
+    max-width:280px;
+    border-radius:6px;
+}
+
+.section-label{
+    color:#1f5e2f;
+    font-weight:700;
+    letter-spacing:1px;
+}
