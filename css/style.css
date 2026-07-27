@@ -128,8 +128,12 @@ footer h5{
 }
 
 .ceo-photo{
-    max-width:280px;
-    border-radius:6px;
+    /* max-width:280px;
+    border-radius:6px; */
+     width:280px;
+    height:280px;
+    border-radius:50%;
+    object-fit:cover;
 }
 
 .section-label{
