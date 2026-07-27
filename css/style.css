@@ -62,6 +62,7 @@ body{
     text-align:center;
     border-radius:8px;
     box-shadow:0 0 20px rgba(0,0,0,.08);
+    min-height: 100%;
 }
 
 .stats{
@@ -212,3 +213,14 @@ footer h5{
     border-radius:50%;
     object-fit:cover;
 } */
+
+.service-card i{
+    font-size:2rem;
+    color:#1f5e2f;
+    margin-bottom:20px;
+    display:block;
+}
+
+.card-img-top{
+    min-height: 70%;
+}
