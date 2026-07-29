@@ -5,8 +5,9 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     color:#222;
+    font-family: "Montserrat", sans-serif;
 }
 
 .top-bar{
