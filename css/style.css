@@ -210,3 +210,90 @@ footer{
 footer p{
     color:#cccccc;
 }
+
+.bg-soft{
+    background:#f8faf8;
+}
+
+.section-title{
+    color:#1f5e2f;
+    font-weight:700;
+    margin-bottom:12px;
+    position:relative;
+}
+
+.section-title::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:3px;
+    background:var(--primary);
+    margin:15px auto 0;
+}
+
+.service-card{
+    padding:45px 35px;
+}
+
+.service-card h5{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    text-shadow:0 3px 15px rgba(0,0,0,.25);
+}
+
+.hero p{
+    text-shadow:0 2px 8px rgba(0,0,0,.2);
+}
+
+.stats h2{
+    font-size:3.5rem;
+    font-weight:700;
+    color:var(--primary);
+}
+
+.stats p{
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:.9rem;
+}
+
+.card{
+    overflow:hidden;
+}
+
+.card-img-top{
+    height:260px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.card:hover .card-img-top{
+    transform:scale(1.05);
+}
+
+.navbar{
+    padding-top:18px;
+    padding-bottom:18px;
+}
+
+.nav-link{
+    position:relative;
+}
+
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:var(--primary);
+    transition:.3s;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
