@@ -7,10 +7,10 @@
 body{
     font-family: "Inter", "Segoe UI", sans-serif;
 }
-
+/* 
 .hero h1{
     font-family: "Montserrat", sans-serif;
-}
+} */
 
 .top-bar{
     background:var(--primary);
@@ -18,27 +18,27 @@ body{
     padding:8px 0;
     font-size:14px;
 }
-
+/* 
 .hero{
     background:url('../assets/Wanchi.jpg') center center/cover;
     min-height:480px;
     position:relative;
     display:flex;
     align-items:center;
-}
-
+} */
+/* 
 .hero .overlay{
     position:absolute;
     inset:0;
     background:rgba(0,0,0,.45);
-}
-
+} */
+/* 
 .hero-content{
     position:relative;
     z-index:2;
     color:white;
-}
-
+} */
+/* 
 .hero h1{
     font-size:4rem;
     font-weight:700;
@@ -48,7 +48,7 @@ body{
     font-size:1.25rem;
     max-width:700px;
 }
-
+ */
 .section-padding{
     padding:80px 0;
 }
@@ -296,4 +296,125 @@ footer p{
 
 .nav-link:hover::after{
     width:100%;
+}
+
+
+.hero{
+    padding:80px 0;
+    background:#fff;
+}
+
+.hero-label{
+    color:var(--primary);
+    font-weight:700;
+    letter-spacing:2px;
+    font-size:.9rem;
+    text-transform:uppercase;
+}
+
+.hero h1{
+    font-size:4rem;
+    font-weight:700;
+    line-height:1.1;
+    color:#222;
+    margin-top:15px;
+    margin-bottom:25px;
+}
+
+.hero-text{
+    font-size:1.15rem;
+    color:#666;
+    line-height:1.8;
+    max-width:550px;
+}
+
+.hero-buttons{
+    margin-top:35px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.hero-image{
+    position:relative;
+}
+
+.hero-image img{
+    width:100%;
+    height:550px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+}
+
+/* .hero{
+    min-height:700px;
+    display:flex;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.95) 0%,
+            rgba(255,255,255,.88) 35%,
+            rgba(255,255,255,.40) 60%,
+            rgba(255,255,255,0) 100%
+        ),
+        url('../assets/photo_2025-03-12_16-56-00.webp');
+
+    background-size:cover;
+    background-position:center;
+} */
+/* 
+.hero{
+    background:
+        linear-gradient(
+            90deg,
+            rgba(16,37,77,.95) 0%,
+            rgba(16,37,77,.85) 35%,
+            rgba(31,94,47,.40) 65%,
+            rgba(0,0,0,0) 100%
+        ),
+        url('../assets/Wanchi.jpg');
+} */
+/* 
+.hero{
+    background:
+        linear-gradient(
+            90deg,
+            rgba(40,40,40,.95) 0%,
+            rgba(40,40,40,.85) 35%,
+            rgba(180,140,50,.25) 65%,
+            rgba(0,0,0,0) 100%
+        ),
+        url('../assets/photo_2025-03-12_16-56-00.webp');
+} */
+
+.hero{
+    background:
+        linear-gradient(
+            70deg,
+            rgba(244,248,244,.98) 0%,
+            rgba(244,248,244,.92) 40%,
+            rgba(244,248,244,.45) 70%,
+            rgba(244,248,244,0) 100%
+        ),
+        url('../assets/construction-site.avif');
+         background-size:cover;
+    background-position:center;
+}
+
+.hero{
+    min-height:500px;
+}
+
+.hero-content{
+    padding-top:40px;
+}
+
+.btn{
+    border-radius:50px;
+    padding:14px 32px;
+    font-weight:600;
 }
