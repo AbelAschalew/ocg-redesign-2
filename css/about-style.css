@@ -67,7 +67,7 @@ body{
     font-weight:700;
 }
 
-.timeline{
+/* .timeline{
     display:flex;
     justify-content:space-between;
     gap:20px;
@@ -82,7 +82,7 @@ body{
     text-align:center;
     border-radius:8px;
     box-shadow:0 8px 24px rgba(0,0,0,.05);
-}
+} */
 
 .vmv-card,
 .commitment-card{
@@ -304,4 +304,64 @@ footer{
 
 footer p{
     color:#cccccc;
+}
+
+
+.history-section{
+    background:#f8f9fa;
+}
+
+.timeline-wrapper{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.timeline-line{
+    position:absolute;
+    top:45px;
+    left:10%;
+    right:10%;
+    height:3px;
+    background:#d6d6d6;
+    z-index:1;
+}
+
+.timeline-item{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    flex:1;
+    min-width:180px;
+}
+
+.timeline-icon{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:var(--primary);
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin:0 auto 25px;
+    font-size:2rem;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+
+.timeline-item h3{
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.timeline-item p{
+    color:#666;
+    margin:0;
 }
