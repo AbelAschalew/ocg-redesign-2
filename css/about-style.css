@@ -226,3 +226,63 @@ body{
     border-radius:8px;
     box-shadow:0 8px 24px rgba(0,0,0,.05);
 }
+
+.mission-list{
+    list-style:none;
+    padding-left:0;
+}
+
+.mission-list li{
+    position:relative;
+    padding-left:35px;
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+.mission-list li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:0;
+    color:var(--primary);
+    font-weight:700;
+    font-size:1.2rem;
+}
+
+.value-list{
+    list-style:none;
+    padding-left:0;
+}
+
+.value-list li{
+    position:relative;
+    padding-left:28px;
+    margin-bottom:15px;
+}
+
+.value-list li::before{
+    content:"";
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:var(--primary);
+    position:absolute;
+    left:0;
+    top:9px;
+}
+
+.vmv-card p, .vmv-card ul{
+    text-align: left;
+}
+
+.vmv-card i,
+.commitment-card i{
+    font-size:2.5rem;
+    color:var(--primary);
+    margin-bottom:20px;
+    display:block;
+}
+
+.leader-card {
+    min-height: 540px;
+}
