@@ -286,3 +286,22 @@ body{
 .leader-card {
     min-height: 540px;
 }
+
+
+footer{
+    background:#222;
+    color:white;
+    padding:60px 0;
+}
+
+footer h5{
+    margin-bottom:15px;
+}
+
+footer{
+    border-top:4px solid var(--primary);
+}
+
+footer p{
+    color:#cccccc;
+}
