@@ -535,3 +535,12 @@ footer p{
     transform:translateY(-8px);
 }
 
+.footer-links a{
+    color:inherit;
+    text-decoration:none;
+    transition:.3s ease;
+}
+
+.footer-links a:hover{
+    color:var(--primary);
+}
