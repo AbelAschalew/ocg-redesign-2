@@ -299,7 +299,7 @@
     </div>
 </section>
 
-<section class="stats">
+<!-- <section class="stats">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-3">
@@ -318,6 +318,42 @@
                 <h2>15.5B</h2>
                 <p>ETB Capital</p>
             </div>
+        </div>
+    </div>
+</section> -->
+
+<section class="stats">
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-md-3">
+                <h2 >
+                    <span class="counter" data-target="288">0</span>+
+                </h2>
+                <p>Projects Completed</p>
+            </div>
+
+            <div class="col-md-3">
+                <h2>
+                    <span class="counter" data-target="1420">0</span>+
+                </h2>
+                <p>Vehicles & Machinery</p>
+            </div>
+
+            <div class="col-md-3">
+                <h2 >
+                    <span class="counter" data-target="5741">0</span>
+                </h2>
+                <p>Employees</p>
+            </div>
+
+            <div class="col-md-3">
+                <h2 >
+                    <span class="counter" data-target="15.5">0</span>
+                </h2>
+                <p>ETB Capital (Billion)</p>
+            </div>
+
         </div>
     </div>
 </section>
@@ -340,7 +376,7 @@
         </div>
     </div>
 </footer>
-
+<!-- 
 <script>
     
 document.addEventListener("DOMContentLoaded", () => {
@@ -387,6 +423,64 @@ if(entry.isIntersecting){
     observer.observe(title);
 
 });
+</script> -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+    const title = document.querySelector(".hero-title");
+    const text = title.textContent.trim();
+
+    title.innerHTML = "";
+
+    let delay = 0;
+
+    text.split(" ").forEach(word => {
+
+        const wordSpan = document.createElement("span");
+        wordSpan.classList.add("word");
+
+        word.split("").forEach(letter => {
+
+            const letterSpan = document.createElement("span");
+
+            letterSpan.textContent = letter;
+            letterSpan.style.animationDelay = `${delay}s`;
+
+            wordSpan.appendChild(letterSpan);
+
+            delay += 0.05;
+        });
+
+        title.appendChild(wordSpan);
+        title.appendChild(document.createTextNode(" "));
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting){
+
+                title.classList.remove("animate");
+                void title.offsetWidth;
+                title.classList.add("animate");
+
+            }else{
+
+                title.classList.remove("animate");
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.5
+    });
+
+    observer.observe(title);
+
+});
 </script>
 
 <script>
@@ -411,6 +505,79 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     elements.forEach(el => observer.observe(el));
+
+});
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+    const statsSection = document.querySelector(".stats");
+    const counters = document.querySelectorAll(".counter");
+
+    function animateCounter(counter){
+
+        const target = parseFloat(counter.dataset.target);
+        const isDecimal = target % 1 !== 0;
+
+        let current = 0;
+        const increment = target / 80;
+
+        function updateCounter(){
+
+            current += increment;
+
+            if(current >= target){
+
+                counter.textContent = isDecimal
+                    ? target.toFixed(1)
+                    : target.toLocaleString();
+
+                return;
+            }
+
+            counter.textContent = isDecimal
+                ? current.toFixed(1)
+                : Math.floor(current).toLocaleString();
+
+            requestAnimationFrame(updateCounter);
+        }
+
+        updateCounter();
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting){
+
+                counters.forEach(counter => {
+
+                    // reset to 0
+                    counter.textContent = "0";
+
+                    // restart animation
+                    animateCounter(counter);
+
+                });
+
+            }else{
+
+                // reset when leaving viewport
+                counters.forEach(counter => {
+                    counter.textContent = "0";
+                });
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.4
+    });
+
+    observer.observe(statsSection);
 
 });
 </script>

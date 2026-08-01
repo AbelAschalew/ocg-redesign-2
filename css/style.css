@@ -471,6 +471,20 @@ footer p{
 
 }
 
+.hero-title .word{
+    display:inline-block;
+    white-space:nowrap;
+}
+
+.hero-title .word span{
+    display:inline-block;
+    opacity:0;
+    transform:translateY(-80px);
+}
+
+.hero-title.animate .word span{
+    animation:dropLetter .6s forwards;
+}
 
 .fade-left{
     opacity: 0;
@@ -498,7 +512,7 @@ footer p{
 }
 
 .delay-1{
-    transition-delay:.7s;
+    transition-delay:.5s;
 }
 
 .delay-2{
@@ -506,9 +520,18 @@ footer p{
 }
 
 .delay-3{
-    transition-delay:1.3s;
+    transition-delay:1.5s;
 }
 
 .delay-4{
-    transition-delay:1.6s;
+    transition-delay:1.9s;
 }
+
+.stats .col-md-3{
+    transition:transform .4s ease;
+}
+
+.stats .col-md-3:hover{
+    transform:translateY(-8px);
+}
+
