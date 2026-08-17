@@ -5,113 +5,110 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OCG - Projects</title>
-
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link type="image/x-icon" rel="shortcut icon" href="assets/logo.png">
-        <link rel="stylesheet" href="css/projects-style.css">
+        <link type="image/x-icon" rel="shortcut icon" href="assets/images/logo.png">
+        <link rel="stylesheet" href="assets/css/projects-style.css">
+        <link rel="stylesheet" href="assets/css/common-nav-footer-style.css">
+        <link rel="stylesheet" href="assets/css/hero-style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/new-hero-nav-style.css">
     </head>
 
     <body>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/OCG Official Website.webp" height="55" alt="OCG">
-                </a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About OCG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="subsidiaries.html">Subsidiaries</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+        <section class="hero" id="hero" style="transition: background-image 1s ease-in-out; min-height: 600px;" >
+            <nav class="navbar navbar-expand-lg ocg-navbar" id="mainNavbar">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/OCG Official Website.webp" alt="Oro Construction Group" class="navbar-logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNavigation">
+                        <ul class="navbar-nav ms-auto align-items-lg-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="subsidiaries.html">
+                                    Subsidiaries
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="projects.html">
+                                    Projects
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">
+                                    Media
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="downloads.html">
+                                    Publications
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="downloads.html">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="navbar-contact">
+                            Partner With Us
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-
-        <!-- HERO -->
-
-        <section class="about-hero">
+            </nav>
             <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Our Projects</h1>
-                    <p>
-                         Delivering transformative infrastructure,
+                <div class="row align-items-center gy-5" style="width: 70%; margin: auto;">
+                    <div class="col-lg-6" style="width: 100%; margin-top: 70px;">
+                        <h1 class="hero-title" style="color: white; text-align: left; text-shadow: 1px 0 0 darkgreen, 0 1px 0 darkgreen, -1px 0 0 darkgreen,0 -1px 0 darkgreen; font-size: clamp(2.8rem, 6vw, 5.5rem); font-weight: 800; line-height: 1.05;">
+                            Our Projects
+                        </h1>
+                        <p class="hero-text fade-left" style="color: white; font-size: 1.5rem; font-weight: 900; min-width: 100%; margin: auto;">
+                             Delivering transformative infrastructure,
                         construction, and development projects
                         across Ethiopia.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-padding">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <h2 class="section-title text-center fade-left">
-                            What We Do
-                        </h2>
-                        <div class="section-title-divider"></div>
-                        <p class="text-justify">
-                            OCG offers a wide range of construction, engineering, and development services, leveraging its integrated subsidiaries to deliver high-quality, cost-effective solutions. Our projects span multiple sectors, ensuring that we address the diverse infrastructure needs of communities and businesses across Ethiopia and beyond.
                         </p>
                     </div>
                 </div>
             </div>
+                <a href="#welcome" class="hero-scroll">
+                    <span>
+                        Scroll to explore
+                    </span>
+                    <i class="bi bi-chevron-down"></i>
+                </a>
         </section>
 
-        <!-- <section class="section-padding bg-light">
+        <section class="section-padding">
             <div class="container">
-                <div class="row g-3">
-                    <h2 class="section-title text-center fade-left">
-                        Key Services
-                    </h2>
-                    <div class="col-md-3">
-                        <div class="category-card fade-up">
-                            <i class="bi bi-signpost-split"></i>
-                            <h5>Road Projects</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="category-card fade-up">
-                            <i class="bi bi-droplet"></i>
-                            <h5>Water Projects</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="category-card fade-up">
-                            <i class="bi bi-building"></i>
-                            <h5>Buildings</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="category-card fade-up">
-                            <i class="bi bi-tree"></i>
-                            <h5>Tourism</h5>
+                <div class="row justify-content-center" >
+                    <div class="col-lg-10" >
+                        <h2 class="section-title text-center fade-left">
+                            What We Do
+                        </h2>
+                        <div class="section-title-divider" style="border-left: 20px solid darkred;">
+                        <p class="text-justify" style="margin-left: 20px;">
+                            OCG offers a wide range of construction, engineering, and development services, leveraging its integrated subsidiaries to deliver high-quality, cost-effective solutions. Our projects span multiple sectors, ensuring that we address the diverse infrastructure needs of communities and businesses across Ethiopia and beyond.
+                        </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section class="section-padding bg-light">
             <div class="container">
@@ -122,7 +119,7 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-6">
-                        <div class="vmv-card fade-up delay-2">
+                        <div class="vmv-card fade-up delay-1" style="border-left: 6px solid darkred;">
                             <i class="bi bi-building"></i>
                             <h4>Building Construction</h4>
                                 <ul class="mission-list">
@@ -132,7 +129,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="vmv-card fade-up delay-2">
+                        <div class="vmv-card fade-up delay-2" style="border-left: 6px solid darkred;">
                             <i class="bi bi-hammer"></i>
                             <h4>Infrastructure & Civil Works</h4>
                                 <ul class="mission-list">
@@ -143,7 +140,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="vmv-card fade-up delay-2">
+                        <div class="vmv-card fade-up delay-3" style="border-left: 6px solid darkred;">
                             <i class="bi bi-droplet"></i>
                             <h4>Water & Environmental Projects</h4>
                                 <ul class="mission-list">
@@ -154,7 +151,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="vmv-card fade-up delay-2">
+                        <div class="vmv-card fade-up delay-4" style="border-left: 6px solid darkred;">
                             <i class="bi bi-compass"></i>
                             <h4>Tourism and Hospitality</h4>
                                 <ul class="mission-list">
@@ -164,7 +161,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="vmv-card fade-up delay-2">
+                        <div class="vmv-card fade-up delay-1" style="border-left: 6px solid darkred;">
                             <i class="bi bi-houses"></i>
                             <h4>Real Estate Development & Investment</h4>
                                 <ul class="mission-list">
@@ -175,7 +172,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="vmv-card fade-up delay-2">
+                        <div class="vmv-card fade-up delay-2" style="border-left: 6px solid darkred;">
                             <i class="bi bi-tools"></i>
                             <h4>Engineering & Consulting</h4>
                                 <ul class="mission-list">
@@ -189,74 +186,6 @@
             </div>
         </section>
 
-         <!-- <section class="section-padding">
-            <div class="container">
-                <h2 class="section-title text-center fade-left">
-                    Featured Projects
-                </h2>
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <img src="assets/project1.jpg"
-                            class="img-fluid rounded shadow image-hover">
-                    </div>
-                    <div class="col-lg-6">
-                        <span class="project-badge">
-                            Tourism Development
-                        </span>
-                        <h3>
-                            Wanchi-Dendi Ecotourism Project
-                        </h3>
-                        <p>
-                            One of Ethiopia's landmark tourism
-                            developments, designed to promote
-                            sustainable tourism and local
-                            economic growth.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-<!-- 
-        <section class="section-padding">
-            <div class="container">
-                <h2 class="section-title text-center fade-left">
-                    Projects Gallery
-                </h2>
-                <div class="col-lg-4 col-md-6">
-                    <div class="project-card fade-up">
-                        <img src="assets/project1.webp" class="card-img-top">
-                        <div class="project-content">
-                            <span class="project-tag">
-                                Completed
-                            </span>
-                            <h5>
-                                Collider Development in Ethiopia
-                            </h5>
-                            <p>
-                                Road Infrastructure
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="project-card fade-up">
-                        <img src="assets/project6.webp" class="card-img-top">
-                        <div class="project-content">
-                            <span class="project-tag">
-                                Ongoing
-                            </span>
-                            <h5>
-                                Shaggar Road Project
-                            </h5>
-                            <p>
-                                Road Infrastructure
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
         <section class="section-padding">
             <div class="container">
                 <h2 class="section-title text-center fade-left mb-5">
@@ -264,9 +193,9 @@
                 </h2>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6">
-                        <div class="project-card fade-up">
-                            <img src="assets/project1.webp" class="card-img-top" alt="Collider Development in Ethiopia">
-                            <div class="project-content">
+                        <div class="project-card fade-up delay-1">
+                            <img src="assets/images/project1.webp" class="card-img-top" alt="Collider Development in Ethiopia">
+                            <div class="project-content" style="border-left: 20px solid darkred;">
                                 <span class="project-tag">
                                     Completed
                                 </span>
@@ -280,9 +209,9 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="project-card fade-up">
-                            <img src="assets/project4.webp" class="card-img-top" alt="Shaggar Road Project">
-                            <div class="project-content">
+                        <div class="project-card fade-up delay-2">
+                            <img src="assets/images/project4.webp" class="card-img-top" alt="Shaggar Road Project">
+                            <div class="project-content" style="border-left: 20px solid darkred;">
                                 <span class="project-tag">
                                     Ongoing
                                 </span>
@@ -296,9 +225,9 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="project-card fade-up">
-                            <img src="assets/project6.webp" class="card-img-top" alt="Shaggar Road Project">
-                            <div class="project-content">
+                        <div class="project-card fade-up delay-3">
+                            <img src="assets/images/project6.webp" class="card-img-top" alt="Shaggar Road Project">
+                            <div class="project-content" style="border-left: 20px solid darkred;">
                                 <span class="project-tag">
                                     Ongoing
                                 </span>
@@ -312,9 +241,9 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="project-card fade-up">
-                            <img src="assets/project4.webp" class="card-img-top" alt="Shaggar Road Project">
-                            <div class="project-content">
+                        <div class="project-card fade-up delay-4">
+                            <img src="assets/images/project4.webp" class="card-img-top" alt="Shaggar Road Project">
+                            <div class="project-content" style="border-left: 20px solid darkred;">
                                 <span class="project-tag">
                                     Completed
                                 </span>
@@ -331,8 +260,6 @@
             </div>
         </section>
         
-
-
         
         <footer>
             <div class="container">
@@ -343,46 +270,37 @@
                     </div>
                     <div class="col-lg-4 footer-links">
                         <h5>Quick Links</h5>
-                        <p><a href="about.html">About</a> • <a href="projects.html">Projects</a> • <a href="news.html">News</a> • <a href="contact.html">Contact</a></p>
+                        <p><a href="about.html" style="display: block; width: 20%;">• About</a> <a href="projects.html" style="display: block; width: 20%;">• Projects</a> <a href="news.html" style="display: block; width: 20%;">• News</a><a href="contact.html" style="display: block; width: 20%;">• Contact</a></p>
                     </div>
                     <div class="col-lg-4 footer-links">
                         <h5>Contact</h5>
-                        <p><a href="mailto:OCG2021@gmail.com">OCG2021@gmail.com</a><br><a href="tel:+251 97 258 3387">+251 97 258 3387</a></p>
+                        <p><a href="mailto:OCG2021@gmail.com"><i class="bi bi-envelope-fill"> </i>OCG2021@gmail.com</a><br><a href="tel:+251 97 258 3387"><i class="bi bi-telephone-fill"> </i>+251 97 258 3387</a></p>
                     </div>
                 </div>
             </div>
         </footer>
+        <div style="text-align: center; background-color: #184a25; font-weight: 600; color: white; padding: 10px;">
+            Copyright &copy; OCG
+        </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-                
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const title = document.querySelector(".hero-title");
-                const text = title.textContent.trim();
-                title.innerHTML = "";
-                text.split("").forEach((letter, index) => {
-                    const span = document.createElement("span");
-                    span.innerHTML = letter === " " ? "&nbsp;" : letter;
-                    span.style.animationDelay = `${index * 0.05}s`;
-                    title.appendChild(span);
-                });
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if(entry.isIntersecting){
-                            title.classList.remove("animate");
-                            void title.offsetWidth;
-                            title.classList.add("animate");
-                        }else{
-                            title.classList.remove("animate");
+                <script>
+                    const navbar = document.getElementById("mainNavbar");
+                    const hero1 = document.getElementById("hero");
+                    window.addEventListener("scroll", function () {
+                        const heroBottom = hero1.offsetTop + hero1.offsetHeight;
+                        if (window.scrollY >= heroBottom - 100) {
+                            navbar.classList.add("scrolled");
+                        } else {
+                            navbar.classList.remove("scrolled");
                         }
                     });
-                }, {
-                    threshold: 0.5
-                });
-                observer.observe(title);
-            });
-        </script>
+                </script>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="assets/js/hero-animation.js"></script>
 
+        <script src="assets/js/fadeleft-fadeup-animation.js"></script>
+        
     </body>
 </html>

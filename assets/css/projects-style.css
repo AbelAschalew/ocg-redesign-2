@@ -1,0 +1,138 @@
+
+.vmv-card{
+    position: relative;
+    overflow: hidden;
+    background:white;
+    padding:35px;
+    height:100%;
+    border-radius:8px;
+    box-shadow:0 8px 24px rgba(0,0,0,.05);
+    text-align:center;
+}
+
+.vmv-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #1f5e2f;
+    transition: height 1s ease;
+    z-index: 0;
+}
+
+.vmv-card:hover::before {
+    height: 100%;
+}
+
+.vmv-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.vmv-card:hover {
+    color: white;
+    transform: rotate(20deg) !important;
+}
+
+.vmv-card:hover i {
+    background-color: white;
+    color: #1f5e2f;
+    transform: rotate(40deg);
+}
+
+.mission-list{
+    list-style:none;
+    padding-left:0;
+}
+
+.mission-list li{
+    position:relative;
+    padding-left:35px;
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+.mission-list li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:0;
+    color:var(--primary);
+    font-weight:700;
+    font-size:1.2rem;
+}
+ 
+
+.vmv-card p, .vmv-card ul{
+    text-align: left;
+}
+
+
+.vmv-card i{
+    font-size: 34px;
+    margin-bottom: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1f5e2f;
+    color: white;
+    transition:
+        transform 0.5s ease,
+        background-color 0.4s ease,
+        color 0.4s ease;
+}
+
+
+
+
+.project-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+}
+
+.project-card:hover{
+    /* transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.12); */
+    
+}
+
+.project-card:hover img {
+    transform:scale(2.4);
+    transition: 1s ease;
+}
+
+.project-card img{
+    height:260px;
+    width:100%;
+    object-fit:cover;
+    transition:.5s ease;
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project-tag{
+    display:inline-block;
+
+    padding:6px 12px;
+
+    background:rgba(31,94,47,.1);
+
+    color:var(--primary);
+
+    border-radius:20px;
+
+    font-size:.85rem;
+    font-weight:600;
+}

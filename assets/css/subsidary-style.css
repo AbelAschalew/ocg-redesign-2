@@ -1,0 +1,167 @@
+
+.text-justify{
+    text-align: justify;
+    line-height: 1.9;
+}
+
+.subsidiaries-intro{
+    max-width: 950px;
+    margin: auto;
+}
+
+.section-title-divider{
+    width:80px;
+    height:4px;
+    background:var(--primary);
+    margin:15px auto 30px;
+    border-radius:10px;
+}
+
+
+.subsidiary-section{
+    padding:100px 0;
+}
+
+.subsidiary-section:nth-child(even){
+    background:#f1f3f5;
+}
+
+.subsidiary-logo-large{
+    max-width:260px;
+    width:100%;
+    height:auto;
+
+    transition:
+        transform .4s ease,
+        filter .4s ease;
+}
+
+.subsidiary-logo-large:hover{
+    transform:scale(1.5);
+}
+
+.subsidiary-content h2{
+    color:var(--primary);
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.subsidiary-content p{
+    font-size:1.05rem;
+    line-height:1.9;
+    color:#555;
+    text-align:justify;
+}
+
+.subsidiary-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    margin-top:20px;
+
+    padding:12px 28px;
+
+    background:var(--primary);
+    color:white;
+
+    text-decoration:none;
+    border-radius:6px;
+
+    transition:.3s ease;
+}
+
+.subsidiary-btn:hover{
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+
+    color:white;
+}
+
+.subsidiary-content h2::after{
+    content:"";
+
+    display:block;
+
+    width:70px;
+    height:4px;
+
+    margin-top:12px;
+
+    background:var(--primary);
+}
+
+.subsidiary-divider{
+    width:120px;
+    height:2px;
+
+    background:#d6d6d6;
+
+    margin:0 auto;
+}
+
+.subsidiary-actions{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.subsidiary-socials{
+    display:flex;
+    gap:12px;
+}
+
+.subsidiary-socials a{
+    width:42px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#f8f9fa;
+    border:1px solid #e9ecef;
+
+    text-decoration:none;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+    font-size:1.2rem;
+}
+
+.subsidiary-socials a:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.facebook{
+    color:#1877F2;
+}
+
+.linkedin{
+    color:#0A66C2;
+}
+
+.telegram{
+    color:#24A1DE;
+}
+
+.youtube{
+    color:#FF0000;
+}
+
+.tiktok{
+    color:#000000;
+}
+
+.instagram{
+    color:#E4405F;
+}
+
