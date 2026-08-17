@@ -19,7 +19,7 @@
     margin:auto;
 }
 
-.leader-card{
+.leaderxxx-card{
     position: relative;
     overflow: hidden;
     background:white;
@@ -35,7 +35,7 @@
         box-shadow 0.8s ease;
 }
 
-.leader-card::before {
+.leaderxxx-card::before {
     content: "";
     position: absolute;
     left: 0;
@@ -47,25 +47,25 @@
     z-index: 0;
 }
 
-.leader-card:hover::before {
+.leaderxxx-card:hover::before {
     height: 100%;
 }
 
-.leader-card > * {
+.leaderxxx-card > * {
     position: relative;
     z-index: 0;
 }
 
-.leader-card:hover {
+.leaderxxx-card:hover {
     color: white;
 }
 
-.leader-card:hover .leader-photo {
+.leaderxxx-card:hover .leaderxxx-photo {
     border-radius: 0%;
     border: 2px solid darkred;
 }
 
-.leader-photo{
+.leaderxxx-photo{
     width:180px;
     height:180px;
     object-fit:cover;
@@ -126,6 +126,7 @@
     color:var(--primary);
     font-weight:700;
     font-size:1.2rem;
+    transition: all 1.2s ease;
 }
 
 .value-list{
@@ -151,7 +152,7 @@
     transition: all 1.2s ease;
 }
 
-.leader-card {
+.leaderxxx-card {
     min-height: 540px;
 }
 
@@ -609,181 +610,109 @@
 
 
 /* ===================== SUSTAINABILITY ===================== */
-
 .content-label {
-
     display: inline-block;
-
     margin-bottom: 10px;
-
     color: darkred;
-
     font-size: .75rem;
-
     font-weight: 800;
-
     letter-spacing: 1.5px;
 }
 
-
 .sustainability-image-wrapper {
-
     position: relative;
-
     padding: 10px;
-
     background: white;
-
     border-radius: 12px;
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, .08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
 }
 
-
 .sustainability-image {
-
     display: block;
-
     width: 100%;
     height: 420px;
-
     object-fit: cover;
-
     border-radius: 8px;
 }
 
 .sustainability-badge {
-
     position: absolute;
-
     right: -20px;
     bottom: 25px;
-
     display: flex;
-
     align-items: center;
-
     gap: 12px;
-
     padding: 15px 20px;
-
     background: #1f5e2f;
-
     color: white;
-
     border-radius: 8px;
-
-    box-shadow:
-        0 8px 20px rgba(0, 0, 0, .15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
 }
 
-
 .sustainability-badge > i {
-
     font-size: 1.8rem;
-
     color: wheat;
 }
 
-
 .sustainability-badge strong {
-
     display: block;
-
     font-size: 1rem;
 }
 
-
 .sustainability-badge span {
-
     display: block;
-
     color: rgba(255,255,255,.75);
-
     font-size: .75rem;
 }
 
 .sustainability-content {
-
     padding-left: 20px;
 }
 
-
 .sustainability-content h3 {
-
     margin-bottom: 20px;
-
     color: #1f5e2f;
-
     font-size: 2rem;
-
     font-weight: 700;
 }
 
-
 .sustainability-content > p {
-
     color: #555;
-
     line-height: 1.8;
-
     margin-bottom: 15px;
 }
 
 .sustainability-points {
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 12px;
-
     margin-top: 25px;
 }
 
-
 .sustainability-point {
-
     display: flex;
-
     align-items: flex-start;
-
     gap: 10px;
-
     color: #555;
-
     font-size: .9rem;
-
     line-height: 1.5;
 }
 
-
 .sustainability-point i {
-
     flex-shrink: 0;
-
     margin-top: 2px;
-
     color: #1f5e2f;
 }
 
 .commitment-heading {
-
     margin-top: 60px;
-
     margin-bottom: 25px;
 }
 
-
 .commitment-heading h3 {
-
     margin-top: 5px;
-
     color: #1f5e2f;
-
     font-size: 1.7rem;
-
     font-weight: 700;
 }
 
@@ -800,4 +729,295 @@
 
 .commitment-card:hover .commitment-number {
     color: darkred;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===================== LEADERSHIP ===================== */
+
+.leadership-section {
+    background: #fff;
+}
+
+/* ===================== CEO CARD ===================== */
+.ceo-leader-card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 45px;
+    background: #f8faf8;
+    border-radius: 12px;
+    border-left: 5px solid darkred;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.ceo-leader-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .1);
+}
+
+/* ===================== CEO PHOTO ===================== */
+.ceo-leader-photo-wrapper {
+    flex-shrink: 0;
+    position: relative;
+}
+
+.ceo-photo-frame {
+    width: 280px;
+    height: 330px;
+    padding: 8px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .12);
+}
+
+.ceo-leader-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Decorative corner */
+.ceo-leader-photo-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: -15px;
+    bottom: -15px;
+    border-right: 5px solid #1f5e2f;
+    border-bottom: 5px solid #1f5e2f;
+    border-radius: 0 0 8px 0;
+    pointer-events: none;
+}
+
+/* ===================== CEO CONTENT ===================== */
+.ceo-leader-content {
+    flex: 1;
+}
+
+.leader-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: darkred;
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.ceo-leader-content h3 {
+    margin-bottom: 12px;
+    color: #1f5e2f;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+/* ===================== DIVIDER ===================== */
+.leader-divider {
+    width: 60px;
+    height: 3px;
+    margin-bottom: 20px;
+    background: #1f5e2f;
+}
+
+
+/* ===================== CEO INTRO ===================== */
+.ceo-intro {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* ===================== QUOTE ===================== */
+.ceo-leader-content blockquote {
+    position: relative;
+    margin: 0 0 20px;
+    padding: 20px 25px;
+    background: white;
+    border-left: 4px solid darkred;
+    border-radius: 5px;
+    color: #555;
+    font-family: "Playfair Display", serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.ceo-leader-content blockquote i {
+    color: #1f5e2f;
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+
+/* ===================== SOCIAL ===================== */
+.leader-social {
+    display: flex;
+    gap: 10px;
+}
+
+.leader-social a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #1f5e2f;
+    color: white;
+    text-decoration: none;
+    transition:
+        transform .3s ease,
+        background-color .3s ease;
+}
+
+.leader-social a:hover {
+    background: darkred;
+    transform: translateY(-4px);
+}
+
+/* ===================== MANAGEMENT HEADING ===================== */
+.management-heading {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.management-heading h3 {
+    margin-top: 5px;
+    color: #1f5e2f;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+/* ===================== LEADER CARD ===================== */
+.leader-card {
+    height: 100%;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    border-top: 4px solid #1f5e2f;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+    text-align: center;
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.leader-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .12);
+}
+
+/* ===================== LEADER PHOTO ===================== */
+.leader-photo-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    padding: 5px;
+    border-radius: 50%;
+    background:
+        linear-gradient(
+            135deg,
+            #1f5e2f,
+            darkred
+        );
+    transition: all 1.2s ease;
+}
+
+.leader-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    transition: all 1.2s ease;
+}
+
+/* ===================== LEADER INFO ===================== */
+.leader-info h4 {
+    margin-bottom: 5px;
+    color: #1f5e2f;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 1.2s ease;
+}
+
+.leader-info span {
+    display: block;
+    margin-bottom: 15px;
+    color: darkred;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    transition: all 1.2s ease;
+}
+
+.leader-info p {
+    margin: 0;
+    color: #666;
+    font-size: .9rem;
+    line-height: 1.7;
+    transition: all 1.2s ease;
+}
+
+.leader-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #1f5e2f;
+    border-radius: 10px;
+    transition: height 1s ease;
+    z-index: 0;
+}
+
+.leader-card:hover::before {
+    height: 100%;
+}
+
+.leader-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.leader-card:hover .leader-info h4 {
+    color: white;
+}
+
+.leader-card:hover .leader-info span {
+    color: red;
+}
+
+.leader-card:hover .leader-info p {
+    color: wheat;
+}
+
+.leader-card:hover .leader-photo-wrapper {
+    border-radius: 10px;
+    background:
+        linear-gradient(
+            135deg,
+            white,
+            wheat
+        );
+}
+
+.leader-card:hover .leader-photo {
+    border-radius: 10px;
+    border: 4px solid darkred;
 }
