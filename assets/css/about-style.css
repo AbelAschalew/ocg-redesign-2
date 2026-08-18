@@ -875,8 +875,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: #1f5e2f;
-    color: white;
+    /* background: #1f5e2f; */
+    background: white;
+    border:1px solid #e9ecef;
+    /* color: white; */
+    color:#0A66C2;
     text-decoration: none;
     transition:
         transform .3s ease,
@@ -907,7 +910,7 @@
     padding: 30px;
     background: white;
     border-radius: 10px;
-    border-top: 4px solid #1f5e2f;
+    border-top: 5px solid darkred;
     box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
     text-align: center;
     transition:
@@ -1020,4 +1023,276 @@
 .leader-card:hover .leader-photo {
     border-radius: 10px;
     border: 4px solid darkred;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===================== ORGANIZATIONAL STRUCTURE ===================== */
+
+.organizational-section {
+    background: #f8faf8;
+}
+
+/* ===================== MAIN STRUCTURE ===================== */
+.org-structure {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===================== LEVELS ===================== */
+.org-level {
+    display: flex;
+    justify-content: center;
+}
+
+/* ===================== MAIN ORG CARD ===================== */
+.org-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: 400px;
+    padding: 25px 30px;
+    background: white;
+    border-radius: 10px;
+    border-left: 5px solid darkred;
+    box-shadow: 0 8px 24px rgba(0,0,0,.06);
+    transition:
+        transform 1s ease,
+        box-shadow 1s ease;
+}
+
+.org-card::before {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1f5e2f;
+    border-radius: 10px;
+    transition: width 1s ease;
+    z-index: 0;
+}
+
+.org-card:hover::before {
+    width: 100%;
+}
+
+.org-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.org-card:hover {
+    transform: translateY(-16px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+
+.org-card:hover .org-label {
+    color: red;
+}
+
+/* Top executive */
+.org-top {
+    border-left-color: darkred;
+}
+
+/* ===================== CARD ICON ===================== */
+.org-card-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #1f5e2f;
+    color: white;
+    font-size: 1.5rem;
+    transition:
+        transform 1s ease,
+        background-color 1s ease;
+}
+
+
+
+/* ===================== LABEL ===================== */
+.org-label {
+    display: block;
+    margin-bottom: 4px;
+    color: darkred;
+    font-size: .65rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    transition: all 1.3s ease;
+}
+
+.org-card:hover .org-card-icon {
+    transform: rotate(40deg);
+    background-color: white;
+    color: darkred;
+}
+
+/* ===================== TITLE ===================== */
+.org-card h3 {
+    margin: 0 0 5px;
+    color: #1f5e2f;
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: all 1.3s ease;
+}
+
+.org-card:hover h3 {
+    color: white;
+}
+
+/* ===================== DESCRIPTION ===================== */
+.org-card p {
+    margin: 0;
+    color: #666;
+    font-size: .85rem;
+    transition: all 1.3s ease;
+}
+
+.org-card:hover p {
+    color: wheat;
+}
+
+/* ===================== CONNECTORS ===================== */
+.org-connector {
+    width: 2px;
+    height: 40px;
+    margin: 0 auto;
+    background: #cfcfcf;
+}
+
+/* ===================== DEPARTMENTS ===================== */
+.org-departments {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* ===================== DEPARTMENT CARD ===================== */
+.org-department-card {
+    position: relative;
+    overflow: hidden;
+    padding: 30px 22px;
+    background: white;
+    border-radius: 10px;
+    border-top: 5px solid darkred;
+    box-shadow: 0 8px 24px rgba(0,0,0,.05);
+    transition:
+        transform 1s ease,
+        box-shadow 1s ease;
+}
+
+
+.org-department-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #1f5e2f;
+    border-radius: 10px;
+    transition: height 1s ease;
+    z-index: 0;
+}
+
+.org-department-card:hover::before {
+    height: 100%;
+}
+
+.org-department-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.org-department-card:hover {
+    transform: translateY(-18px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+
+/* Operations highlight */
+.org-operation {
+    border-top-color: darkred;
+}
+
+/* ===================== DEPARTMENT ICON ===================== */
+.org-department-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background: #1f5e2f;
+    color: white;
+    font-size: 1.3rem;
+    transition: all 1.2s ease;
+}
+
+.org-department-card:hover
+.org-department-icon {
+    background-color: white;
+    color: darkred;
+    transform: rotate(40deg) scale(1.05);
+}
+
+/* ===================== DEPARTMENT LABEL ===================== */
+.org-department-label {
+    display: block;
+    margin-bottom: 5px;
+    color: darkred;
+    font-size: .6rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    transition: all 1.3s ease;
+}
+
+.org-department-card:hover .org-department-label {
+    color: red;
+}
+
+/* ===================== DEPARTMENT TITLE ===================== */
+.org-department-card h4 {
+    margin-bottom: 15px;
+    color: #1f5e2f;
+    font-size: 1.05rem;
+    font-weight: 700;
+    transition: all 1.3s ease;
+}
+
+.org-department-card:hover h4 {
+    color: white;
+}
+
+/* ===================== LIST ===================== */
+.org-department-card ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.org-department-card li {
+    margin-bottom: 8px;
+    color: #666;
+    font-size: .82rem;
+    transition: all 1.3s ease;
+}
+
+.org-department-card:hover li {
+    color: wheat;
 }
