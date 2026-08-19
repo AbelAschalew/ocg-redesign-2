@@ -266,10 +266,6 @@
 
 /* ===================== FEATURED PROJECTS ===================== */
 
-.featured-projects-section {
-    background: #f8faf8;
-}
-
 /* ===================== MAIN FEATURED PROJECT ===================== */
 .featured-project-main {
     overflow: hidden;
@@ -305,7 +301,6 @@
 
 .featured-project-main:hover
 .featured-project-image img {
-
     transform: scale(1.06);
 }
 
@@ -328,275 +323,160 @@
 }
 
 /* ===================== IMAGE OVERLAY ===================== */
-
 .featured-project-overlay {
-
     position: absolute;
-
     top: 20px;
-
     left: 20px;
-
     z-index: 2;
 }
 
-
 /* ===================== STATUS ===================== */
-
 .project-status {
-
     display: inline-block;
-
     padding: 7px 14px;
-
     border-radius: 30px;
-
     background: #1f5e2f;
-
     color: white;
-
     font-size: .62rem;
-
     font-weight: 700;
-
     letter-spacing: .5px;
 }
 
-
 /* ===================== MAIN CONTENT ===================== */
-
 .featured-project-content {
-
     height: 100%;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     padding: 45px;
 }
 
-
 .project-category {
-
     display: block;
-
     margin-bottom: 10px;
-
     color: darkred;
-
     font-size: .65rem;
-
     font-weight: 800;
-
     letter-spacing: 1.5px;
 }
 
-
 .featured-project-content h3 {
-
     margin-bottom: 12px;
-
     color: #1f5e2f;
-
     font-size: 1.7rem;
-
     font-weight: 700;
-
     line-height: 1.3;
 }
 
-
 /* ===================== LOCATION ===================== */
-
 .project-location {
-
     display: flex;
-
     align-items: center;
-
     gap: 7px;
-
     margin-bottom: 18px;
-
     color: #777;
-
     font-size: .72rem;
 }
 
-
 .project-location i {
-
     color: darkred;
-
     font-size: .85rem;
 }
 
-
 .featured-project-content p {
-
     margin-bottom: 25px;
-
     color: #666;
-
     font-size: .8rem;
-
     line-height: 1.8;
 }
 
-
 /* ===================== PROJECT DETAILS ===================== */
-
 .project-details {
-
     display: flex;
-
     gap: 35px;
-
     margin-bottom: 25px;
-
     padding: 18px 0;
-
     border-top: 1px solid #eee;
-
     border-bottom: 1px solid #eee;
 }
 
-
 .project-details div {
-
     display: flex;
-
     flex-direction: column;
-
     gap: 4px;
 }
 
-
 .project-details span {
-
     color: #999;
-
     font-size: .62rem;
-
     text-transform: uppercase;
-
     letter-spacing: .5px;
 }
 
-
 .project-details strong {
-
     color: #1f5e2f;
-
     font-size: .75rem;
 }
 
-
 /* ===================== VIEW BUTTON ===================== */
-
 .project-view-btn {
-
     display: inline-flex;
-
     align-items: center;
-
     gap: 8px;
-
     align-self: flex-start;
-
     padding: 11px 20px;
-
     border-radius: 30px;
-
     background: #1f5e2f;
-
     color: white;
-
     text-decoration: none;
-
     font-size: .72rem;
-
     font-weight: 700;
-
     transition:
         transform .3s ease,
         background-color .3s ease;
 }
 
-
 .project-view-btn:hover {
-
     background: darkred;
-
     color: white;
-
     transform: translateX(5px);
 }
 
-
 /* ===================== SMALL PROJECT CARD ===================== */
-
 .featured-project-small {
-
     height: 100%;
-
     overflow: hidden;
-
     background: white;
-
     border-radius: 10px;
-
-    box-shadow:
-        0 7px 22px rgba(0,0,0,.05);
-
+    box-shadow: 0 7px 22px rgba(0,0,0,.05);
     transition:
         transform .4s ease,
         box-shadow .4s ease;
 }
 
-
 .featured-project-small:hover {
-
     transform: translateY(-8px);
-
-    box-shadow:
-        0 15px 30px rgba(0,0,0,.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
 }
 
-
 /* ===================== SMALL IMAGE ===================== */
-
 .featured-small-image {
-
     position: relative;
-
     height: 240px;
-
     overflow: hidden;
 }
 
-
 .featured-small-image img {
-
     width: 100%;
-
     height: 100%;
-
     object-fit: cover;
-
     display: block;
-
     transition:
         transform .6s ease;
 }
 
-
 .featured-project-small:hover
 .featured-small-image img {
-
     transform: scale(1.08);
 }
 
@@ -619,126 +499,324 @@
 }
 
 /* Position status on small cards */
-
 .featured-small-image .project-status {
-
     position: absolute;
-
     top: 15px;
-
     left: 15px;
 }
 
-
 /* ===================== SMALL CONTENT ===================== */
-
 .featured-small-content {
-
     padding: 25px;
 }
 
-
 .featured-small-content h3 {
-
     margin-bottom: 10px;
-
     color: #1f5e2f;
-
     font-size: 1.05rem;
-
     font-weight: 700;
-
     line-height: 1.4;
 }
 
-
 .featured-small-content .project-location {
-
     margin-bottom: 12px;
 }
 
-
 .featured-small-content p {
-
     margin-bottom: 18px;
-
     color: #666;
-
     font-size: .74rem;
-
     line-height: 1.7;
 }
 
-
 /* ===================== PROJECT LINK ===================== */
-
 .project-view-link {
-
     display: inline-flex;
-
     align-items: center;
-
     gap: 7px;
-
     color: #1f5e2f;
-
     text-decoration: none;
-
     font-size: .72rem;
-
     font-weight: 700;
-
     transition:
         gap .3s ease,
         color .3s ease;
 }
 
-
 .project-view-link:hover {
-
     gap: 12px;
-
     color: darkred;
 }
 
-
 /* ===================== VIEW ALL ===================== */
-
 .projects-view-all {
-
     margin-top: 45px;
 }
 
-
 .projects-view-all .btn {
-
     display: inline-flex;
-
     align-items: center;
-
     gap: 8px;
-
     padding: 13px 25px;
-
     border-radius: 50px;
-
     background: #1f5e2f;
-
     border: none;
-
     font-size: .75rem;
-
     font-weight: 700;
-
     transition:
         transform .3s ease,
         background-color .3s ease;
 }
 
-
 .projects-view-all .btn:hover {
-
     background: darkred;
-
     transform: translateY(-4px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== PROJECT PORTFOLIO ===================== */
+
+/* ===================== FILTERS ===================== */
+.project-filter-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 45px;
+}
+
+.project-filter {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    background: white;
+    color: #555;
+    font-size: .7rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+.project-filter:hover {
+    border-color: #1f5e2f;
+    color: #1f5e2f;
+    transform: translateY(-2px);
+}
+
+.project-filter.active {
+    background: #1f5e2f;
+    border-color: #1f5e2f;
+    color: white;
+}
+
+/* ===================== PROJECT CARD ===================== */
+.portfolio-project-card {
+    height: 100%;
+    overflow: hidden;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0,0,0,.06);
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.portfolio-project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
+}
+
+/* ===================== IMAGE ===================== */
+.portfolio-project-image {
+    position: relative;
+    height: 245px;
+    overflow: hidden;
+}
+
+.portfolio-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition:
+        transform .6s ease;
+}
+
+.portfolio-project-card:hover
+.portfolio-project-image img {
+    transform: scale(1.08);
+}
+
+/* ===================== STATUS ===================== */
+.portfolio-project-status {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    padding: 7px 13px;
+    border-radius: 30px;
+    background: #1f5e2f;
+    color: white;
+    font-size: .6rem;
+    font-weight: 700;
+}
+
+.portfolio-project-status.ongoing {
+    background: darkred;
+}
+
+/* ===================== IMAGE OVERLAY ===================== */
+.portfolio-project-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(31,94,47,.65);
+    opacity: 0;
+    transition:
+        opacity .4s ease;
+}
+
+.portfolio-project-card:hover
+.portfolio-project-overlay {
+    opacity: 1;
+}
+
+/* ===================== VIEW ICON ===================== */
+.portfolio-project-view {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: white;
+    color: #1f5e2f;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transform: translateY(15px);
+    transition:
+        transform .4s ease,
+        background-color .3s ease,
+        color .3s ease;
+}
+
+.portfolio-project-card:hover
+.portfolio-project-view {
+    transform: translateY(0);
+}
+
+.portfolio-project-view:hover {
+    background: wheat;
+    color: darkred;
+}
+
+/* ===================== CONTENT ===================== */
+.portfolio-project-content {
+    padding: 25px;
+}
+
+.portfolio-project-category {
+    display: block;
+    margin-bottom: 8px;
+    color: darkred;
+    font-size: .6rem;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.portfolio-project-content h3 {
+    margin-bottom: 10px;
+    color: #1f5e2f;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.portfolio-project-location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+    color: #777;
+    font-size: .68rem;
+}
+
+.portfolio-project-location i {
+    color: darkred;
+    font-size: .8rem;
+}
+
+.portfolio-project-content p {
+    margin-bottom: 18px;
+    color: #666;
+    font-size: .73rem;
+    line-height: 1.7;
+}
+
+/* ===================== PROJECT LINK ===================== */
+.portfolio-project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #1f5e2f;
+    text-decoration: none;
+    font-size: .7rem;
+    font-weight: 700;
+    transition:
+        gap .3s ease,
+        color .3s ease;
+}
+
+.portfolio-project-link:hover {
+    gap: 12px;
+    color: darkred;
+}
+
+/* ===================== LOAD MORE ===================== */
+.project-load-more {
+    margin-top: 50px;
+}
+
+.project-load-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px;
+    border: 2px solid #1f5e2f;
+    border-radius: 50px;
+    background: white;
+    color: #1f5e2f;
+    font-size: .72rem;
+    font-weight: 700;
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+.project-load-btn:hover {
+    background: #1f5e2f;
+    color: white;
+    transform: translateY(-3px);
 }
