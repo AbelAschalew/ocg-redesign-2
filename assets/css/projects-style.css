@@ -820,3 +820,126 @@
     color: white;
     transform: translateY(-3px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== PROJECT LIFECYCLE ===================== */
+
+/* ===================== LIFECYCLE WRAPPER ===================== */
+.project-lifecycle {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+    margin-top: 60px;
+}
+
+/* ===================== CONNECTING LINE ===================== */
+.project-lifecycle::before {
+    content: "";
+    position: absolute;
+    top: 43px;
+    left: 8%;
+    right: 8%;
+    height: 3px;
+    background: #dfe7e1;
+    z-index: 0;
+}
+
+/* ===================== STEP ===================== */
+.lifecycle-step {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 12px;
+}
+
+/* ===================== NUMBER ===================== */
+.lifecycle-number {
+    position: absolute;
+    top: -22px;
+    right: 10px;
+    color: rgba(31,94,47,.08);
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+/* ===================== ICON ===================== */
+.lifecycle-icon {
+    position: relative;
+    width: 86px;
+    height: 86px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #1f5e2f;
+    border: 5px solid white;
+    box-shadow:
+        0 0 0 2px #1f5e2f,
+        0 8px 20px rgba(0,0,0,.12);
+    color: white;
+    font-size: 1.7rem;
+    transition:
+        transform .4s ease,
+        background-color .3s ease,
+        color .3s ease;
+}
+
+.lifecycle-step:hover .lifecycle-icon {
+    transform: translateY(-8px) rotate(8deg);
+    background: white;
+    color: #1f5e2f;
+}
+
+/* ===================== CONTENT ===================== */
+.lifecycle-content {
+    padding: 0 5px;
+}
+
+.lifecycle-stage {
+    display: block;
+    margin-bottom: 8px;
+    color: darkred;
+    font-size: .58rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.lifecycle-content h3 {
+    min-height: 45px;
+    margin-bottom: 12px;
+    color: #1f5e2f;
+    font-size: .95rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.lifecycle-content p {
+    color: #666;
+    font-size: .68rem;
+    line-height: 1.7;
+}
