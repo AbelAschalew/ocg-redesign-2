@@ -443,3 +443,36 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+/* ================================================ RESPONSIVE =========================================================== */
+@media (max-width: 992px) {
+    .hero {
+        min-height: 590px;
+    }
+    .hero {
+        max-width: 680px;
+        padding: 100px 0 80px;
+    }
+    .hero-title {
+        font-size: clamp(
+            2.2rem,
+            7vw,
+            3.8rem
+        );
+    }
+    .hero-text {
+        font-size: .38rem;
+    }
+    .hero-scroll {
+        right: 20px;
+    }
+}
