@@ -53,7 +53,7 @@ footer p{
 }
 
 .section-title{
-    color:var(--primary);
+    color: blue;
     font-weight:700;
     margin-bottom:20px;
 }
@@ -65,10 +65,10 @@ footer p{
 }
 
 .section-title{
-    color:#1f5e2f;
-    font-weight:700;
-    margin-bottom:12px;
-    position:relative;
+    color:#1f5e2f !important;
+    font-weight:700 !important;
+    margin-bottom:12px !important;
+    position:relative !important;
 }
 
 .section-title::after{

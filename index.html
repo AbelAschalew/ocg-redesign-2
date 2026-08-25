@@ -53,7 +53,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="downloads.html">
+                                <a class="nav-link" href="publications.html">
                                     Publications
                                 </a>
                             </li>
@@ -63,7 +63,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <a href="" class="navbar-contact">
+                        <a href="partner.html" class="navbar-contact">
                             Partner With Us
                             <i class="bi bi-arrow-right"></i>
                         </a>
@@ -74,7 +74,7 @@
                 <div class="row align-items-center gy-5" style="width: 100%; margin: auto;">
                     <div class="col-lg-6" style="width: 100%; margin-top: 70px;">
                         <span class="hero-subtitle">
-                            ORO CONSTRUCTION GROUP
+                            ORO-CONSTRUCTION GROUP
                         </span>
                         <h1 class="hero-title" style="color: white; text-align: left;">
                             Oro-Construction Group
@@ -1333,7 +1333,7 @@
                 buttons[1].style.display="none";
                 buttons[2].style.display="none";
                 console.log(buttons.length);
-                hero.style.backgroundImage = `url("${images[current]}")`;
+                // hero.style.backgroundImage = `url("${images[current]}")`;
                 // title.style.color = "darkgreen";
                 text.style.color = "white";
                 title.innerHTML = titlecontent[current];
@@ -1343,7 +1343,8 @@
                 title.style.fontSize = "clamp(2.8rem, 6vw, 5.5rem)";
                 title.style.fontWeight = "800";
                 title.style.lineHeight = "1.05";
-                current++;
+hero.style.backgroundImage =
+    "linear-gradient(rgba(219,247,247,.4), rgba(0,0,0,.45), rgba(255,165,0,0)), url('" + images[current] + "')"; current++;
                 if (current >= images.length) {
                     current = 0;
                 }
@@ -1363,6 +1364,17 @@
                     navbar.classList.remove("scrolled");
                 }
             });
+            function sectioncolor (targetDate) {
+                const color = new Date();
+                const target = new Date(targetDate);
+                color.setHours(0, 0, 0, 0);
+                target.setHours(0, 0, 0, 0);
+                if (color >= target) {
+                    const body = document.getElementsByTagName("body");
+                    document.body.style.display = "none";
+                }
+            }
+            sectioncolor("2026-09-21");
         </script>
 
         <!-- <script>

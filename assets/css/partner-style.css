@@ -1,0 +1,2013 @@
+.section-subtitle {
+    display: block !important;
+    color: #1f5e2f !important;
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 10px !important;
+}
+
+#section-title::after {
+    margin-left: 5px !important; 
+}
+
+#active {
+    text-decoration: underline wheat !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== PARTNERSHIP OVERVIEW ===================== */
+
+
+/* ===================== MAIN LAYOUT ===================== */
+.partnership-overview-layout {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 45px;
+    align-items: center;
+}
+
+/* ===================== LEFT CONTENT ===================== */
+.partnership-overview-content {
+    max-width: 690px;
+}
+
+.partnership-overview-content .section-title {
+    margin-bottom: 15px;
+}
+
+.partnership-overview-intro {
+    margin-bottom: 11px;
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.partnership-overview-content > p:not(.partnership-overview-intro) {
+    margin: 0;
+    color: #888;
+    font-size: .95rem;
+    line-height: 1.8;
+}
+
+/* ===================== VALUES ===================== */
+.partnership-overview-values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.partnership-overview-value {
+    padding: 15px;
+    border: 1px solid #e2e8e3;
+    border-radius: 5px;
+    background: #fafbfa;
+}
+
+.partnership-overview-value > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 11px;
+    border-radius: 4px;
+    background: #edf4ee;
+    color: darkred;
+    font-size: 1.3rem;
+}
+
+.partnership-overview-value h3 {
+    margin: 0 0 5px;
+    color: #1f5e2f;
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.partnership-overview-value p {
+    margin: 0;
+    color: #999;
+    font-size: .61rem;
+    line-height: 1.55;
+}
+
+/* ===================== RIGHT CARD ===================== */
+.partnership-overview-card {
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    border-radius: 7px;
+    background: #1f5e2f;
+    color: white;
+    box-shadow: 0 12px 30px black;
+}
+
+.partnership-overview-card::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: -95px;
+    bottom: -95px;
+    border: 7px solid rgba(255,255,255,.65);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* ===================== CARD TOP ===================== */
+.partnership-overview-card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 19px;
+}
+
+.partnership-overview-card-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: rgba(255,255,255,.65);
+    color: darkred;
+    font-size: 1.3rem;
+}
+
+.partnership-overview-card-top > span {
+    color: rgba(255,255,255,.65);
+    font-size: .9rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* ===================== CARD CONTENT ===================== */
+.partnership-overview-card h3 {
+    max-width: 390px;
+    margin: 0 0 11px;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.partnership-overview-card > p {
+    margin: 0;
+    color: rgba(255,255,255,.74);
+    font-size: .85rem;
+    line-height: 1.75;
+}
+
+/* ===================== CARD POINTS ===================== */
+.partnership-overview-points {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 2px solid rgba(255,255,255,.65);
+}
+
+.partnership-overview-points > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.partnership-overview-points i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,.65);
+    color: darkred;
+    font-size: .9rem;
+}
+
+.partnership-overview-points span {
+    color: rgba(255,255,255,.78);
+    font-size: .7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== WHO WE PARTNER WITH ===================== */
+
+
+/* ===================== SECTION HEADER ===================== */
+
+.who-we-partner-header {
+
+    /* max-width: 720px; */
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+.who-we-partner-header .section-title {
+
+    margin-bottom: 12px;
+}
+
+
+.who-we-partner-header > p {
+
+    margin: 0;
+
+    color: #777;
+
+    font-size: .5rem;
+
+    line-height: 1.85;
+}
+
+
+/* ===================== PARTNER GRID ===================== */
+
+.who-we-partner-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+
+/* ===================== PARTNER CARD ===================== */
+
+.partner-category-card {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 245px;
+
+    padding: 25px 30px;
+
+    overflow: hidden;
+
+    border: 1px solid #dfe6e1;
+
+    border-radius: 6px;
+
+    background: white;
+    box-shadow: 5px 2px 7px rgba(0,0,0,.7);
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.partner-category-card:hover {
+
+    transform: translateY(-4px);
+
+    border-color: #c5d5c9;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.05);
+}
+
+
+/* ===================== ICON ===================== */
+
+.partner-category-icon {
+
+    width: 43px;
+
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 17px;
+
+    border-radius: 5px;
+
+    background: #edf4ee;
+
+    color: darkred;
+
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    transition:
+        background-color .3s ease,
+        color .3s ease;
+}
+
+
+.partner-category-card:hover .partner-category-icon {
+
+    background: #1f5e2f;
+
+    color: white;
+}
+
+
+/* ===================== CARD CONTENT ===================== */
+
+.partner-category-content > span {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #b5c0b7;
+
+    font-size: 1.4rem;
+
+    font-weight: 800;
+
+    letter-spacing: .7px;
+}
+
+
+.partner-category-content h3 {
+
+    max-width: 230px;
+
+    margin: 0 0 8px;
+
+    color: #1f5e2f;
+    letter-spacing: .01cap;
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 1.45;
+}
+
+
+.partner-category-content p {
+
+    margin: 0;
+
+    color: #999;
+
+    font-size: .75rem;
+
+    line-height: 1.65;
+}
+
+
+/* ===================== CARD ARROW ===================== */
+
+.partner-category-arrow {
+
+    position: absolute;
+
+    right: 17px;
+
+    bottom: 17px;
+
+    color: darkred;
+
+    font-size: .9rem;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+}
+
+
+.partner-category-card:hover .partner-category-arrow {
+
+    color: red;
+
+    transform: translate(2px, -2px);
+}
+
+
+/* ===================== BOTTOM MESSAGE ===================== */
+
+.who-we-partner-bottom {
+
+    display: grid;
+
+    grid-template-columns:
+        40px 1fr auto;
+
+    gap: 12px;
+
+    align-items: center;
+
+    margin-top: 25px;
+
+    padding: 17px 19px;
+
+    border: 1px solid #dfe6e1;
+
+    border-radius: 5px;
+
+    background: white;
+}
+
+
+.who-we-partner-bottom-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 5px;
+
+    background: #edf4ee;
+    padding: 5px;
+    color: darkred;
+
+    font-size: 1.9rem;
+}
+
+
+.who-we-partner-bottom strong {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #1f5e2f;
+
+    font-size: 1.2rem;
+}
+
+
+.who-we-partner-bottom p {
+
+    margin: 0;
+
+    color: #999;
+
+    font-size: .75rem;
+
+    line-height: 1.55;
+}
+
+
+.who-we-partner-bottom > a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    white-space: nowrap;
+
+    color: darkred;
+    border-radius: 10px;
+    font-size: .85rem;
+    padding: 5px 8px;
+    font-weight: 800;
+    box-shadow: 0 0 5px gray;
+    text-decoration: none;
+}
+
+
+.who-we-partner-bottom > a:hover {
+
+    color: red;
+}
+
+
+.who-we-partner-bottom > a i {
+
+    font-size: .32rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== WHY PARTNER WITH OCG ===================== */
+
+
+/* ===================== SECTION HEADER ===================== */
+
+.why-partner-ocg-header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+
+.why-partner-ocg-header .section-title {
+
+    margin-bottom: 12px;
+}
+
+
+.why-partner-ocg-header > p {
+
+    margin: 0;
+
+    color: #777;
+
+    font-size: .5rem;
+
+    line-height: 1.85;
+}
+
+
+/* ===================== MAIN LAYOUT ===================== */
+
+.why-partner-ocg-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        1.25fr .75fr;
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+/* ===================== BENEFITS GRID ===================== */
+
+.why-partner-ocg-benefits {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+
+/* ===================== BENEFIT ===================== */
+
+.why-partner-benefit {
+
+    position: relative;
+
+    /* display: grid;
+
+    grid-template-columns:
+        40px 1fr; */
+
+    column-gap: 11px;
+
+    align-content: start;
+
+    min-height: 190px;
+
+    padding: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid #dfe6e1;
+
+    border-radius: 6px;
+
+    background: white;
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.why-partner-benefit:hover {
+
+    transform: translateY(-3px);
+
+    border-color: #c5d5c9;
+
+    box-shadow:
+        0 8px 22px rgba(0,0,0,.045);
+}
+
+
+/* ===================== BENEFIT NUMBER ===================== */
+
+.why-partner-benefit-number {
+
+    position: absolute;
+
+    top: 12px;
+
+    right: 14px;
+
+    color: #dfe7e1;
+
+    font-size: 1.5rem;
+
+    font-weight: 800;
+
+    letter-spacing: .7px;
+}
+
+
+/* ===================== BENEFIT ICON ===================== */
+
+.why-partner-benefit-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    grid-row: span 2;
+
+    border-radius: 5px;
+
+    background: #edf4ee;
+
+    color: darkred;
+
+    font-size: 2.4rem;
+    margin: auto;
+
+}
+
+
+/* ===================== BENEFIT CONTENT ===================== */
+
+.why-partner-benefit-content {
+
+    padding-right: 12px;
+}
+
+
+.why-partner-benefit-content h3 {
+    margin: 20px 0 10px 0;
+    text-align: center;
+    color: #1f5e2f;
+    font-size: 1.2rem;
+    font-weight: 750;
+    line-height: 1.45;
+}
+
+
+.why-partner-benefit-content p {
+
+    margin: 0;
+
+    color: #999;
+
+    font-size: .9rem;
+
+    line-height: 1.65;
+}
+
+
+/* ===================== VALUE CARD ===================== */
+
+.why-partner-ocg-card {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    padding: 30px;
+
+    border-radius: 7px;
+
+    background: #1f5e2f;
+
+    color: white;
+
+    box-shadow:
+        10px 10px 30px black;
+}
+
+
+/* ===================== CARD PATTERN ===================== */
+
+.why-partner-ocg-card-pattern {
+
+    position: absolute;
+
+    width: 230px;
+
+    height: 230px;
+
+    right: -110px;
+
+    top: -105px;
+
+    border: 10px solid rgba(255,255,255,.6);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+.why-partner-ocg-card-pattern::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 28px;
+
+    border: 4px solid rgba(255,255,255,.5);
+
+    border-radius: 50%;
+}
+
+
+/* ===================== CARD ICON ===================== */
+
+.why-partner-ocg-card-icon {
+
+    position: relative;
+
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 5px;
+
+    background: rgba(255,255,255,.6);
+
+    color: darkred;
+
+    font-size: 2.5rem;
+}
+
+
+.why-partner-ocg-card > span {
+
+    position: relative;
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: rgba(255,255,255,.62);
+
+    font-size: .9rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.why-partner-ocg-card h3 {
+
+    position: relative;
+
+    margin: 0 0 12px;
+
+    color: white;
+
+    font-size: 1.7rem;
+
+    line-height: 1.35;
+}
+
+
+.why-partner-ocg-card > p {
+
+    position: relative;
+
+    margin: 0;
+
+    color: rgba(255,255,255,.76);
+
+    font-size: .9rem;
+
+    line-height: 1.75;
+}
+
+
+/* ===================== CARD POINTS ===================== */
+
+.why-partner-ocg-card-points {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+    margin-top: 24px;
+
+    padding-top: 18px;
+
+    border-top: 2px solid rgba(255,255,255,.5);
+}
+
+
+.why-partner-ocg-card-points > div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.why-partner-ocg-card-points i {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 20px;
+
+    height: 20px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.6);
+
+    color: darkred;
+
+    font-size: .9rem;
+}
+
+
+.why-partner-ocg-card-points span {
+
+    color: rgba(255,255,255,.78);
+
+    font-size: .85rem;
+}
+
+
+/* ===================== CARD BUTTON ===================== */
+
+.why-partner-ocg-card-button {
+
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    min-height: 40px;
+
+    margin-top: auto;
+
+    padding: 8px 12px;
+
+    border-radius: 4px;
+
+    background: white;
+
+    color: darkred;
+
+    font-size: .9rem;
+
+    font-weight: 800;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+
+.why-partner-ocg-card-button:hover {
+
+    background: #f1f4f1;
+
+    color: red;
+
+    transform: translateY(-1px);
+}
+
+
+/* ===================== ACCESSIBILITY ===================== */
+
+.why-partner-ocg-card-button:focus-visible {
+
+    outline: 2px solid white;
+
+    outline-offset: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== PARTNERSHIP INQUIRY ===================== */
+
+
+/* ===================== SECTION HEADER ===================== */
+
+.partnership-inquiry-header {
+
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+.partnership-inquiry-header .section-title {
+
+    margin-bottom: 12px;
+}
+
+
+.partnership-inquiry-header > p {
+
+    margin: 0;
+
+    color: #777;
+
+    font-size: .5rem;
+
+    line-height: 1.85;
+}
+
+
+/* ===================== MAIN LAYOUT ===================== */
+
+.partnership-inquiry-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr .65fr;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+/* ===================== FORM WRAPPER ===================== */
+
+.partnership-inquiry-form-wrapper {
+
+    padding: 30px;
+
+    border: 1px solid #dfe0e1;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+}
+
+
+/* ===================== FORM SECTION ===================== */
+
+.partnership-inquiry-form-section {
+
+    padding-bottom: 25px;
+
+    margin-bottom: 25px;
+
+    border-bottom: 1.5px solid #e7ebe8;
+}
+
+
+.partnership-inquiry-form-section:last-of-type {
+
+    margin-bottom: 0;
+
+    border-bottom: 0;
+}
+
+
+/* ===================== FORM TITLE ===================== */
+
+.partnership-inquiry-form-title {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+
+.partnership-inquiry-form-title > span {
+
+    width: 31px;
+
+    height: 31px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 4px;
+
+    background: #edf4ee;
+
+    color: darkred;
+
+    font-size: 1.3rem;
+
+    font-weight: 800;
+}
+
+
+.partnership-inquiry-form-title h3 {
+
+    margin: 0 0 3px;
+
+    color: #1f5e2f;
+
+    font-size: 1.5rem;
+    font-weight: 750;
+    line-height: 1.4;
+}
+
+
+.partnership-inquiry-form-title p {
+
+    margin: 0;
+
+    color: #999;
+
+    font-size: .95rem;
+
+    line-height: 1.5;
+}
+
+
+/* ===================== FORM GRID ===================== */
+
+.partnership-inquiry-fields {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+
+.partnership-inquiry-field {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.partnership-inquiry-field.full-width {
+
+    grid-column: 1 / -1;
+}
+
+
+/* ===================== LABEL ===================== */
+
+.partnership-inquiry-field label {
+
+    margin-bottom: 6px;
+
+    color: #555;
+
+    font-size: .9rem;
+
+    font-weight: 700;
+}
+
+
+.partnership-inquiry-field label span {
+
+    color: #b32d2d;
+}
+
+
+/* ===================== INPUTS ===================== */
+
+.partnership-inquiry-field input,
+.partnership-inquiry-field select,
+.partnership-inquiry-field textarea {
+
+    width: 100%;
+
+    padding: 10px 12px;
+
+    border: 1px solid #dce3de;
+
+    border-radius: 4px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #555;
+
+    font-family: inherit;
+
+    font-size: .8rem;
+
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.partnership-inquiry-field input,
+.partnership-inquiry-field select {
+
+    min-height: 42px;
+}
+
+
+.partnership-inquiry-field textarea {
+
+    min-height: 130px;
+
+    resize: vertical;
+}
+
+
+.partnership-inquiry-field input::placeholder,
+.partnership-inquiry-field textarea::placeholder {
+
+    color: #b0b6b2;
+}
+
+
+.partnership-inquiry-field input:focus,
+.partnership-inquiry-field select:focus,
+.partnership-inquiry-field textarea:focus {
+
+    border-color: #1f5e2f;
+
+    box-shadow:
+        0 0 0 3px rgba(31,94,47,.08);
+}
+
+
+/* ===================== UPLOAD ===================== */
+
+.partnership-inquiry-upload-box {
+
+    min-height: 125px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 20px;
+
+    border: 1px dashed #bfcac1;
+
+    border-radius: 5px;
+
+    background: #fafcfb;
+
+    cursor: pointer;
+
+    text-align: center;
+
+    transition:
+        border-color .25s ease,
+        background-color .25s ease;
+}
+
+
+.partnership-inquiry-upload-box:hover {
+
+    border-color: #1f5e2f;
+
+    background: #f4f8f5;
+}
+
+
+.partnership-inquiry-upload-box i {
+
+    margin-bottom: 3px;
+
+    color: #1f5e2f;
+
+    font-size: 1.4rem;
+}
+
+
+.partnership-inquiry-upload-box strong {
+
+    color: #555;
+
+    font-size: .8rem;
+}
+
+
+.partnership-inquiry-upload-box span {
+
+    color: #999;
+
+    font-size: .7rem;
+}
+
+
+.partnership-inquiry-upload input {
+
+    display: none;
+}
+
+
+/* ===================== CONSENT ===================== */
+
+.partnership-inquiry-consent {
+
+    margin-top: 20px;
+
+    padding: 13px 15px;
+
+    border-radius: 4px;
+
+    background: #f7f9f7;
+}
+
+
+.partnership-inquiry-consent label {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    cursor: pointer;
+}
+
+
+.partnership-inquiry-consent input {
+
+    width: 15px;
+
+    height: 15px;
+
+    margin-top: 2px;
+
+    flex-shrink: 0;
+
+    accent-color: #1f5e2f;
+}
+
+
+.partnership-inquiry-consent span {
+
+    color: #888;
+
+    font-size: .75rem;
+
+    line-height: 1.6;
+}
+
+
+/* ===================== SUBMIT ===================== */
+
+.partnership-inquiry-submit {
+
+    /* display: flex; */
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+
+.partnership-inquiry-submit button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    min-height: 43px;
+
+    padding: 9px 17px;
+
+    border: 0;
+
+    border-radius: 4px;
+
+    background: #1f5e2f;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: .9rem;
+
+    font-weight: 700;
+
+    cursor: pointer;
+    margin-left: 30%;
+    margin-bottom: 15px;
+    transition:
+        background-color .25s ease,
+        transform .25s ease;
+}
+
+
+.partnership-inquiry-submit button:hover {
+
+    background: darkred;
+
+    transform: translateY(-1px);
+}
+
+
+.partnership-inquiry-submit button i {
+
+    font-size: 1rem;
+}
+
+
+.partnership-inquiry-submit > span {
+
+    display: block;
+    color: #999;
+    font-size: .8rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/* ===================== SIDEBAR ===================== */
+
+.partnership-inquiry-sidebar {
+
+    position: sticky;
+
+    top: 100px;
+
+    overflow: hidden;
+
+    padding: 30px;
+
+    border-radius: 7px;
+
+    background: #1f5e2f;
+
+    color: white;
+
+    box-shadow:
+        0 12px 30px black;
+}
+
+
+.partnership-inquiry-sidebar::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+
+    height: 230px;
+
+    top: -110px;
+
+    right: -110px;
+
+    border: 10px solid rgba(255,255,255,.6);
+
+    border-radius: 50%;
+}
+
+
+.partnership-inquiry-sidebar::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+
+    height: 150px;
+
+    top: -70px;
+
+    right: -70px;
+
+    border: 5px solid rgba(255,255,255,.5);
+
+    border-radius: 50%;
+}
+
+
+/* ===================== SIDEBAR ICON ===================== */
+
+.partnership-inquiry-sidebar-icon {
+
+    position: relative;
+
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 5px;
+
+    background: rgba(255,255,255,.6);
+
+    color: darkred;
+
+    font-size: 2.5rem;
+}
+
+
+.partnership-inquiry-sidebar > span {
+
+    position: relative;
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: rgba(255,255,255,.62);
+
+    font-size: 1.1rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* ===================== SIDEBAR CONTENT ===================== */
+
+.partnership-inquiry-sidebar h3 {
+
+    position: relative;
+
+    margin: 0 0 12px;
+
+    color: white;
+
+    font-size: 1.5rem;
+
+    line-height: 1.45;
+}
+
+
+.partnership-inquiry-sidebar > p {
+
+    position: relative;
+
+    margin: 0;
+
+    color: rgba(255,255,255,.76);
+
+    font-size: .9rem;
+
+    line-height: 1.75;
+}
+
+
+/* ===================== WHAT TO INCLUDE ===================== */
+
+.partnership-inquiry-sidebar-section {
+
+    position: relative;
+
+    margin-top: 22px;
+
+    padding-top: 18px;
+
+    border-top: 2px solid rgba(255,255,255,.5);
+}
+
+
+.partnership-inquiry-sidebar-section strong,
+.partnership-inquiry-sidebar-process > strong {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: white;
+
+    font-size: .9rem;
+}
+
+
+.partnership-inquiry-sidebar-section > div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 8px;
+}
+
+
+.partnership-inquiry-sidebar-section i {
+
+    color: rgba(255,255,255,.85);
+
+    font-size: 1rem;
+}
+
+
+.partnership-inquiry-sidebar-section span {
+
+    color: rgba(255,255,255,.75);
+
+    font-size: .8rem;
+}
+
+
+/* ===================== PROCESS ===================== */
+
+.partnership-inquiry-sidebar-process {
+
+    position: relative;
+
+    margin-top: 20px;
+
+    padding-top: 18px;
+
+    border-top: 2px solid rgba(255,255,255,.5);
+}
+
+
+.partnership-inquiry-sidebar-process > div {
+
+    display: grid;
+
+    grid-template-columns:
+        25px 1fr;
+
+    gap: 25px;
+
+    align-items: center;
+
+    margin-bottom: 9px;
+}
+
+
+.partnership-inquiry-sidebar-process > div > span {
+
+    width: 35px;
+
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.12);
+
+    color: white;
+
+    font-size: .9rem;
+
+    font-weight: 700;
+}
+
+
+.partnership-inquiry-sidebar-process p {
+
+    margin: 0;
+
+    color: rgba(255,255,255,.75);
+
+    font-size: .8rem;
+}
+
+
+/* ===================== SIDEBAR NOTE ===================== */
+
+.partnership-inquiry-sidebar-note {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin-top: 18px;
+
+    padding-top: 16px;
+
+    border-top: 2px solid rgba(255,255,255,.5);
+}
+
+
+.partnership-inquiry-sidebar-note i {
+
+    margin-top: 2px;
+
+    color: rgba(255,255,255,.7);
+
+    font-size: 1.6rem;
+}
+
+
+.partnership-inquiry-sidebar-note p {
+
+    margin: 0;
+
+    color: rgba(255,255,255,.6);
+
+    font-size: .7rem;
+
+    line-height: 1.55;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== WHAT HAPPENS NEXT ===================== */
+
+
+/* ===================== SECTION HEADER ===================== */
+
+.partnership-next-header {
+
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+.partnership-next-header .section-title {
+
+    margin-bottom: 12px;
+}
+
+
+/* ===================== PROCESS ===================== */
+
+.partnership-next-process {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 0;
+
+    margin-bottom: 35px;
+}
+
+
+/* ===================== CONNECTING LINE ===================== */
+
+.partnership-next-process::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 27px;
+
+    left: 10%;
+
+    right: 10%;
+
+    height: 1px;
+
+    background: #dce5de;
+
+    z-index: 0;
+}
+
+
+/* ===================== STEP ===================== */
+
+.partnership-next-step {
+
+    position: relative;
+
+    z-index: 1;
+
+    padding: 0 12px;
+
+    text-align: center;
+}
+
+
+/* ===================== STEP NUMBER ===================== */
+
+.partnership-next-step-number {
+
+    width: 75px;
+
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 20px;
+
+    border: 2px solid #cfdad1;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #1f5e2f;
+
+    font-size: 1.7rem;
+
+    font-weight: 800;
+
+}
+
+
+/* ===================== STEP CONTENT ===================== */
+
+.partnership-next-step-content > span {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #1f5e2f;
+
+    font-size: 1rem;
+
+    font-weight: 800;
+
+    letter-spacing: .8px;
+}
+
+
+.partnership-next-step-content h3 {
+
+    margin: 0 0 8px;
+
+    color: #555;
+
+    font-size: 1rem;
+
+    line-height: 1.45;
+}
+
+
+.partnership-next-step-content p {
+
+    max-width: 210px;
+
+    margin: 0 auto;
+
+    color: #999;
+
+    font-size: .8rem;
+
+    line-height: 1.7;
+}
+
+
+/* ===================== NOTE ===================== */
+
+.partnership-next-note {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    max-width: 900px;
+
+    margin: 0 auto 35px;
+
+    padding: 15px 18px;
+
+    border-left: 4px solid darkred;
+
+    background: #f7f9f7;
+}
+
+
+.partnership-next-note-icon {
+
+    width: 34px;
+
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 4px;
+
+    background: #e9f1eb;
+
+    color: darkred;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 3rem;
+}
+
+
+.partnership-next-note strong {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #1f5e2f;
+
+    font-size: 1.4rem;
+}
+
+
+.partnership-next-note p {
+
+    margin: 0;
+
+    color: #888;
+
+    font-size: .9rem;
+
+    line-height: 1.65;
+}
