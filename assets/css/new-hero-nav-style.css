@@ -895,7 +895,7 @@
     }
 
     .ocg-navbar.scrolled {
-        padding: 5px 0;
+        padding: 0;
     }
 
     .ocg-navbar.scrolled .navbar-logo {
@@ -1306,12 +1306,12 @@
 
 /* Desktop */
 #mainNavbar {
-    padding: 15px 0;
+    padding: 9px 0;
     transition: all 0.4s ease;
 }
 
 #mainNavbar.scrolled {
-    padding: 8px 0;
+    padding: 0;
 }
 
 
@@ -1319,11 +1319,11 @@
 @media (max-width: 991.98px) {
 
     #mainNavbar {
-        padding: 10px 0;
+        padding: 0;
     }
 
     #mainNavbar.scrolled {
-        padding: 8px 0;
+        padding: 0;
         background: transparent;
     }
 
