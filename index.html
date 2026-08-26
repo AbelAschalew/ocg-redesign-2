@@ -1224,7 +1224,7 @@ hero.style.backgroundImage =
             setInterval(changeBackground, 5000);
         </script>
 
-        <script>
+        <!-- <script>
             const navbar = document.getElementById("mainNavbar");
             const hero1 = document.getElementById("hero");
             window.addEventListener("scroll", function () {
@@ -1246,7 +1246,35 @@ hero.style.backgroundImage =
                 }
             }
             sectioncolor("2026-09-21");
-        </script>
+        </script> -->
+
+        <script>
+    const navbar = document.getElementById("mainNavbar");
+    const hero1 = document.getElementById("hero");
+
+    function updateNavbar() {
+
+        if (!navbar || !hero) {
+            return;
+        }
+
+        const heroBottom = hero1.offsetTop + hero1.offsetHeight;
+
+        if (window.scrollY >= heroBottom - 100) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    }
+
+    window.addEventListener("scroll", updateNavbar, {
+        passive: true
+    });
+
+    window.addEventListener("resize", updateNavbar);
+
+    updateNavbar();
+</script>
 
         <!-- <script>
             document.addEventListener("DOMContentLoaded", () => {

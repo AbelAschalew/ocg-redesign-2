@@ -1286,3 +1286,45 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop */
+#mainNavbar {
+    padding: 15px 0;
+    transition: all 0.4s ease;
+}
+
+#mainNavbar.scrolled {
+    padding: 8px 0;
+}
+
+
+/* Mobile */
+@media (max-width: 991.98px) {
+
+    #mainNavbar {
+        padding: 10px 0;
+    }
+
+    #mainNavbar.scrolled {
+        padding: 8px 0;
+        background: transparent;
+    }
+
+}
