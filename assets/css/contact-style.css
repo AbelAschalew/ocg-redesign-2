@@ -105,3 +105,453 @@
 .contact-card a:hover{
     color:var(--primary);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================== RESPONSIVE ============================================================== */
+
+
+
+
+/* =========================================================
+   RESPONSIVE CONTACT CARDS
+   ========================================================= */
+
+
+/* ===================== TABLET ===================== */
+
+@media (max-width: 992px) {
+
+    .contact-card {
+        padding: 32px 22px;
+        border-radius: 10px;
+    }
+
+    .contact-card i {
+        font-size: 2.2rem;
+        margin-bottom: 16px;
+    }
+
+    .contact-card h4 {
+        font-size: 1.05rem;
+        margin-bottom: 8px;
+    }
+
+    .contact-card p {
+        font-size: .9rem;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 767px) {
+
+    .contact-card {
+        padding: 28px 20px;
+        border-radius: 9px;
+    }
+
+    .contact-card i {
+        font-size: 2rem;
+        margin-bottom: 14px;
+    }
+
+    .contact-card h4 {
+        font-size: 1rem;
+        margin-bottom: 7px;
+    }
+
+    .contact-card p {
+        font-size: .85rem;
+        line-height: 1.6;
+    }
+
+    /*
+       Disable the large desktop hover movement
+       on touch devices.
+    */
+    .contact-card:hover {
+        transform: translateY(-3px);
+    }
+
+}
+
+
+/* ===================== SMALL MOBILE ===================== */
+
+@media (max-width: 576px) {
+
+    .contact-card {
+        padding: 25px 18px;
+        border-radius: 8px;
+    }
+
+    .contact-card i {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .contact-card h4 {
+        font-size: .95rem;
+    }
+
+    .contact-card p {
+        font-size: .8rem;
+    }
+
+}
+
+
+/* ===================== VERY SMALL DEVICES ===================== */
+
+@media (max-width: 400px) {
+
+    .contact-card {
+        padding: 22px 15px;
+    }
+
+    .contact-card i {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+
+    .contact-card h4 {
+        font-size: .9rem;
+    }
+
+    .contact-card p {
+        font-size: .75rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE CONTACT FORM & MAP
+   ========================================================= */
+
+
+/* ===================== LARGE TABLET ===================== */
+
+@media (max-width: 992px) {
+
+    /* ---------- SECTION SPACING ---------- */
+
+    .row.g-5 {
+        --bs-gutter-y: 2.5rem;
+        --bs-gutter-x: 2.5rem;
+    }
+
+
+    /* ---------- FORM HEADING ---------- */
+
+    .section-title {
+        margin-bottom: 30px !important;
+    }
+
+
+    /* ---------- FORM CONTROLS ---------- */
+
+    .form-control {
+        padding: 12px 13px;
+        border-radius: 7px;
+        font-size: .9rem;
+    }
+
+    textarea.form-control {
+        min-height: 180px;
+    }
+
+
+    /* ---------- MAP ---------- */
+
+    iframe {
+        height: 400px;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 767px) {
+
+    /* ---------- COLUMNS ---------- */
+
+    .row.g-5 {
+        --bs-gutter-y: 2rem;
+        --bs-gutter-x: 1.25rem;
+    }
+
+
+    /* ---------- FORM HEADING ---------- */
+
+    .section-title {
+        margin-bottom: 25px !important;
+    }
+
+
+    /* ---------- FORM ---------- */
+
+    .form-control {
+        width: 100%;
+        padding: 11px 12px;
+        border-radius: 6px;
+        font-size: .85rem;
+    }
+
+    textarea.form-control {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+
+    /* ---------- BUTTON ---------- */
+
+    .btn.btn-success {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: .85rem;
+    }
+
+
+    /* ---------- MAP ---------- */
+
+    iframe {
+        width: 100%;
+        height: 350px;
+        border-radius: 10px !important;
+    }
+
+}
+
+
+/* ===================== SMALL MOBILE ===================== */
+
+@media (max-width: 576px) {
+
+    /* ---------- SECTION ---------- */
+
+    .row.g-5 {
+        --bs-gutter-y: 1.75rem;
+        --bs-gutter-x: 1rem;
+    }
+
+
+    /* ---------- HEADING ---------- */
+
+    .section-title {
+        margin-bottom: 20px !important;
+    }
+
+
+    /* ---------- INPUTS ---------- */
+
+    .form-control {
+        padding: 10px 11px;
+        border-radius: 6px;
+        font-size: .8rem;
+    }
+
+    .mb-3 {
+        margin-bottom: .75rem !important;
+    }
+
+    textarea.form-control {
+        min-height: 135px;
+    }
+
+
+    /* ---------- BUTTON ---------- */
+
+    .btn.btn-success {
+        padding: 9px 13px;
+        font-size: .8rem;
+    }
+
+
+    /* ---------- MAP ---------- */
+
+    iframe {
+        height: 300px;
+        border-radius: 8px !important;
+    }
+
+}
+
+
+/* ===================== VERY SMALL DEVICES ===================== */
+
+@media (max-width: 400px) {
+
+    .form-control {
+        padding: 9px 10px;
+        font-size: .75rem;
+    }
+
+    textarea.form-control {
+        min-height: 120px;
+    }
+
+    .btn.btn-success {
+        padding: 8px 12px;
+        font-size: .75rem;
+    }
+
+    iframe {
+        height: 260px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE SOCIAL MEDIA SECTION
+   ========================================================= */
+
+
+/* ===================== TABLET ===================== */
+
+@media (max-width: 992px) {
+
+    .contact-socials {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .contact-socials a {
+        width: 62px;
+        height: 62px;
+        font-size: 1.1rem;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 767px) {
+
+    .contact-socials {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .contact-socials a {
+        width: 55px;
+        height: 55px;
+        font-size: 1rem;
+    }
+
+}
+
+
+/* ===================== SMALL MOBILE ===================== */
+
+@media (max-width: 576px) {
+
+    .contact-socials {
+        gap: 14px;
+    }
+
+    .contact-socials a {
+        width: 48px;
+        height: 48px;
+        font-size: .9rem;
+    }
+
+}
+
+
+/* ===================== VERY SMALL DEVICES ===================== */
+
+@media (max-width: 400px) {
+
+    .contact-socials {
+        gap: 10px;
+    }
+
+    .contact-socials a {
+        width: 44px;
+        height: 44px;
+        font-size: .8rem;
+    }
+
+}
