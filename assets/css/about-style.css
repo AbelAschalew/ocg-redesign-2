@@ -1296,3 +1296,2433 @@
 .org-department-card:hover li {
     color: wheat;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================== RESPONSIVE ======================================================== */
+
+
+
+
+/* =========================================================
+   WHO WE ARE - RESPONSIVE DESIGN
+   Covers: large desktops, tablets, phones and small phones
+   ========================================================= */
+
+/* ===================== LARGE DESKTOP ===================== */
+
+@media (min-width: 1400px) {
+
+    .who-we-are-image-wrapper {
+        max-width: 620px;
+    }
+
+    .who-we-are-image {
+        height: 540px;
+    }
+
+    .who-we-are-content {
+        padding-left: 30px;
+    }
+
+    .who-we-are-focus {
+        width: 75%;
+    }
+}
+
+
+/* ===================== DESKTOP / LAPTOP ===================== */
+
+@media (max-width: 1199.98px) {
+
+    .who-we-are-image-wrapper {
+        max-width: 540px;
+        padding: 12px;
+    }
+
+    .who-we-are-image {
+        height: 450px;
+    }
+
+    .who-we-are-decoration {
+        width: 125px;
+        height: 125px;
+    }
+
+    .who-we-are-badge {
+        right: -5px;
+        bottom: 30px;
+        padding: 13px 18px;
+    }
+
+    .who-we-are-badge > i {
+        font-size: 1.8rem;
+    }
+
+    .who-we-are-content {
+        padding-left: 10px;
+    }
+
+    .who-we-are-content p {
+        line-height: 1.7;
+    }
+
+    .who-we-are-content .who-we-are-intro {
+        font-size: 1.05rem;
+    }
+
+    .who-we-are-focus {
+        width: 85%;
+        margin-left: 15px;
+    }
+
+    .who-focus-item {
+        padding: 11px 13px;
+    }
+}
+
+
+/* ===================== TABLET ===================== */
+
+@media (max-width: 991.98px) {
+
+    .who-we-are-image-wrapper {
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto 25px;
+        padding: 15px;
+    }
+
+    .who-we-are-image {
+        height: 480px;
+    }
+
+    .who-we-are-decoration {
+        width: 140px;
+        height: 140px;
+    }
+
+    .who-we-are-image-wrapper::before {
+        width: 65%;
+        height: 65%;
+        border-width: 4px;
+    }
+
+    .who-we-are-badge {
+        right: 0;
+        bottom: 35px;
+        padding: 14px 20px;
+    }
+
+    .who-we-are-content {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .who-we-are-content p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .who-we-are-content .who-we-are-intro {
+        font-size: 1.08rem;
+    }
+
+    .who-we-are-focus {
+        width: 100%;
+        margin-left: 0;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .who-focus-item {
+        min-height: 58px;
+    }
+
+    .who-focus-item span {
+        font-size: .95rem;
+    }
+}
+
+
+/* ===================== SMALL TABLET ===================== */
+
+@media (max-width: 767.98px) {
+
+    .who-we-are-image-wrapper {
+        max-width: 600px;
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+
+    .who-we-are-image {
+        height: 400px;
+    }
+
+    .who-we-are-decoration {
+        width: 110px;
+        height: 110px;
+        border-radius: 8px;
+    }
+
+    .who-we-are-image-wrapper::before {
+        width: 65%;
+        height: 65%;
+        border-width: 4px;
+    }
+
+    .who-we-are-badge {
+        right: -2px;
+        bottom: 25px;
+        gap: 9px;
+        padding: 11px 15px;
+        border-radius: 7px;
+    }
+
+    .who-we-are-badge > i {
+        font-size: 1.5rem;
+    }
+
+    .who-we-are-badge strong {
+        font-size: 1rem;
+    }
+
+    .who-we-are-badge span {
+        font-size: .68rem;
+    }
+
+    .who-we-are-content {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .who-we-are-content .who-we-are-intro {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .who-we-are-content p {
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+
+    .who-we-are-focus {
+        width: 100%;
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .who-focus-item {
+        width: 100%;
+        padding: 11px 13px;
+    }
+
+    .who-focus-item i {
+        font-size: 1.25rem;
+        flex-shrink: 0;
+    }
+
+    .who-focus-item span {
+        font-size: .92rem;
+    }
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 575.98px) {
+
+    .who-we-are-image-wrapper {
+        width: 95%;
+        max-width: 90%;
+        padding: 8px;
+    }
+
+    .who-we-are-image {
+        height: 320px;
+        border-radius: 8px;
+    }
+
+    .who-we-are-decoration {
+        left: 0;
+        bottom: 0;
+        width: 85px;
+        height: 85px;
+        border-radius: 7px;
+    }
+
+    .who-we-are-image-wrapper::before {
+        top: 0;
+        right: 0;
+        width: 65%;
+        height: 65%;
+        border-width: 3px;
+        border-radius: 8px;
+    }
+
+    .who-we-are-badge {
+        right: -5px;
+        bottom: 20px;
+        gap: 8px;
+        padding: 9px 12px;
+        border-radius: 6px;
+    }
+
+    .who-we-are-badge > i {
+        font-size: 1.3rem;
+    }
+
+    .who-we-are-badge strong {
+        font-size: .9rem;
+    }
+
+    .who-we-are-badge span {
+        font-size: .62rem;
+    }
+
+    .who-we-are-content {
+        margin-top: 5px;
+    }
+
+    .who-we-are-content .who-we-are-intro {
+        font-size: .98rem;
+        line-height: 1.7;
+    }
+
+    .who-we-are-content p {
+        font-size: .95rem;
+        line-height: 1.7;
+    }
+
+    .who-we-are-focus {
+        margin-top: 18px;
+        gap: 9px;
+    }
+
+    .who-focus-item {
+        padding: 10px 12px;
+        border-right-width: 3px;
+        box-shadow: -3px 3px 5px rgba(0, 0, 0, .25);
+    }
+
+    .who-focus-item i {
+        font-size: 1.15rem;
+    }
+
+    .who-focus-item span {
+        font-size: .88rem;
+        line-height: 1.4;
+    }
+}
+
+
+/* ===================== VERY SMALL PHONES ===================== */
+
+@media (max-width: 375px) {
+
+    .who-we-are-image-wrapper {
+        padding: 5px;
+    }
+
+    .who-we-are-image {
+        height: 270px;
+    }
+
+    .who-we-are-decoration {
+        width: 70px;
+        height: 70px;
+    }
+
+    .who-we-are-image-wrapper::before {
+        width: 60%;
+        height: 60%;
+        border-width: 2px;
+    }
+
+    .who-we-are-badge {
+        right: -3px;
+        bottom: 15px;
+        padding: 8px 10px;
+        gap: 6px;
+    }
+
+    .who-we-are-badge > i {
+        font-size: 1.1rem;
+    }
+
+    .who-we-are-badge strong {
+        font-size: .8rem;
+    }
+
+    .who-we-are-badge span {
+        font-size: .55rem;
+    }
+
+    .who-we-are-content p {
+        font-size: .9rem;
+    }
+
+    .who-we-are-content .who-we-are-intro {
+        font-size: .93rem;
+    }
+
+    .who-focus-item {
+        padding: 9px 10px;
+    }
+
+    .who-focus-item i {
+        font-size: 1rem;
+    }
+
+    .who-focus-item span {
+        font-size: .82rem;
+    }
+}
+
+
+/* ===================== EXTRA SMALL PHONES ===================== */
+
+@media (max-width: 320px) {
+
+    .who-we-are-image {
+        height: 240px;
+    }
+
+    .who-we-are-decoration {
+        width: 60px;
+        height: 60px;
+    }
+
+    .who-we-are-badge {
+        padding: 7px 8px;
+    }
+
+    .who-we-are-badge > i {
+        font-size: 1rem;
+    }
+
+    .who-we-are-badge strong {
+        font-size: .72rem;
+    }
+
+    .who-we-are-badge span {
+        font-size: .5rem;
+    }
+
+    .who-focus-item span {
+        font-size: .78rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   HISTORY & TIMELINE - RESPONSIVE
+   Covers desktop, laptop, tablet, mobile and small phones
+   ========================================================= */
+
+
+/* ===================== HISTORY TEXT ===================== */
+
+#hist-p {
+    box-sizing: border-box;
+}
+
+
+/* ===================== LARGE DESKTOP ===================== */
+
+@media (min-width: 1400px) {
+
+    #hist-p {
+        padding: 55px 70px;
+        font-size: 1.05rem;
+        line-height: 1.9;
+    }
+
+    .timeline-wrapper {
+        gap: 25px;
+    }
+
+    .timeline-item {
+        min-width: 190px;
+    }
+
+    .timeline-icon {
+        width: 95px;
+        height: 95px;
+        font-size: 2.1rem;
+    }
+
+    .timeline-line {
+        top: 47px;
+        left: 9%;
+        right: 9%;
+    }
+}
+
+
+/* ===================== LAPTOP ===================== */
+
+@media (max-width: 1199.98px) {
+
+    #hist-p {
+        padding: 45px 50px;
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .timeline-wrapper {
+        gap: 15px;
+    }
+
+    .timeline-item {
+        min-width: 150px;
+    }
+
+    .timeline-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+    }
+
+    .timeline-line {
+        top: 40px;
+        left: 8%;
+        right: 8%;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.8rem;
+    }
+
+    .timeline-item p {
+        font-size: .95rem;
+    }
+}
+
+
+/* ===================== TABLET ===================== */
+
+@media (max-width: 991.98px) {
+
+    #hist-p {
+        padding: 40px 40px;
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    /*
+       Change timeline into a 2-column layout.
+       This prevents five items from becoming too narrow.
+    */
+
+    .timeline-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 45px 30px;
+        padding: 10px;
+    }
+
+    .timeline-line {
+        display: none;
+    }
+
+    .timeline-item {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .timeline-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 18px;
+        font-size: 1.8rem;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .timeline-item p {
+        font-size: .95rem;
+    }
+
+    /*
+       Center the final timeline item when there
+       is an odd number of items.
+    */
+
+    .timeline-item:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 50%;
+    }
+}
+
+
+/* ===================== SMALL TABLET ===================== */
+
+@media (max-width: 767.98px) {
+
+    #hist-p {
+        padding: 35px 30px;
+        font-size: .97rem;
+        line-height: 1.75;
+    }
+
+    /*
+       Switch to vertical timeline.
+    */
+
+    .timeline-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 35px;
+        padding: 10px 0 10px 55px;
+    }
+
+    /*
+       Vertical timeline line
+    */
+
+    .timeline-wrapper::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        bottom: 10px;
+        left: 25px;
+        width: 3px;
+        background: #d6d6d6;
+        z-index: 0;
+    }
+
+    .timeline-line {
+        display: none;
+    }
+
+    .timeline-item {
+        position: relative;
+        width: 100%;
+        min-width: 0;
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    /*
+       Move the icon onto the vertical line.
+    */
+
+    .timeline-icon {
+        position: absolute;
+        left: -5px;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        font-size: 1.4rem;
+        z-index: 2;
+    }
+
+    /*
+       Create space for the icon.
+    */
+
+    .timeline-item h3,
+    .timeline-item p {
+        margin-left: 50px;
+    }
+
+    .timeline-item h3 {
+        padding-top: 5px;
+        font-size: 1.7rem;
+        margin-bottom: 5px;
+    }
+
+    .timeline-item p {
+        font-size: .95rem;
+        line-height: 1.5;
+    }
+
+    /*
+       Reset the tablet last-item behavior.
+    */
+
+    .timeline-item:last-child {
+        grid-column: auto;
+        justify-self: auto;
+        width: 100%;
+    }
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 575.98px) {
+
+    #hist-p {
+        padding: 28px 22px;
+        font-size: .94rem;
+        line-height: 1.7;
+        border-radius: 7px;
+    }
+
+    /*
+       Slightly narrower timeline
+    */
+
+    .timeline-wrapper {
+        padding-left: 45px;
+        gap: 30px;
+    }
+
+    .timeline-wrapper::before {
+        left: 20px;
+        width: 2px;
+    }
+
+    .timeline-item {
+        padding-left: 20px;
+    }
+
+    .timeline-icon {
+        left: -10px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .timeline-item h3,
+    .timeline-item p {
+        margin-left: 40px;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.5rem;
+        padding-top: 2px;
+    }
+
+    .timeline-item p {
+        font-size: .9rem;
+    }
+}
+
+
+/* ===================== VERY SMALL PHONES ===================== */
+
+@media (max-width: 375px) {
+
+    #hist-p {
+        padding: 24px 18px;
+        font-size: .9rem;
+        line-height: 1.65;
+    }
+
+    .timeline-wrapper {
+        padding-left: 38px;
+        gap: 28px;
+    }
+
+    .timeline-wrapper::before {
+        left: 17px;
+    }
+
+    .timeline-item {
+        padding-left: 17px;
+    }
+
+    .timeline-icon {
+        left: -8px;
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+
+    .timeline-item h3,
+    .timeline-item p {
+        margin-left: 32px;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.35rem;
+    }
+
+    .timeline-item p {
+        font-size: .85rem;
+    }
+}
+
+
+/* ===================== EXTRA SMALL PHONES ===================== */
+
+@media (max-width: 320px) {
+
+    #hist-p {
+        padding: 20px 15px;
+        font-size: .86rem;
+    }
+
+    .timeline-wrapper {
+        padding-left: 34px;
+    }
+
+    .timeline-wrapper::before {
+        left: 15px;
+    }
+
+    .timeline-icon {
+        left: -7px;
+        width: 38px;
+        height: 38px;
+        font-size: .9rem;
+    }
+
+    .timeline-item h3,
+    .timeline-item p {
+        margin-left: 28px;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.25rem;
+    }
+
+    .timeline-item p {
+        font-size: .82rem;
+    }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   Prevent hover enlargement from causing awkward layouts
+   ========================================================= */
+
+@media (hover: none) {
+
+    .timeline-icon:hover {
+        transform: none;
+        background-color: var(--primary);
+        border: none;
+    }
+
+    .timeline-icon:hover i {
+        color: white;
+    }
+
+    .timeline-item:has(.timeline-icon:hover) h3 {
+        font-size: inherit;
+        font-weight: 700;
+        color: inherit;
+    }
+
+    .timeline-item:has(.timeline-icon:hover) p {
+        color: #666;
+        font-weight: normal;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   VMV RESPONSIVE DESIGN
+   ========================================================= */
+
+/* ===================== LARGE DESKTOP ===================== */
+/* 1200px - 1399px */
+
+@media (max-width: 1399px) {
+
+    .vmv-card {
+        padding: 32px 28px;
+    }
+
+    .vmv-card p,
+    .mission-list li,
+    .value-list li {
+        font-size: 0.98rem;
+    }
+
+    .vmv-number {
+        top: 22px;
+        right: 25px;
+        font-size: 2.3rem;
+    }
+}
+
+
+/* ===================== DESKTOP / LAPTOP ===================== */
+/* 992px - 1199px */
+
+@media (max-width: 1199px) {
+
+    .vmv-card {
+        padding: 30px 25px;
+    }
+
+    .vmv-card i {
+        width: 58px;
+        height: 58px;
+        font-size: 26px;
+    }
+
+    .vmv-card h4 {
+        font-size: 1.25rem;
+    }
+
+    .vmv-card p,
+    .mission-list li,
+    .value-list li {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .vmv-number {
+        top: 20px;
+        right: 22px;
+        font-size: 2.1rem;
+    }
+
+    /*
+       Reduce rotation slightly so cards don't collide
+       on narrower desktop screens.
+    */
+    .vmv-card:hover {
+        transform: rotate(-8deg) !important;
+    }
+
+}
+
+
+/* ===================== TABLET ===================== */
+/* 768px - 991px */
+
+@media (max-width: 991px) {
+
+    .vmv-card {
+        padding: 30px 25px;
+    }
+
+    .vmv-card i {
+        width: 58px;
+        height: 58px;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .vmv-card h4 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .vmv-card p,
+    .mission-list li,
+    .value-list li {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .vmv-number {
+        top: 18px;
+        right: 20px;
+        font-size: 2rem;
+    }
+
+    /*
+       Don't rotate the entire card heavily on tablets.
+    */
+    .vmv-card:hover {
+        transform: translateY(-8px) !important;
+    }
+
+    .vmv-card:hover i {
+        transform: rotate(-20deg);
+    }
+
+}
+
+
+/* ===================== SMALL TABLET ===================== */
+/* 576px - 767px */
+
+@media (max-width: 767px) {
+
+    .vmv-card {
+        padding: 30px 25px;
+        border-left-width: 4px;
+    }
+
+    .vmv-card i {
+        width: 58px;
+        height: 58px;
+        font-size: 25px;
+    }
+
+    .vmv-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .vmv-card p,
+    .mission-list li,
+    .value-list li {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .vmv-number {
+        top: 18px;
+        right: 20px;
+        font-size: 2rem;
+    }
+
+    /*
+       Prevent the card from rotating and causing
+       horizontal overflow.
+    */
+    .vmv-card:hover {
+        transform: translateY(-6px) !important;
+    }
+
+    .vmv-card:hover i {
+        transform: rotate(-15deg);
+    }
+
+    .mission-list li {
+        padding-left: 30px;
+    }
+
+    .value-list li {
+        padding-left: 25px;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+/* 480px - 575px */
+
+@media (max-width: 575px) {
+
+    .vmv-card {
+        padding: 28px 22px;
+        border-left-width: 4px;
+    }
+
+    .vmv-card i {
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+    }
+
+    .vmv-card h4 {
+        font-size: 1.15rem;
+    }
+
+    .vmv-card p,
+    .mission-list li,
+    .value-list li {
+        font-size: 0.93rem;
+        line-height: 1.65;
+    }
+
+    .vmv-number {
+        top: 17px;
+        right: 17px;
+        font-size: 1.8rem;
+    }
+
+    .vmv-card:hover {
+        transform: translateY(-5px) !important;
+    }
+
+    .vmv-card:hover i {
+        transform: rotate(-12deg);
+    }
+
+    .mission-list li {
+        padding-left: 28px;
+        margin-bottom: 13px;
+    }
+
+    .value-list li {
+        padding-left: 23px;
+        margin-bottom: 13px;
+    }
+
+    .mission-list li::before {
+        font-size: 1.1rem;
+    }
+
+    .value-list li::before {
+        width: 8px;
+        height: 8px;
+        top: 8px;
+    }
+
+    .vmv-card:hover .value-list li::before {
+        width: 12px;
+        height: 12px;
+        top: 7px;
+    }
+
+    .vmv-card:hover .mission-list li::before {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+/* ===================== VERY SMALL PHONES ===================== */
+/* 360px - 479px */
+
+@media (max-width: 479px) {
+
+    .vmv-card {
+        padding: 25px 18px;
+        border-radius: 8px;
+    }
+
+    .vmv-card i {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+        margin-bottom: 13px;
+    }
+
+    .vmv-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .vmv-card p,
+    .mission-list li,
+    .value-list li {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .vmv-number {
+        top: 15px;
+        right: 15px;
+        font-size: 1.65rem;
+    }
+
+    .vmv-card:hover {
+        transform: translateY(-4px) !important;
+    }
+
+    .vmv-card:hover i {
+        transform: rotate(-10deg);
+    }
+
+    .mission-list li {
+        padding-left: 25px;
+        margin-bottom: 12px;
+    }
+
+    .value-list li {
+        padding-left: 21px;
+        margin-bottom: 12px;
+    }
+
+}
+
+
+/* ===================== EXTRA SMALL PHONES ===================== */
+/* Below 360px */
+
+@media (max-width: 359px) {
+
+    .vmv-card {
+        padding: 22px 15px;
+    }
+
+    .vmv-card i {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .vmv-card h4 {
+        font-size: 1.05rem;
+    }
+
+    .vmv-card p,
+    .mission-list li,
+    .value-list li {
+        font-size: 0.86rem;
+    }
+
+    .vmv-number {
+        top: 13px;
+        right: 13px;
+        font-size: 1.5rem;
+    }
+
+    .vmv-card:hover {
+        transform: translateY(-3px) !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   SUSTAINABILITY RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ===================== LARGE DESKTOP ===================== */
+/* 1200px - 1399px */
+
+@media (max-width: 1399px) {
+
+    .sustainability-image {
+        height: 400px;
+    }
+
+    .sustainability-content {
+        padding-left: 15px;
+    }
+
+    .sustainability-content h3 {
+        font-size: 1.85rem;
+    }
+
+    .sustainability-badge {
+        right: -15px;
+        bottom: 25px;
+    }
+
+}
+
+
+/* ===================== LAPTOP ===================== */
+/* 992px - 1199px */
+
+@media (max-width: 1199px) {
+
+    .sustainability-image-wrapper {
+        padding: 8px;
+    }
+
+    .sustainability-image {
+        height: 380px;
+    }
+
+    .sustainability-badge {
+        right: -10px;
+        bottom: 20px;
+        padding: 13px 17px;
+    }
+
+    .sustainability-badge > i {
+        font-size: 1.6rem;
+    }
+
+    .sustainability-badge strong {
+        font-size: .95rem;
+    }
+
+    .sustainability-badge span {
+        font-size: .72rem;
+    }
+
+    .sustainability-content {
+        padding-left: 10px;
+    }
+
+    .sustainability-content h3 {
+        font-size: 1.7rem;
+        margin-bottom: 16px;
+    }
+
+    .sustainability-content > p {
+        font-size: .95rem;
+        line-height: 1.7;
+    }
+
+    .sustainability-points {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .sustainability-point {
+        font-size: .88rem;
+    }
+
+}
+
+
+/* ===================== TABLET ===================== */
+/* 768px - 991px */
+
+@media (max-width: 991px) {
+
+    /*
+       Image and content become full-width stacked
+       Bootstrap already handles this through col-lg-6.
+    */
+
+    .sustainability-image-wrapper {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .sustainability-image {
+        height: 400px;
+    }
+
+    .sustainability-badge {
+        right: 15px;
+        bottom: 20px;
+    }
+
+    .sustainability-content {
+        padding-left: 0;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .sustainability-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .sustainability-content > p {
+        font-size: .95rem;
+    }
+
+    .sustainability-points {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+}
+
+
+/* ===================== SMALL TABLET ===================== */
+/* 576px - 767px */
+
+@media (max-width: 767px) {
+
+    .sustainability-section .row {
+        --bs-gutter-y: 2.5rem;
+    }
+
+    .sustainability-image-wrapper {
+        padding: 7px;
+        border-radius: 10px;
+    }
+
+    .sustainability-image {
+        height: 350px;
+        border-radius: 7px;
+    }
+
+    .sustainability-badge {
+        right: 10px;
+        bottom: 15px;
+        gap: 10px;
+        padding: 12px 15px;
+        border-radius: 7px;
+    }
+
+    .sustainability-badge > i {
+        font-size: 1.5rem;
+    }
+
+    .sustainability-badge strong {
+        font-size: .9rem;
+    }
+
+    .sustainability-badge span {
+        font-size: .7rem;
+    }
+
+    .sustainability-content {
+        padding-left: 0;
+    }
+
+    .content-label {
+        font-size: .72rem;
+        letter-spacing: 1.3px;
+    }
+
+    .sustainability-content h3 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .sustainability-content > p {
+        font-size: .94rem;
+        line-height: 1.7;
+    }
+
+    .sustainability-points {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .sustainability-point {
+        font-size: .9rem;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+/* 480px - 575px */
+
+@media (max-width: 575px) {
+
+    .sustainability-image-wrapper {
+        padding: 6px;
+        border-radius: 9px;
+    }
+
+    .sustainability-image {
+        height: 300px;
+        border-radius: 6px;
+    }
+
+    /*
+       Keep badge completely inside the image wrapper.
+    */
+    .sustainability-badge {
+        right: 8px;
+        bottom: 12px;
+        gap: 8px;
+        padding: 10px 12px;
+    }
+
+    .sustainability-badge > i {
+        font-size: 1.35rem;
+    }
+
+    .sustainability-badge strong {
+        font-size: .82rem;
+    }
+
+    .sustainability-badge span {
+        font-size: .65rem;
+    }
+
+    .sustainability-content h3 {
+        font-size: 1.45rem;
+    }
+
+    .sustainability-content > p {
+        font-size: .9rem;
+        line-height: 1.65;
+    }
+
+    .sustainability-points {
+        gap: 10px;
+    }
+
+    .sustainability-point {
+        font-size: .87rem;
+    }
+
+    .sustainability-point i {
+        font-size: .95rem;
+    }
+
+}
+
+
+/* ===================== VERY SMALL PHONES ===================== */
+/* 360px - 479px */
+
+@media (max-width: 479px) {
+
+    .sustainability-image-wrapper {
+        padding: 5px;
+    }
+
+    .sustainability-image {
+        height: 260px;
+    }
+
+    .sustainability-badge {
+        right: 6px;
+        bottom: 8px;
+        padding: 8px 10px;
+        gap: 7px;
+    }
+
+    .sustainability-badge > i {
+        font-size: 1.2rem;
+    }
+
+    .sustainability-badge strong {
+        font-size: .75rem;
+    }
+
+    .sustainability-badge span {
+        font-size: .6rem;
+    }
+
+    .content-label {
+        font-size: .68rem;
+        letter-spacing: 1px;
+    }
+
+    .sustainability-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .sustainability-content > p {
+        font-size: .87rem;
+        line-height: 1.6;
+    }
+
+    .sustainability-point {
+        font-size: .84rem;
+        gap: 8px;
+    }
+
+}
+
+
+/* ===================== EXTRA SMALL PHONES ===================== */
+/* Below 360px */
+
+@media (max-width: 359px) {
+
+    .sustainability-image {
+        height: 230px;
+    }
+
+    .sustainability-badge {
+        right: 5px;
+        bottom: 6px;
+        padding: 7px 8px;
+    }
+
+    .sustainability-badge > i {
+        font-size: 1.05rem;
+    }
+
+    .sustainability-badge strong {
+        font-size: .68rem;
+    }
+
+    .sustainability-badge span {
+        font-size: .55rem;
+    }
+
+    .sustainability-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .sustainability-content > p {
+        font-size: .84rem;
+    }
+
+    .sustainability-point {
+        font-size: .8rem;
+    }
+
+}
+
+/* =========================================================
+   COMMITMENT RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ===================== LARGE DESKTOP ===================== */
+/* 1200px - 1399px */
+
+@media (max-width: 1399px) {
+
+    .commitment-heading {
+        margin-top: 55px;
+        margin-bottom: 25px;
+    }
+
+    .commitment-heading h3 {
+        font-size: 1.65rem;
+    }
+
+    .commitment-number {
+        top: 18px;
+        right: 18px;
+        font-size: 1.75rem;
+    }
+
+}
+
+
+/* ===================== LAPTOP ===================== */
+/* 992px - 1199px */
+
+@media (max-width: 1199px) {
+
+    .commitment-heading {
+        margin-top: 50px;
+        margin-bottom: 23px;
+    }
+
+    .commitment-heading h3 {
+        font-size: 1.6rem;
+    }
+
+    .commitment-number {
+        top: 18px;
+        right: 18px;
+        font-size: 1.7rem;
+    }
+
+}
+
+
+/* ===================== TABLET ===================== */
+/* 768px - 991px */
+
+@media (max-width: 991px) {
+
+    .commitment-heading {
+        margin-top: 45px;
+        margin-bottom: 22px;
+    }
+
+    .commitment-heading h3 {
+        font-size: 1.55rem;
+    }
+
+    .commitment-number {
+        top: 17px;
+        right: 17px;
+        font-size: 1.65rem;
+    }
+
+}
+
+
+/* ===================== SMALL TABLET ===================== */
+/* 576px - 767px */
+
+@media (max-width: 767px) {
+
+    .commitment-heading {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .commitment-heading h3 {
+        font-size: 1.45rem;
+    }
+
+    .commitment-number {
+        top: 16px;
+        right: 16px;
+        font-size: 1.6rem;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+/* 480px - 575px */
+
+@media (max-width: 575px) {
+
+    .commitment-heading {
+        margin-top: 35px;
+        margin-bottom: 18px;
+    }
+
+    .commitment-heading h3 {
+        font-size: 1.35rem;
+        line-height: 1.3;
+    }
+
+    .commitment-number {
+        top: 15px;
+        right: 15px;
+        font-size: 1.5rem;
+    }
+
+}
+
+
+/* ===================== VERY SMALL PHONES ===================== */
+/* 360px - 479px */
+
+@media (max-width: 479px) {
+
+    .commitment-heading {
+        margin-top: 30px;
+        margin-bottom: 17px;
+    }
+
+    .commitment-heading h3 {
+        font-size: 1.25rem;
+    }
+
+    .commitment-number {
+        top: 13px;
+        right: 13px;
+        font-size: 1.4rem;
+    }
+
+}
+
+
+/* ===================== EXTRA SMALL PHONES ===================== */
+/* Below 360px */
+
+@media (max-width: 359px) {
+
+    .commitment-heading {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .commitment-heading h3 {
+        font-size: 1.15rem;
+    }
+
+    .commitment-number {
+        top: 12px;
+        right: 12px;
+        font-size: 1.3rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   ORGANIZATIONAL STRUCTURE - RESPONSIVE
+   ========================================================= */
+
+/* ---------- Base correction ---------- */
+
+.org-card {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1200px - 1399px
+   ========================================================= */
+
+@media (max-width: 1399px) {
+
+    .org-structure {
+        max-width: 1100px;
+    }
+
+    .org-departments {
+        gap: 18px;
+    }
+
+    .org-department-card {
+        padding: 28px 20px;
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP / SMALL DESKTOP
+   992px - 1199px
+   ========================================================= */
+
+@media (max-width: 1199px) {
+
+    .org-structure {
+        max-width: 100%;
+    }
+
+    .org-card {
+        width: 380px;
+    }
+
+    .org-departments {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .org-department-card {
+        min-height: 260px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .organizational-section {
+        overflow: hidden;
+    }
+
+    .org-card {
+        width: min(100%, 500px);
+        padding: 22px 25px;
+    }
+
+    .org-card-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.35rem;
+    }
+
+    .org-card h3 {
+        font-size: 1.15rem;
+    }
+
+    .org-card p {
+        font-size: .82rem;
+    }
+
+    .org-connector {
+        height: 35px;
+    }
+
+    .org-departments {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .org-department-card {
+        padding: 25px 20px;
+        min-height: auto;
+    }
+
+    .org-department-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 1.2rem;
+    }
+
+    .org-department-card h4 {
+        font-size: 1rem;
+    }
+
+    .org-department-card li {
+        font-size: .8rem;
+    }
+
+}
+
+
+/* =========================================================
+   LARGE MOBILE
+   576px - 767px
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .organizational-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .org-card {
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .org-card-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 1.25rem;
+    }
+
+    .org-label {
+        font-size: .6rem;
+        letter-spacing: 1.2px;
+    }
+
+    .org-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .org-card p {
+        font-size: .8rem;
+        line-height: 1.5;
+    }
+
+    .org-connector {
+        height: 30px;
+    }
+
+    .org-departments {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .org-department-card {
+        padding: 25px;
+    }
+
+    .org-department-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .org-department-label {
+        font-size: .58rem;
+    }
+
+    .org-department-card h4 {
+        font-size: 1.05rem;
+    }
+
+    .org-department-card li {
+        font-size: .82rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   400px - 575px
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .org-card {
+        width: 100%;
+        padding: 18px;
+        gap: 12px;
+        border-left-width: 4px;
+    }
+
+    .org-card-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.15rem;
+    }
+
+    .org-label {
+        font-size: .55rem;
+        letter-spacing: 1px;
+    }
+
+    .org-card h3 {
+        font-size: 1rem;
+        line-height: 1.35;
+    }
+
+    .org-card p {
+        font-size: .76rem;
+        line-height: 1.45;
+    }
+
+    .org-connector {
+        height: 25px;
+    }
+
+    .org-departments {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .org-department-card {
+        padding: 22px 20px;
+        border-top-width: 4px;
+    }
+
+    .org-department-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+        font-size: 1.1rem;
+    }
+
+    .org-department-label {
+        font-size: .55rem;
+        letter-spacing: 1px;
+    }
+
+    .org-department-card h4 {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .org-department-card ul {
+        padding-left: 17px;
+    }
+
+    .org-department-card li {
+        margin-bottom: 7px;
+        font-size: .78rem;
+        line-height: 1.45;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   BELOW 400px
+   ========================================================= */
+
+@media (max-width: 399px) {
+
+    .org-card {
+        padding: 16px;
+        gap: 10px;
+    }
+
+    .org-card-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+
+    .org-label {
+        font-size: .5rem;
+    }
+
+    .org-card h3 {
+        font-size: .92rem;
+    }
+
+    .org-card p {
+        font-size: .72rem;
+    }
+
+    .org-department-card {
+        padding: 20px 17px;
+    }
+
+    .org-department-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .org-department-card h4 {
+        font-size: .95rem;
+    }
+
+    .org-department-card li {
+        font-size: .75rem;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+   BELOW 320px
+   ========================================================= */
+
+@media (max-width: 319px) {
+
+    .org-card {
+        padding: 14px;
+        gap: 8px;
+    }
+
+    .org-card-icon {
+        width: 40px;
+        height: 40px;
+        font-size: .9rem;
+    }
+
+    .org-card h3 {
+        font-size: .85rem;
+    }
+
+    .org-card p {
+        font-size: .68rem;
+    }
+
+    .org-department-card {
+        padding: 18px 14px;
+    }
+
+    .org-department-card li {
+        font-size: .7rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   LEADERSHIP RESPONSIVE DESIGN
+   ========================================================= */
+
+/* ===================== LARGE TABLETS / SMALL LAPTOPS ===================== */
+
+@media (max-width: 1199.98px) {
+
+    /* CEO Card */
+    .ceo-leader-card {
+        gap: 35px;
+        padding: 35px;
+    }
+
+    .ceo-photo-frame {
+        width: 240px;
+        height: 300px;
+    }
+
+    .ceo-leader-content h3 {
+        font-size: 1.8rem;
+    }
+
+    /* Management cards */
+    .leader-card {
+        padding: 25px 20px;
+    }
+
+    .leader-photo-wrapper {
+        width: 140px;
+        height: 140px;
+    }
+
+    .leader-info h4 {
+        font-size: 1.1rem;
+    }
+
+}
+
+
+/* ===================== TABLETS ===================== */
+
+@media (max-width: 991.98px) {
+
+    /* CEO Section */
+    .ceo-leader-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 35px 30px;
+    }
+
+    .ceo-leader-photo-wrapper {
+        margin: 0 auto;
+    }
+
+    .ceo-photo-frame {
+        width: 250px;
+        height: 300px;
+    }
+
+    .ceo-leader-content {
+        width: 100%;
+    }
+
+    .leader-divider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ceo-leader-content blockquote {
+        text-align: left;
+    }
+
+    .leader-social {
+        justify-content: center;
+    }
+
+    /* Management */
+    .management-heading {
+        margin-top: 50px;
+    }
+
+    .leader-card {
+        padding: 25px;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 767.98px) {
+
+    /* Section spacing */
+    .leadership-section {
+        overflow: hidden;
+    }
+
+    /* ===================== CEO CARD ===================== */
+
+    .ceo-leader-card {
+        gap: 25px;
+        padding: 25px 20px;
+        border-left: none;
+        border-top: 5px solid darkred;
+        border-radius: 10px;
+    }
+
+    .ceo-photo-frame {
+        width: 220px;
+        height: 270px;
+    }
+
+    .ceo-leader-photo-wrapper::after {
+        width: 55px;
+        height: 55px;
+        right: -10px;
+        bottom: -10px;
+        border-width: 4px;
+    }
+
+    .leader-label {
+        font-size: .7rem;
+        letter-spacing: 1.2px;
+    }
+
+    .ceo-leader-content h3 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    .ceo-intro {
+        font-size: .95rem;
+        line-height: 1.7;
+    }
+
+    .ceo-leader-content blockquote {
+        padding: 15px 18px;
+        font-size: .95rem;
+        line-height: 1.6;
+    }
+
+    /* ===================== MANAGEMENT ===================== */
+
+    .management-heading {
+        margin-top: 45px;
+        margin-bottom: 25px;
+    }
+
+    .management-heading h3 {
+        font-size: 1.45rem;
+    }
+
+    .leader-card {
+        padding: 25px 20px;
+    }
+
+    .leader-photo-wrapper {
+        width: 135px;
+        height: 135px;
+        margin-bottom: 18px;
+    }
+
+    .leader-info h4 {
+        font-size: 1.05rem;
+        line-height: 1.4;
+    }
+
+    .leader-info span {
+        font-size: .75rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .leader-info p {
+        font-size: .85rem;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* ===================== SMALL PHONES ===================== */
+
+@media (max-width: 575.98px) {
+
+    /* CEO Card */
+
+    .ceo-leader-card {
+        padding: 22px 15px;
+    }
+
+    .ceo-photo-frame {
+        width: 190px;
+        height: 235px;
+    }
+
+    .ceo-leader-photo-wrapper::after {
+        width: 45px;
+        height: 45px;
+        right: -8px;
+        bottom: -8px;
+        border-width: 3px;
+    }
+
+    .ceo-leader-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .leader-label {
+        font-size: .65rem;
+    }
+
+    .ceo-intro {
+        font-size: .9rem;
+    }
+
+    .ceo-leader-content blockquote {
+        padding: 14px 15px;
+        font-size: .9rem;
+    }
+
+    .leader-social a {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    /* Management Cards */
+
+    .leader-card {
+        padding: 22px 15px;
+    }
+
+    .leader-photo-wrapper {
+        width: 125px;
+        height: 125px;
+    }
+
+    .leader-info h4 {
+        font-size: 1rem;
+    }
+
+    .leader-info span {
+        font-size: .72rem;
+    }
+
+    .leader-info p {
+        font-size: .82rem;
+    }
+
+}
