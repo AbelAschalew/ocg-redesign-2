@@ -14,41 +14,6 @@
     width:auto;
 }
 
-.newsx-card{
-    position: relative;
-    overflow: hidden;
-    background:white;
-    padding:30px;
-    border-radius:8px;
-    box-shadow:0 0 15px rgba(0,0,0,.08);
-}
-
-.newsx-card::before {
-    content: "";
-    position: absolute;
-    left: auto;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 100%;
-    background-color: #1f5e2f;
-    transition: width 1s ease;
-    z-index: 0;
-}
-
-.newsx-card:hover::before {
-    width: 100%;
-}
-
-.newsx-card > * {
-    position: relative;
-    z-index: 1;
-}
-
-.newsx-card:hover {
-    color: white;
-}
-
 .priority-card{
     position: relative;
     overflow: hidden;
@@ -1749,4 +1714,3729 @@
     color: #777;
 
     font-size: .9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================================== RESPONSIVE ======================================================= */
+
+
+/* =========================================================
+   OCG INTRODUCTION / WELCOME SECTION
+   ========================================================= */
+
+#first {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================
+   IMAGE
+   ========================= */
+
+#first .col-lg-6:first-child {
+    border-left: 10px solid darkred;
+    padding-left: 15px;
+}
+
+#first img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+#first .col-lg-6:first-child:hover img {
+    transform: scale(1.02);
+}
+
+
+/* =========================
+   CONTENT
+   ========================= */
+
+#first .section-subtitle {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#first .section-title {
+    margin-bottom: 20px;
+}
+
+#first p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+#first .btn {
+    margin-top: 10px;
+    padding: 11px 25px;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1200px+
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+    #first .row {
+        align-items: center;
+        gap: 0;
+    }
+
+    #first .col-lg-6:first-child {
+        padding-right: 30px;
+    }
+
+    #first .col-lg-6:last-child {
+        padding-left: 45px;
+    }
+
+    #first img {
+        min-height: 450px;
+        object-fit: cover;
+    }
+
+    #first p {
+        max-width: 650px;
+        font-size: 1.05rem;
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+   992px - 1199px
+   ========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    #first .col-lg-6:first-child {
+        padding-right: 20px;
+    }
+
+    #first .col-lg-6:last-child {
+        padding-left: 30px;
+    }
+
+    #first img {
+        min-height: 400px;
+        object-fit: cover;
+    }
+
+    #first p {
+        font-size: 0.98rem;
+        line-height: 1.7;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    #first {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    #first .row {
+        row-gap: 40px;
+    }
+
+    #first .col-lg-6:first-child {
+        border-left: 8px solid darkred;
+        padding-left: 15px;
+    }
+
+    #first .col-lg-6:last-child {
+        padding-left: 15px;
+    }
+
+    #first img {
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+    }
+
+    #first .section-subtitle {
+        font-size: 0.8rem;
+    }
+
+    #first .section-title {
+        font-size: 2.4rem;
+    }
+
+    #first p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+}
+
+
+/* =========================================================
+   LARGE MOBILE
+   576px - 767px
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    #first {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #first .row {
+        row-gap: 35px;
+    }
+
+    #first .col-lg-6:first-child {
+        border-left: 7px solid darkred;
+        padding-left: 12px;
+    }
+
+    #first .col-lg-6:last-child {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    #first img {
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    #first .section-subtitle {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+
+    #first .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 16px;
+    }
+
+    #first p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    #first .btn {
+        padding: 10px 22px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   400px - 575px
+   ========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+    #first {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #first .row {
+        row-gap: 30px;
+    }
+
+    #first .col-lg-6:first-child {
+        border-left: 6px solid darkred;
+        padding-left: 10px;
+    }
+
+    #first .col-lg-6:last-child {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #first img {
+        max-height: 330px;
+        object-fit: cover;
+    }
+
+    #first .section-subtitle {
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+    }
+
+    #first .section-title {
+        font-size: 2rem;
+        line-height: 1.15;
+        margin-bottom: 15px;
+    }
+
+    #first p {
+        font-size: 0.92rem;
+        line-height: 1.65;
+        margin-bottom: 15px;
+    }
+
+    #first .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   Below 400px
+   ========================================================= */
+
+@media (max-width: 399px) {
+
+    #first {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    #first .row {
+        row-gap: 25px;
+    }
+
+    #first .col-lg-6:first-child {
+        border-left: 5px solid darkred;
+        padding-left: 8px;
+    }
+
+    #first .col-lg-6:last-child {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    #first img {
+        max-height: 280px;
+        object-fit: cover;
+    }
+
+    #first .section-subtitle {
+        font-size: 0.65rem;
+        letter-spacing: 1.2px;
+    }
+
+    #first .section-title {
+        font-size: 1.8rem;
+        line-height: 1.15;
+        margin-bottom: 14px;
+    }
+
+    #first p {
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin-bottom: 14px;
+    }
+
+    #first .btn {
+        padding: 9px 18px;
+        font-size: 0.85rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   CEO / LEADERSHIP MESSAGE - RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+.ceo-section {
+    overflow: hidden;
+}
+
+.ceo-image-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.ceo-photo {
+    display: block;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.5s ease;
+}
+
+.ceo-image-wrapper:hover .ceo-photo {
+    transform: scale(1.03);
+}
+
+.ceo-image-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 18px 20px;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0)
+    );
+    color: white;
+}
+
+.ceo-image-caption span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   CEO MESSAGE
+   ========================================================= */
+
+.ceo-message {
+    position: relative;
+}
+
+.ceo-message .section-subtitle {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.ceo-message .section-title {
+    margin-bottom: 15px;
+}
+
+.ceo-divider {
+    width: 70px;
+    height: 3px;
+    margin: 15px 0 25px;
+    background: darkred;
+}
+
+.ceo-quote-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background: #1f5e2f;
+    color: white;
+}
+
+.ceo-quote-icon i {
+    font-size: 1.8rem;
+}
+
+.ceo-message p {
+    margin-bottom: 18px;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.ceo-message .ceo-intro {
+    color: #333;
+    font-size: 1.08rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   SIGNATURE
+   ========================================================= */
+
+.ceo-signature {
+    margin-top: 30px;
+}
+
+.ceo-signature-line {
+    width: 60px;
+    height: 2px;
+    margin-bottom: 12px;
+    background: darkred;
+}
+
+.ceo-signature h4 {
+    margin-bottom: 4px;
+    color: #222;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.ceo-signature span {
+    color: #777;
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1200px+
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+    .ceo-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .ceo-image-wrapper {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .ceo-photo {
+        height: 560px;
+    }
+
+    .ceo-message {
+        padding-left: 15px;
+    }
+
+    .ceo-message p {
+        max-width: 750px;
+        font-size: 1rem;
+    }
+
+    .ceo-message .ceo-intro {
+        font-size: 1.1rem;
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+   992px - 1199px
+   ========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .ceo-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .ceo-photo {
+        height: 500px;
+    }
+
+    .ceo-message {
+        padding-left: 5px;
+    }
+
+    .ceo-message .section-title {
+        font-size: 2.5rem;
+    }
+
+    .ceo-message p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .ceo-message .ceo-intro {
+        font-size: 1rem;
+    }
+
+    .ceo-quote-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .ceo-section {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .ceo-section .row {
+        row-gap: 45px !important;
+    }
+
+    .ceo-image-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .ceo-photo {
+        height: 520px;
+        object-position: center top;
+    }
+
+    .ceo-message {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .ceo-message .section-title {
+        font-size: 2.5rem;
+    }
+
+    .ceo-divider {
+        margin-bottom: 22px;
+    }
+
+    .ceo-message p {
+        font-size: 0.98rem;
+        line-height: 1.75;
+    }
+
+    .ceo-message .ceo-intro {
+        font-size: 1.05rem;
+    }
+
+}
+
+
+/* =========================================================
+   LARGE MOBILE
+   576px - 767px
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .ceo-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .ceo-section .row {
+        row-gap: 35px !important;
+    }
+
+    .ceo-image-wrapper {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .ceo-photo {
+        height: 480px;
+        object-position: center top;
+    }
+
+    .ceo-image-caption {
+        padding: 15px 18px;
+    }
+
+    .ceo-image-caption span {
+        font-size: 0.82rem;
+    }
+
+    .ceo-message {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .ceo-message .section-subtitle {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+
+    .ceo-message .section-title {
+        font-size: 2.2rem;
+        line-height: 1.15;
+    }
+
+    .ceo-divider {
+        width: 60px;
+        margin: 12px 0 20px;
+    }
+
+    .ceo-quote-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 15px;
+    }
+
+    .ceo-quote-icon i {
+        font-size: 1.5rem;
+    }
+
+    .ceo-message p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 16px;
+    }
+
+    .ceo-message .ceo-intro {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .ceo-signature {
+        margin-top: 25px;
+    }
+
+    .ceo-signature h4 {
+        font-size: 1.05rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   400px - 575px
+   ========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+    .ceo-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .ceo-section .row {
+        row-gap: 30px !important;
+    }
+
+    .ceo-image-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 6px;
+    }
+
+    .ceo-photo {
+        height: 420px;
+        object-position: center top;
+    }
+
+    .ceo-image-caption {
+        padding: 13px 15px;
+    }
+
+    .ceo-image-caption span {
+        font-size: 0.75rem;
+    }
+
+    .ceo-message .section-subtitle {
+        font-size: 0.68rem;
+        letter-spacing: 1.5px;
+    }
+
+    .ceo-message .section-title {
+        font-size: 2rem;
+        line-height: 1.15;
+        margin-bottom: 12px;
+    }
+
+    .ceo-divider {
+        width: 50px;
+        height: 2px;
+        margin: 10px 0 18px;
+    }
+
+    .ceo-quote-icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 14px;
+    }
+
+    .ceo-quote-icon i {
+        font-size: 1.4rem;
+    }
+
+    .ceo-message p {
+        font-size: 0.9rem;
+        line-height: 1.65;
+        margin-bottom: 15px;
+    }
+
+    .ceo-message .ceo-intro {
+        font-size: 0.96rem;
+        line-height: 1.65;
+    }
+
+    .ceo-signature {
+        margin-top: 22px;
+    }
+
+    .ceo-signature-line {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    .ceo-signature h4 {
+        font-size: 1rem;
+    }
+
+    .ceo-signature span {
+        font-size: 0.78rem;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   BELOW 400px
+   ========================================================= */
+
+@media (max-width: 399px) {
+
+    .ceo-section {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .ceo-section .row {
+        row-gap: 25px !important;
+    }
+
+    .ceo-image-wrapper {
+        border-radius: 5px;
+    }
+
+    .ceo-photo {
+        height: 350px;
+        object-position: center top;
+    }
+
+    .ceo-image-caption {
+        padding: 10px 12px;
+    }
+
+    .ceo-image-caption span {
+        font-size: 0.68rem;
+    }
+
+    .ceo-message .section-subtitle {
+        font-size: 0.62rem;
+        letter-spacing: 1.2px;
+    }
+
+    .ceo-message .section-title {
+        font-size: 1.8rem;
+        line-height: 1.15;
+    }
+
+    .ceo-divider {
+        width: 45px;
+        margin: 9px 0 16px;
+    }
+
+    .ceo-quote-icon {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 12px;
+    }
+
+    .ceo-quote-icon i {
+        font-size: 1.25rem;
+    }
+
+    .ceo-message p {
+        font-size: 0.86rem;
+        line-height: 1.6;
+        margin-bottom: 13px;
+    }
+
+    .ceo-message .ceo-intro {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .ceo-signature {
+        margin-top: 20px;
+    }
+
+    .ceo-signature h4 {
+        font-size: 0.92rem;
+    }
+
+    .ceo-signature span {
+        font-size: 0.72rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   SERVICES SECTION - RESPONSIVE DESIGN
+   ========================================================= */
+
+.services-section {
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   SERVICE CARDS - BASE
+   ========================================================= */
+
+.services-section .service-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-section .service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 20px;
+}
+
+.services-section .service-icon i {
+    font-size: 2rem;
+}
+
+.services-section .service-number {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.services-section .service-card h4 {
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.services-section .service-card p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.services-section .service-link {
+    margin-top: auto;
+}
+
+
+/* =========================================================
+   SERVICES CTA - BASE
+   ========================================================= */
+
+.services-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 35px 40px;
+}
+
+.services-cta > div {
+    flex: 1;
+}
+
+.services-cta h4 {
+    margin-bottom: 8px;
+}
+
+.services-cta p {
+    margin-bottom: 0;
+}
+
+.services-cta-button {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1200px+
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+    .services-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .services-section .text-center {
+        margin-bottom: 55px !important;
+    }
+
+    .services-section .service-card {
+        min-height: 390px;
+        padding: 35px 30px;
+    }
+
+    .services-section .service-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 22px;
+    }
+
+    .services-section .service-icon i {
+        font-size: 2.1rem;
+    }
+
+    .services-section .service-card h4 {
+        font-size: 1.3rem;
+    }
+
+    .services-section .service-card p {
+        font-size: 0.98rem;
+    }
+
+    .services-cta {
+        padding: 38px 45px;
+        margin-top: 55px;
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+   992px - 1199px
+   ========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .services-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .services-section .text-center {
+        margin-bottom: 45px !important;
+    }
+
+    .services-section .service-card {
+        min-height: 380px;
+        padding: 30px 25px;
+    }
+
+    .services-section .service-icon {
+        width: 62px;
+        height: 62px;
+        margin-bottom: 18px;
+    }
+
+    .services-section .service-icon i {
+        font-size: 1.9rem;
+    }
+
+    .services-section .service-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .services-section .service-card p {
+        font-size: 0.92rem;
+        line-height: 1.65;
+    }
+
+    .services-cta {
+        padding: 32px;
+        margin-top: 45px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .services-section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .services-section .text-center {
+        margin-bottom: 40px !important;
+    }
+
+    .services-section .row {
+        row-gap: 24px !important;
+    }
+
+    .services-section .service-card {
+        min-height: 370px;
+        padding: 28px 24px;
+    }
+
+    .services-section .service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 17px;
+    }
+
+    .services-section .service-icon i {
+        font-size: 1.8rem;
+    }
+
+    .services-section .service-number {
+        font-size: 0.8rem;
+    }
+
+    .services-section .service-card h4 {
+        font-size: 1.15rem;
+        line-height: 1.35;
+    }
+
+    .services-section .service-card p {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    .services-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-top: 40px;
+        padding: 30px;
+    }
+
+    .services-cta-button {
+        align-self: stretch;
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   LARGE MOBILE
+   576px - 767px
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .services-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .services-section .text-center {
+        margin-bottom: 35px !important;
+    }
+
+    .services-section .row {
+        row-gap: 20px !important;
+    }
+
+    .services-section .service-card {
+        min-height: 350px;
+        padding: 25px 22px;
+    }
+
+    .services-section .service-icon {
+        width: 58px;
+        height: 58px;
+        margin-bottom: 15px;
+    }
+
+    .services-section .service-icon i {
+        font-size: 1.7rem;
+    }
+
+    .services-section .service-number {
+        font-size: 0.78rem;
+    }
+
+    .services-section .service-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .services-section .service-card p {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    .services-cta {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        margin-top: 35px;
+        padding: 25px 22px;
+    }
+
+    .services-cta h4 {
+        font-size: 1.15rem;
+    }
+
+    .services-cta p {
+        font-size: 0.9rem;
+    }
+
+    .services-cta-button {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   400px - 575px
+   ========================================================= */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+    .services-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .services-section .text-center {
+        margin-bottom: 30px !important;
+    }
+
+    .services-section .row {
+        row-gap: 18px !important;
+    }
+
+    .services-section .service-card {
+        min-height: 0;
+        padding: 25px 20px;
+    }
+
+    .services-section .service-icon {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 14px;
+    }
+
+    .services-section .service-icon i {
+        font-size: 1.6rem;
+    }
+
+    .services-section .service-number {
+        font-size: 0.75rem;
+        margin-bottom: 7px;
+    }
+
+    .services-section .service-card h4 {
+        font-size: 1.1rem;
+        line-height: 1.3;
+        margin-bottom: 12px;
+    }
+
+    .services-section .service-card p {
+        font-size: 0.88rem;
+        line-height: 1.65;
+        margin-bottom: 18px;
+    }
+
+    .services-section .service-link {
+        font-size: 0.88rem;
+    }
+
+    .services-cta {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        margin-top: 30px;
+        padding: 24px 20px;
+    }
+
+    .services-cta h4 {
+        font-size: 1.08rem;
+        line-height: 1.4;
+    }
+
+    .services-cta p {
+        font-size: 0.86rem;
+        line-height: 1.6;
+    }
+
+    .services-cta-button {
+        width: 100%;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   BELOW 400px
+   ========================================================= */
+
+@media (max-width: 399px) {
+
+    .services-section {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .services-section .text-center {
+        margin-bottom: 25px !important;
+    }
+
+    .services-section .row {
+        row-gap: 15px !important;
+    }
+
+    .services-section .service-card {
+        min-height: 0;
+        padding: 22px 17px;
+    }
+
+    .services-section .service-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 12px;
+    }
+
+    .services-section .service-icon i {
+        font-size: 1.45rem;
+    }
+
+    .services-section .service-number {
+        font-size: 0.7rem;
+        margin-bottom: 6px;
+    }
+
+    .services-section .service-card h4 {
+        font-size: 1rem;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+
+    .services-section .service-card p {
+        font-size: 0.84rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .services-section .service-link {
+        font-size: 0.82rem;
+    }
+
+    .services-cta {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        margin-top: 25px;
+        padding: 20px 17px;
+    }
+
+    .services-cta h4 {
+        font-size: 1rem;
+        line-height: 1.35;
+    }
+
+    .services-cta p {
+        font-size: 0.82rem;
+        line-height: 1.55;
+    }
+
+    .services-cta-button {
+        width: 100%;
+        padding: 9px 12px;
+        font-size: 0.85rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   FEATURED PROJECTS - RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ===================== LARGE DESKTOP ===================== */
+/* 1200px and above */
+
+@media (min-width: 1200px) {
+
+    .project-image {
+        height: 360px;
+    }
+
+    .project-large .project-image {
+        height: 500px;
+    }
+
+    .project-overlay {
+        padding: 30px;
+    }
+
+    .project-large .project-overlay {
+        padding: 40px;
+    }
+
+    .project-overlay h3 {
+        font-size: 1.4rem;
+    }
+
+    .project-large .project-overlay h3 {
+        font-size: 1.8rem;
+    }
+
+}
+
+
+/* ===================== LAPTOP ===================== */
+/* 992px - 1199px */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .project-image {
+        height: 330px;
+    }
+
+    .project-large .project-image {
+        height: 450px;
+    }
+
+    .project-overlay {
+        padding: 25px;
+    }
+
+    .project-large .project-overlay {
+        padding: 30px;
+    }
+
+    .project-category {
+        margin-bottom: 8px;
+        padding: 5px 10px;
+        font-size: .65rem;
+    }
+
+    .project-overlay h3 {
+        margin-bottom: 8px;
+        font-size: 1.2rem;
+    }
+
+    .project-large .project-overlay h3 {
+        font-size: 1.55rem;
+    }
+
+    .project-location {
+        margin-bottom: 12px;
+        font-size: .82rem;
+    }
+
+    .project-link {
+        font-size: .85rem;
+    }
+
+}
+
+
+/* ===================== TABLET ===================== */
+/* 768px - 991px */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .project-image {
+        height: 400px;
+    }
+
+    .project-large .project-image {
+        height: 450px;
+    }
+
+    .project-overlay {
+        padding: 28px;
+    }
+
+    .project-large .project-overlay {
+        padding: 32px;
+    }
+
+    .project-category {
+        padding: 6px 11px;
+        font-size: .67rem;
+    }
+
+    .project-overlay h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-large .project-overlay h3 {
+        font-size: 1.65rem;
+    }
+
+    .project-location {
+        font-size: .85rem;
+    }
+
+    .project-link {
+        font-size: .85rem;
+    }
+
+}
+
+
+/* ===================== LARGE MOBILE ===================== */
+/* 576px - 767px */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .project-image,
+    .project-large .project-image {
+        height: 380px;
+    }
+
+    .project-overlay,
+    .project-large .project-overlay {
+        padding: 25px;
+    }
+
+    .project-category {
+        margin-bottom: 8px;
+        padding: 5px 10px;
+        font-size: .63rem;
+        letter-spacing: .8px;
+    }
+
+    .project-overlay h3 {
+        margin-bottom: 8px;
+        font-size: 1.2rem;
+    }
+
+    .project-large .project-overlay h3 {
+        font-size: 1.45rem;
+    }
+
+    .project-location {
+        margin-bottom: 12px;
+        font-size: .8rem;
+    }
+
+    .project-link {
+        font-size: .82rem;
+        gap: 7px;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+/* 400px - 575px */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+    .project-image,
+    .project-large .project-image {
+        height: 320px;
+    }
+
+    .project-overlay,
+    .project-large .project-overlay {
+        padding: 20px;
+    }
+
+    .project-category {
+        margin-bottom: 7px;
+        padding: 5px 9px;
+        font-size: .6rem;
+        letter-spacing: .7px;
+    }
+
+    .project-overlay h3 {
+        margin-bottom: 7px;
+        font-size: 1.08rem;
+        line-height: 1.3;
+    }
+
+    .project-large .project-overlay h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-location {
+        margin-bottom: 10px;
+        font-size: .75rem;
+        gap: 5px;
+    }
+
+    .project-link {
+        font-size: .78rem;
+        gap: 6px;
+    }
+
+    .project-link:hover {
+        gap: 9px;
+    }
+
+    .projects-view-button {
+        width: 100%;
+        padding: 11px 20px;
+        font-size: .9rem;
+    }
+
+}
+
+
+/* ===================== SMALL MOBILE ===================== */
+/* Below 400px */
+
+@media (max-width: 399px) {
+
+    .project-image,
+    .project-large .project-image {
+        height: 285px;
+    }
+
+    .project-overlay,
+    .project-large .project-overlay {
+        padding: 17px;
+    }
+
+    .project-category {
+        margin-bottom: 6px;
+        padding: 4px 8px;
+        font-size: .55rem;
+        letter-spacing: .6px;
+    }
+
+    .project-overlay h3 {
+        margin-bottom: 6px;
+        font-size: .98rem;
+        line-height: 1.3;
+    }
+
+    .project-large .project-overlay h3 {
+        font-size: 1.15rem;
+    }
+
+    .project-location {
+        margin-bottom: 9px;
+        font-size: .68rem;
+        gap: 5px;
+    }
+
+    .project-link {
+        font-size: .7rem;
+        gap: 5px;
+    }
+
+    .project-link:hover {
+        gap: 8px;
+    }
+
+    .projects-view-button {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: .85rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   OUR PRIORITIES - RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ===================== LARGE DESKTOP ===================== */
+/* 1200px and above */
+
+@media (min-width: 1200px) {
+
+    .priority-card {
+        padding: 35px 30px;
+    }
+
+    .priority-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 28px;
+    }
+
+    .priority-number {
+        top: 20px;
+        right: 25px;
+        font-size: 2.5rem;
+    }
+
+    .priority-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .priority-card p {
+        font-size: .95rem;
+    }
+
+}
+
+
+/* ===================== LAPTOP ===================== */
+/* 992px - 1199px */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .priority-card {
+        padding: 30px 24px;
+        border-left-width: 4px;
+    }
+
+    .priority-icon {
+        width: 58px;
+        height: 58px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .priority-number {
+        top: 17px;
+        right: 20px;
+        font-size: 2.2rem;
+    }
+
+    .priority-card h4 {
+        margin-bottom: 12px;
+        font-size: 1.08rem;
+    }
+
+    .priority-card p {
+        margin-bottom: 20px;
+        font-size: .88rem;
+        line-height: 1.65;
+    }
+
+    .priority-line {
+        width: 40px;
+        height: 3px;
+    }
+
+    .priority-card:hover .priority-line {
+        width: 70px;
+        height: 5px;
+    }
+
+}
+
+
+/* ===================== TABLET ===================== */
+/* 768px - 991px */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .priority-card {
+        padding: 30px 25px;
+        border-left-width: 4px;
+    }
+
+    .priority-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+
+    .priority-number {
+        top: 18px;
+        right: 20px;
+        font-size: 2.2rem;
+    }
+
+    .priority-card h4 {
+        margin-bottom: 12px;
+        font-size: 1.1rem;
+    }
+
+    .priority-card p {
+        margin-bottom: 20px;
+        font-size: .88rem;
+        line-height: 1.65;
+    }
+
+    .priority-line {
+        width: 40px;
+    }
+
+    .priority-card:hover .priority-line {
+        width: 70px;
+        height: 5px;
+    }
+
+}
+
+
+/* ===================== LARGE MOBILE ===================== */
+/* 576px - 767px */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .priority-card {
+        padding: 28px 23px;
+        border-left-width: 4px;
+    }
+
+    .priority-icon {
+        width: 58px;
+        height: 58px;
+        margin-bottom: 18px;
+        font-size: 24px;
+    }
+
+    .priority-number {
+        top: 15px;
+        right: 18px;
+        font-size: 2rem;
+    }
+
+    .priority-card h4 {
+        margin-bottom: 11px;
+        font-size: 1.08rem;
+    }
+
+    .priority-card p {
+        margin-bottom: 18px;
+        font-size: .86rem;
+        line-height: 1.65;
+    }
+
+    .priority-line {
+        width: 38px;
+        height: 3px;
+    }
+
+    .priority-card:hover .priority-line {
+        width: 65px;
+        height: 5px;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+/* 400px - 575px */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+    .priority-card {
+        padding: 25px 20px;
+        border-left-width: 4px;
+    }
+
+    .priority-icon {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 17px;
+        font-size: 22px;
+    }
+
+    .priority-number {
+        top: 14px;
+        right: 16px;
+        font-size: 1.9rem;
+    }
+
+    .priority-card h4 {
+        margin-bottom: 10px;
+        font-size: 1.05rem;
+    }
+
+    .priority-card p {
+        margin-bottom: 17px;
+        font-size: .84rem;
+        line-height: 1.6;
+    }
+
+    .priority-line {
+        width: 35px;
+        height: 3px;
+    }
+
+    .priority-card:hover .priority-line {
+        width: 60px;
+        height: 5px;
+    }
+
+}
+
+
+/* ===================== SMALL MOBILE ===================== */
+/* Below 400px */
+
+@media (max-width: 399px) {
+
+    .priority-card {
+        padding: 22px 17px;
+        border-left-width: 3px;
+    }
+
+    .priority-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .priority-number {
+        top: 12px;
+        right: 13px;
+        font-size: 1.7rem;
+    }
+
+    .priority-card h4 {
+        margin-bottom: 9px;
+        font-size: 1rem;
+    }
+
+    .priority-card p {
+        margin-bottom: 15px;
+        font-size: .8rem;
+        line-height: 1.6;
+    }
+
+    .priority-line {
+        width: 32px;
+        height: 2px;
+    }
+
+    .priority-card:hover .priority-line {
+        width: 55px;
+        height: 4px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   LATEST NEWS - RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ===================== LARGE DESKTOP ===================== */
+/* 1200px and above */
+
+@media (min-width: 1200px) {
+
+    .news-image {
+        height: 270px;
+    }
+
+    .news-content {
+        padding: 28px;
+    }
+
+    .news-content h4 {
+        font-size: 1.25rem;
+    }
+
+    .news-content p {
+        font-size: .95rem;
+    }
+
+}
+
+
+/* ===================== LAPTOP ===================== */
+/* 992px - 1199px */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .news-image {
+        height: 240px;
+    }
+
+    .news-content {
+        padding: 24px;
+    }
+
+    .news-content h4 {
+        font-size: 1.15rem;
+        line-height: 1.35;
+    }
+
+    .news-content p {
+        font-size: .9rem;
+        line-height: 1.65;
+    }
+
+    .news-date {
+        font-size: .8rem;
+    }
+
+    .news-category {
+        left: 15px;
+        bottom: 15px;
+        padding: 6px 12px;
+        font-size: .65rem;
+    }
+
+}
+
+
+/* ===================== TABLET ===================== */
+/* 768px - 991px */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .news-image {
+        height: 235px;
+    }
+
+    .news-content {
+        padding: 23px;
+    }
+
+    .news-content h4 {
+        font-size: 1.1rem;
+        line-height: 1.35;
+    }
+
+    .news-content p {
+        font-size: .9rem;
+        line-height: 1.65;
+    }
+
+    .news-date {
+        font-size: .8rem;
+    }
+
+    .news-category {
+        left: 14px;
+        bottom: 14px;
+        padding: 6px 11px;
+        font-size: .65rem;
+    }
+
+    .news-link {
+        font-size: .85rem;
+    }
+
+}
+
+
+/* ===================== LARGE MOBILE ===================== */
+/* 576px - 767px */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .news-image {
+        height: 250px;
+    }
+
+    .news-content {
+        padding: 22px;
+    }
+
+    .news-content h4 {
+        font-size: 1.1rem;
+        line-height: 1.35;
+    }
+
+    .news-content p {
+        font-size: .88rem;
+        line-height: 1.65;
+    }
+
+    .news-date {
+        font-size: .78rem;
+    }
+
+    .news-category {
+        left: 14px;
+        bottom: 14px;
+        padding: 6px 11px;
+        font-size: .64rem;
+    }
+
+    .news-link {
+        font-size: .85rem;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+/* 400px - 575px */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+    .news-image {
+        height: 220px;
+    }
+
+    .news-content {
+        padding: 20px;
+    }
+
+    .news-content h4 {
+        font-size: 1.08rem;
+        line-height: 1.35;
+        margin-bottom: 12px;
+    }
+
+    .news-content p {
+        font-size: .86rem;
+        line-height: 1.65;
+        margin-bottom: 17px;
+    }
+
+    .news-date {
+        font-size: .76rem;
+        margin-bottom: 10px;
+    }
+
+    .news-category {
+        left: 12px;
+        bottom: 12px;
+        padding: 5px 10px;
+        font-size: .6rem;
+        letter-spacing: .8px;
+    }
+
+    .news-link {
+        font-size: .82rem;
+        gap: 7px;
+    }
+
+    .news-link:hover {
+        gap: 10px;
+    }
+
+    .news-view-button {
+        width: 100%;
+        padding: 11px 20px;
+        font-size: .9rem;
+    }
+
+}
+
+
+/* ===================== SMALL MOBILE ===================== */
+/* Below 400px */
+
+@media (max-width: 399px) {
+
+    .news-image {
+        height: 195px;
+    }
+
+    .news-content {
+        padding: 17px;
+    }
+
+    .news-content h4 {
+        font-size: 1rem;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+
+    .news-content p {
+        font-size: .82rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .news-date {
+        font-size: .7rem;
+        margin-bottom: 8px;
+    }
+
+    .news-category {
+        left: 10px;
+        bottom: 10px;
+        padding: 4px 8px;
+        font-size: .56rem;
+        letter-spacing: .7px;
+    }
+
+    .news-link {
+        font-size: .75rem;
+        gap: 6px;
+    }
+
+    .news-link:hover {
+        gap: 9px;
+    }
+
+    .news-view-button {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: .85rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   TESTIMONIALS - RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ===================== LARGE DESKTOP ===================== */
+/* 1200px and above */
+
+@media (min-width: 1200px) {
+
+    .testimonial-card {
+        padding: 40px 35px;
+    }
+
+    .testimonial-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 25px;
+    }
+
+    .testimonial-stars {
+        font-size: 1rem;
+    }
+
+    .testimonial-text {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .testimonial-client h5 {
+        font-size: 1rem;
+    }
+
+    .testimonial-client span {
+        font-size: .85rem;
+    }
+
+}
+
+
+/* ===================== LAPTOP ===================== */
+/* 992px - 1199px */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .testimonial-card {
+        padding: 32px 25px;
+        border-left-width: 4px;
+    }
+
+    .testimonial-icon {
+        width: 52px;
+        height: 52px;
+        margin-bottom: 17px;
+        font-size: 23px;
+    }
+
+    .testimonial-stars {
+        margin-bottom: 17px;
+        font-size: .9rem;
+    }
+
+    .testimonial-stars i {
+        margin-right: 2px;
+    }
+
+    .testimonial-text {
+        margin-bottom: 25px;
+        font-size: .9rem;
+        line-height: 1.7;
+    }
+
+    .testimonial-client {
+        gap: 12px;
+        padding-top: 17px;
+    }
+
+    .client-avatar {
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+    }
+
+    .testimonial-client h5 {
+        font-size: .92rem;
+    }
+
+    .testimonial-client span {
+        font-size: .78rem;
+    }
+
+}
+
+
+/* ===================== TABLET ===================== */
+/* 768px - 991px */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .testimonial-card {
+        padding: 30px 24px;
+        border-left-width: 4px;
+    }
+
+    .testimonial-icon {
+        width: 52px;
+        height: 52px;
+        margin-bottom: 17px;
+        font-size: 23px;
+    }
+
+    .testimonial-stars {
+        margin-bottom: 17px;
+        font-size: .9rem;
+    }
+
+    .testimonial-text {
+        margin-bottom: 24px;
+        font-size: .9rem;
+        line-height: 1.7;
+    }
+
+    .testimonial-client {
+        gap: 12px;
+        padding-top: 17px;
+    }
+
+    .client-avatar {
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+    }
+
+    .testimonial-client h5 {
+        font-size: .92rem;
+    }
+
+    .testimonial-client span {
+        font-size: .77rem;
+    }
+
+}
+
+
+/* ===================== LARGE MOBILE ===================== */
+/* 576px - 767px */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .testimonial-card {
+        padding: 28px 23px;
+        border-left-width: 4px;
+    }
+
+    .testimonial-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 16px;
+        font-size: 22px;
+    }
+
+    .testimonial-stars {
+        margin-bottom: 16px;
+        font-size: .88rem;
+    }
+
+    .testimonial-stars i {
+        margin-right: 2px;
+    }
+
+    .testimonial-text {
+        margin-bottom: 22px;
+        font-size: .88rem;
+        line-height: 1.7;
+    }
+
+    .testimonial-client {
+        gap: 11px;
+        padding-top: 16px;
+    }
+
+    .client-avatar {
+        width: 45px;
+        height: 45px;
+        font-size: 17px;
+    }
+
+    .testimonial-client h5 {
+        font-size: .9rem;
+    }
+
+    .testimonial-client span {
+        font-size: .75rem;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+/* 400px - 575px */
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+    .testimonial-card {
+        padding: 25px 20px;
+        border-left-width: 4px;
+    }
+
+    .testimonial-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 15px;
+        font-size: 21px;
+    }
+
+    .testimonial-stars {
+        margin-bottom: 15px;
+        font-size: .82rem;
+    }
+
+    .testimonial-stars i {
+        margin-right: 1px;
+    }
+
+    .testimonial-text {
+        margin-bottom: 20px;
+        font-size: .84rem;
+        line-height: 1.65;
+    }
+
+    .testimonial-client {
+        gap: 10px;
+        padding-top: 15px;
+    }
+
+    .client-avatar {
+        width: 43px;
+        height: 43px;
+        font-size: 16px;
+    }
+
+    .testimonial-client h5 {
+        font-size: .87rem;
+    }
+
+    .testimonial-client span {
+        font-size: .72rem;
+    }
+
+}
+
+
+/* ===================== SMALL MOBILE ===================== */
+/* Below 400px */
+
+@media (max-width: 399px) {
+
+    .testimonial-card {
+        padding: 22px 17px;
+        border-left-width: 3px;
+    }
+
+    .testimonial-icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 13px;
+        font-size: 19px;
+    }
+
+    .testimonial-stars {
+        margin-bottom: 13px;
+        font-size: .75rem;
+    }
+
+    .testimonial-stars i {
+        margin-right: 0;
+    }
+
+    .testimonial-text {
+        margin-bottom: 17px;
+        font-size: .79rem;
+        line-height: 1.6;
+    }
+
+    .testimonial-client {
+        gap: 9px;
+        padding-top: 13px;
+    }
+
+    .client-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .testimonial-client h5 {
+        font-size: .82rem;
+    }
+
+    .testimonial-client span {
+        font-size: .68rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   ANNOUNCEMENTS - RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ===================== LARGE TABLETS / SMALL LAPTOPS ===================== */
+
+@media (max-width: 1199.98px) {
+
+    .announcement-card {
+        padding: 28px;
+    }
+
+    .announcement-content {
+        padding-right: 15px;
+    }
+
+    .announcement-content h4 {
+        font-size: 1.15rem;
+    }
+
+    .announcement-content p {
+        font-size: .95rem;
+        line-height: 1.65;
+    }
+
+    .announcement-date {
+        width: 52px;
+        height: 58px;
+        top: 18px;
+        right: 18px;
+    }
+
+    .date-day {
+        font-size: 1.2rem;
+    }
+
+    .date-month {
+        font-size: .65rem;
+    }
+
+}
+
+
+/* ===================== TABLETS ===================== */
+
+@media (max-width: 991.98px) {
+
+    .announcement-card {
+        padding: 28px;
+    }
+
+    .announcement-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .announcement-content {
+        padding-right: 10px;
+    }
+
+    .announcement-content h4 {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    .announcement-content p {
+        font-size: .95rem;
+        line-height: 1.7;
+    }
+
+    .announcement-date {
+        width: 52px;
+        height: 58px;
+        top: 18px;
+        right: 18px;
+    }
+
+}
+
+
+/* ===================== SMALL TABLETS / LARGE PHONES ===================== */
+
+@media (max-width: 767.98px) {
+
+    .announcement-card {
+        padding: 25px;
+        border-left-width: 4px;
+    }
+
+    .announcement-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 23px;
+        margin-bottom: 18px;
+    }
+
+    .announcement-content {
+        padding-right: 0;
+    }
+
+    .announcement-category {
+        font-size: .7rem;
+        letter-spacing: .8px;
+    }
+
+    .announcement-content h4 {
+        font-size: 1.15rem;
+        line-height: 1.4;
+        padding-right: 45px;
+    }
+
+    .announcement-content p {
+        font-size: .93rem;
+        line-height: 1.65;
+    }
+
+    .announcement-date {
+        width: 48px;
+        height: 55px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .date-day {
+        font-size: 1.15rem;
+    }
+
+    .date-month {
+        margin-top: 4px;
+        font-size: .62rem;
+    }
+
+    .announcement-link {
+        font-size: .9rem;
+    }
+
+    .announcement-button {
+        width: auto;
+        max-width: 100%;
+        padding: 11px 22px;
+        font-size: .9rem;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 575.98px) {
+
+    .announcement-card {
+        padding: 23px 20px;
+        border-left-width: 4px;
+        border-radius: 8px;
+    }
+
+    .announcement-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+        margin-bottom: 17px;
+    }
+
+    .announcement-category {
+        margin-bottom: 8px;
+        font-size: .68rem;
+        letter-spacing: .7px;
+    }
+
+    .announcement-content h4 {
+        margin-bottom: 13px;
+        font-size: 1.08rem;
+        line-height: 1.4;
+        padding-right: 42px;
+    }
+
+    .announcement-content p {
+        margin-bottom: 18px;
+        font-size: .9rem;
+        line-height: 1.65;
+    }
+
+    .announcement-date {
+        width: 45px;
+        height: 52px;
+        top: 14px;
+        right: 14px;
+        border-radius: 5px;
+    }
+
+    .date-day {
+        font-size: 1.05rem;
+    }
+
+    .date-month {
+        margin-top: 3px;
+        font-size: .58rem;
+        letter-spacing: .8px;
+    }
+
+    .announcement-link {
+        gap: 6px;
+        font-size: .88rem;
+    }
+
+    .announcement-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+        max-width: 320px;
+        padding: 12px 18px;
+        font-size: .88rem;
+    }
+
+}
+
+
+/* ===================== VERY SMALL PHONES ===================== */
+
+@media (max-width: 380px) {
+
+    .announcement-card {
+        padding: 20px 17px;
+    }
+
+    .announcement-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .announcement-category {
+        font-size: .63rem;
+    }
+
+    .announcement-content h4 {
+        font-size: 1rem;
+        padding-right: 38px;
+    }
+
+    .announcement-content p {
+        font-size: .86rem;
+        line-height: 1.6;
+    }
+
+    .announcement-date {
+        width: 42px;
+        height: 49px;
+        top: 12px;
+        right: 12px;
+    }
+
+    .date-day {
+        font-size: 1rem;
+    }
+
+    .date-month {
+        font-size: .55rem;
+    }
+
+    .announcement-button {
+        font-size: .82rem;
+        padding: 11px 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   SUBSIDIARIES - RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ===================== BASE ===================== */
+
+.subsidiary-logo {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    height: 90px;
+    margin: 0 auto;
+    object-fit: contain;
+    transition:
+        transform .4s ease,
+        filter .4s ease;
+}
+
+/* Optional hover effect */
+.subsidiary-logo:hover {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   EXTRA LARGE DESKTOP — 1400px+
+   ========================================================= */
+
+@media (min-width: 1400px) {
+
+    .subsidiary-logo {
+        max-width: 170px;
+        height: 100px;
+    }
+
+}
+
+
+/* =========================================================
+   LARGE DESKTOP — 1200px to 1399px
+   ========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+    .subsidiary-logo {
+        max-width: 155px;
+        height: 95px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL LAPTOP — 992px to 1199px
+   ========================================================= */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .subsidiary-logo {
+        max-width: 140px;
+        height: 85px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET — 768px to 991px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .subsidiary-logo {
+        max-width: 125px;
+        height: 80px;
+    }
+
+}
+
+
+/* =========================================================
+   LARGE MOBILE — 576px to 767px
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .row.align-items-center.text-center {
+        row-gap: 30px;
+    }
+
+    .row.align-items-center.text-center .col {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .subsidiary-logo {
+        max-width: 125px;
+        height: 75px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE — 400px to 575px
+   ========================================================= */
+
+@media (min-width: 400px) and (max-width: 575.98px) {
+
+    .row.align-items-center.text-center {
+        row-gap: 30px;
+    }
+
+    .row.align-items-center.text-center .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .subsidiary-logo {
+        max-width: 120px;
+        height: 70px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE — 360px to 399px
+   ========================================================= */
+
+@media (min-width: 360px) and (max-width: 399.98px) {
+
+    .row.align-items-center.text-center {
+        row-gap: 25px;
+    }
+
+    .row.align-items-center.text-center .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .subsidiary-logo {
+        max-width: 105px;
+        height: 65px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES — BELOW 360px
+   ========================================================= */
+
+@media (max-width: 359.98px) {
+
+    .row.align-items-center.text-center {
+        row-gap: 22px;
+    }
+
+    .row.align-items-center.text-center .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .subsidiary-logo {
+        max-width: 90px;
+        height: 60px;
+    }
+
+}
+
+
+/* =========================================================
+   LANDSCAPE PHONES
+   ========================================================= */
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .subsidiary-logo {
+        max-width: 100px;
+        height: 65px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   DOWNLOADS - RESPONSIVE DESIGN
+   Works across desktop, tablet, mobile and very small screens
+   ========================================================= */
+
+
+/* =========================
+   LARGE DESKTOP
+   1400px and above
+   ========================= */
+
+@media (min-width: 1400px) {
+
+    .download-card {
+        padding: 35px;
+    }
+
+    .download-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+
+    .download-info h4 {
+        font-size: 1.25rem;
+    }
+
+    .download-info p {
+        font-size: 0.98rem;
+    }
+
+}
+
+
+/* =========================
+   LAPTOP / DESKTOP
+   1200px - 1399px
+   ========================= */
+
+@media (max-width: 1399.98px) {
+
+    .download-card {
+        padding: 28px;
+    }
+
+    .download-info h4 {
+        font-size: 1.18rem;
+    }
+
+    .download-info p {
+        font-size: 0.95rem;
+    }
+
+}
+
+
+/* =========================
+   TABLET / SMALL LAPTOP
+   992px - 1199px
+   ========================= */
+
+@media (max-width: 1199.98px) {
+
+    .download-card {
+        padding: 26px;
+    }
+
+    .download-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+
+    .download-info h4 {
+        font-size: 1.15rem;
+        line-height: 1.35;
+    }
+
+    .download-info p {
+        font-size: 0.92rem;
+        line-height: 1.65;
+    }
+
+    .download-category {
+        font-size: 0.7rem;
+    }
+
+    .download-meta {
+        font-size: 0.8rem;
+    }
+
+    .download-button {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+
+}
+
+
+/* =========================
+   TABLET
+   768px - 991px
+   ========================= */
+
+@media (max-width: 991.98px) {
+
+    .download-card {
+        padding: 25px;
+    }
+
+    .download-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+    }
+
+    .download-info h4 {
+        font-size: 1.15rem;
+    }
+
+    .download-info p {
+        font-size: 0.92rem;
+    }
+
+    .download-meta {
+        padding-top: 14px;
+    }
+
+    .download-button {
+        margin-top: 18px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+   576px - 767px
+   ========================= */
+
+@media (max-width: 767.98px) {
+
+    .download-card {
+        padding: 25px 22px;
+        border-left-width: 4px;
+    }
+
+    .download-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .download-category {
+        font-size: 0.68rem;
+        letter-spacing: 1px;
+    }
+
+    .download-info h4 {
+        font-size: 1.15rem;
+        line-height: 1.4;
+    }
+
+    .download-info p {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    .download-meta {
+        font-size: 0.8rem;
+    }
+
+    .download-button {
+        padding: 11px 18px;
+        font-size: 0.9rem;
+    }
+
+    .downloads-view-button {
+        width: auto;
+        max-width: 100%;
+        padding: 11px 24px;
+        font-size: 0.9rem;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+   400px - 575px
+   ========================= */
+
+@media (max-width: 575.98px) {
+
+    .download-card {
+        padding: 24px 20px;
+        border-radius: 9px;
+    }
+
+    .download-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 23px;
+        margin-bottom: 17px;
+    }
+
+    .download-category {
+        font-size: 0.65rem;
+        letter-spacing: 0.9px;
+    }
+
+    .download-info h4 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .download-info p {
+        font-size: 0.88rem;
+        line-height: 1.65;
+        margin-bottom: 18px;
+    }
+
+    .download-meta {
+        font-size: 0.78rem;
+        gap: 10px;
+    }
+
+    .download-button {
+        width: 100%;
+        padding: 11px 15px;
+        font-size: 0.88rem;
+    }
+
+    .downloads-view-button {
+        width: 100%;
+        max-width: 340px;
+        padding: 11px 18px;
+        font-size: 0.88rem;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+   Below 400px
+   ========================= */
+
+@media (max-width: 399.98px) {
+
+    .download-card {
+        padding: 20px 16px;
+        border-left-width: 4px;
+    }
+
+    .download-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+    .download-category {
+        font-size: 0.62rem;
+        letter-spacing: 0.7px;
+    }
+
+    .download-info h4 {
+        font-size: 1rem;
+        line-height: 1.35;
+    }
+
+    .download-info p {
+        font-size: 0.84rem;
+        line-height: 1.6;
+    }
+
+    .download-meta {
+        flex-wrap: wrap;
+        font-size: 0.74rem;
+    }
+
+    .download-button {
+        padding: 10px 12px;
+        font-size: 0.84rem;
+    }
+
+    .downloads-view-button {
+        width: 100%;
+        font-size: 0.82rem;
+        padding: 10px 14px;
+    }
+
+}
+
+
+/* =========================
+   TOUCH DEVICES
+   Disable hover-only visual
+   effects on touch screens
+   ========================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+    .download-card:hover {
+        transform: none;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .05);
+    }
+
+    .download-card:hover::before {
+        height: 0;
+    }
+
+    .download-card:hover .download-icon {
+        background-color: #1f5e2f;
+    }
+
+    .download-card:hover .download-icon i {
+        color: white;
+        transform: none;
+    }
+
+    .download-card:hover .download-category {
+        color: #1f5e2f;
+    }
+
+    .download-card:hover .download-info h4 {
+        color: #222;
+    }
+
+    .download-card:hover .download-info p {
+        color: #666;
+    }
+
+    .download-card:hover .download-meta span {
+        color: inherit;
+    }
+
+    .download-card:hover .download-meta span:first-child {
+        color: #1f5e2f;
+    }
+
+    .download-card:hover .download-button {
+        background-color: #1f5e2f;
+        color: white;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== STATS ===================== */
+
+.stats {
+    width: 100%;
+    padding: 70px 0;
+    overflow: hidden;
+}
+
+.stats .row {
+    align-items: stretch;
+}
+
+.stats .col-md-3 {
+    position: relative;
+    padding: 20px 25px;
+}
+
+/* Vertical separators */
+.stats .col-md-3:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 1px;
+    height: 70%;
+    background: rgba(31, 94, 47, 0.2);
+}
+
+/* Number */
+.stats h2 {
+    margin: 0 0 10px;
+    color: #1f5e2f;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+/* Counter */
+.stats .counter {
+    display: inline-block;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Label */
+.stats p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   LARGE DESKTOP
+   1400px+
+   ========================= */
+
+@media (min-width: 1400px) {
+
+    .stats {
+        padding: 80px 0;
+    }
+
+    .stats .col-md-3 {
+        padding: 20px 35px;
+    }
+
+    .stats h2 {
+        font-size: 3.4rem;
+    }
+
+    .stats p {
+        font-size: 1rem;
+    }
+
+}
+
+
+/* =========================
+   LAPTOP
+   1200px - 1399px
+   ========================= */
+
+@media (max-width: 1399.98px) {
+
+    .stats {
+        padding: 65px 0;
+    }
+
+    .stats h2 {
+        font-size: 2.8rem;
+    }
+
+}
+
+
+/* =========================
+   TABLET / SMALL LAPTOP
+   992px - 1199px
+   ========================= */
+
+@media (max-width: 1199.98px) {
+
+    .stats {
+        padding: 60px 0;
+    }
+
+    .stats .col-md-3 {
+        padding: 18px 15px;
+    }
+
+    .stats h2 {
+        font-size: 2.5rem;
+    }
+
+    .stats p {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+/* =========================
+   TABLET
+   768px - 991px
+   ========================= */
+
+@media (max-width: 991.98px) {
+
+    .stats {
+        padding: 55px 0;
+    }
+
+    .stats .col-md-3 {
+        padding: 15px 10px;
+    }
+
+    .stats h2 {
+        font-size: 2.25rem;
+    }
+
+    .stats p {
+        font-size: 0.85rem;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+   Below 768px
+   ========================= */
+
+@media (max-width: 767.98px) {
+
+    .stats {
+        padding: 45px 0;
+    }
+
+    .stats .row {
+        row-gap: 25px;
+    }
+
+    .stats .col-md-3 {
+        padding: 15px 10px;
+    }
+
+    /* Remove vertical separators */
+    .stats .col-md-3:not(:last-child)::after {
+        display: none;
+    }
+
+    /* Add horizontal separators */
+    .stats .col-md-3:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        left: 15%;
+        right: 15%;
+        bottom: -13px;
+        height: 1px;
+        background: rgba(31, 94, 47, 0.15);
+    }
+
+    .stats h2 {
+        font-size: 2.3rem;
+        margin-bottom: 7px;
+    }
+
+    .stats p {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+   576px and below
+   ========================= */
+
+@media (max-width: 575.98px) {
+
+    .stats {
+        padding: 40px 0;
+    }
+
+    .stats .row {
+        row-gap: 20px;
+    }
+
+    .stats .col-md-3 {
+        padding: 12px 15px;
+    }
+
+    .stats h2 {
+        font-size: 2.15rem;
+    }
+
+    .stats p {
+        font-size: 0.85rem;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+   Below 400px
+   ========================= */
+
+@media (max-width: 399.98px) {
+
+    .stats {
+        padding: 35px 0;
+    }
+
+    .stats .col-md-3 {
+        padding: 10px 10px;
+    }
+
+    .stats h2 {
+        font-size: 1.9rem;
+        letter-spacing: -0.5px;
+    }
+
+    .stats p {
+        font-size: 0.8rem;
+    }
+
 }

@@ -250,7 +250,17 @@
 }
 
 
-
+.footer-copyright {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #184a25;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
 
 
 
@@ -1039,4 +1049,240 @@
     .hero-scroll {
         display: none;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1400px+
+   ========================================================= */
+
+@media (min-width: 1400px) {
+
+    footer {
+        padding: 70px 0 50px;
+    }
+
+    footer .col-lg-4 {
+        padding: 0 35px;
+    }
+
+    footer h5 {
+        font-size: 1.2rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+   1200px - 1399px
+   ========================================================= */
+
+@media (max-width: 1399.98px) {
+
+    footer {
+        padding: 60px 0 45px;
+    }
+
+    footer .col-lg-4 {
+        padding: 0 20px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+   992px - 1199px
+   ========================================================= */
+
+@media (max-width: 1199.98px) {
+
+    footer {
+        padding: 50px 0 40px;
+    }
+
+    footer .col-lg-4 {
+        padding: 0 15px;
+    }
+
+    footer h5 {
+        font-size: 1.05rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+   ========================================================= */
+
+@media (max-width: 991.98px) {
+
+    footer {
+        padding: 50px 0 35px;
+    }
+
+    footer .row {
+        row-gap: 35px;
+    }
+
+    footer .col-lg-4 {
+        padding: 0 15px;
+    }
+
+    footer h5 {
+        margin-bottom: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   Below 768px
+   ========================================================= */
+
+@media (max-width: 767.98px) {
+
+    footer {
+        padding: 45px 0 30px;
+    }
+
+    footer .row {
+        text-align: center;
+        row-gap: 30px;
+    }
+
+    footer .col-lg-4 {
+        padding: 0 25px;
+    }
+
+    footer h5 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    footer h5::after {
+        margin: 10px auto 0;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .footer-links a {
+        display: block !important;
+        margin-bottom: 7px;
+    }
+
+    .footer-links a:hover {
+        padding-left: 0;
+    }
+
+    footer + div {
+        padding: 11px 15px !important;
+        font-size: 0.8rem;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   576px and below
+   ========================================================= */
+
+@media (max-width: 575.98px) {
+
+    footer {
+        padding: 40px 0 25px;
+    }
+
+    footer .row {
+        row-gap: 28px;
+    }
+
+    footer .col-lg-4 {
+        padding: 0 20px;
+    }
+
+    footer h5 {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+
+    footer a {
+        word-break: break-word;
+    }
+
+    footer + div {
+        padding: 10px 12px !important;
+        font-size: 0.75rem;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   Below 400px
+   ========================================================= */
+
+@media (max-width: 399.98px) {
+
+    footer {
+        padding: 35px 0 22px;
+    }
+
+    footer .col-lg-4 {
+        padding: 0 15px;
+    }
+
+    footer h5 {
+        font-size: 0.95rem;
+    }
+
+    footer p {
+        font-size: 0.82rem;
+        line-height: 1.65;
+    }
+
+    footer + div {
+        font-size: 0.7rem;
+        padding: 9px 10px !important;
+    }
+
 }
