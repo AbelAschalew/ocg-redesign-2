@@ -943,3 +943,1368 @@
     font-size: .68rem;
     line-height: 1.7;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================================== RESPONSIVE ========================================================= */
+
+
+
+/* =========================================================
+   PROJECTS OVERVIEW - RESPONSIVE
+   ========================================================= */
+
+/* ===================== HEADING ===================== */
+
+.projects-overview-title {
+    width: 35%;
+}
+
+
+/* ===================== LARGE TABLETS ===================== */
+
+@media (max-width: 1199.98px) {
+
+    .projects-overview-content {
+        max-width: 100%;
+    }
+
+    .projects-overview-title {
+        width: 45%;
+    }
+
+    .projects-overview-content p {
+        font-size: .9rem;
+    }
+
+    .projects-overview-stats {
+        padding: 5px;
+    }
+
+    .project-overview-stat {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .project-overview-stat strong {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+/* ===================== TABLETS ===================== */
+
+@media (max-width: 991.98px) {
+
+    .projects-overview-section {
+        overflow: hidden;
+    }
+
+    /* Heading */
+
+    .projects-overview-title {
+        width: 100%;
+    }
+
+    /* Content */
+
+    .projects-overview-content {
+        max-width: 100%;
+    }
+
+    .projects-overview-content p {
+        font-size: .95rem;
+        line-height: 1.8;
+    }
+
+    .projects-overview-btn {
+        margin-top: 10px;
+    }
+
+    /* Statistics */
+
+    .projects-overview-stats {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .project-overview-stat {
+        gap: 18px;
+        padding: 14px;
+        margin-bottom: 15px;
+    }
+
+    .project-overview-stat-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.8rem;
+    }
+
+    .project-overview-stat strong {
+        font-size: 1.6rem;
+    }
+
+    .project-overview-stat span {
+        font-size: .75rem;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 767.98px) {
+
+    .projects-overview-section {
+        overflow: hidden;
+    }
+
+    /* Content */
+
+    .projects-overview-content {
+        text-align: left;
+    }
+
+    .projects-overview-title {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+    .projects-overview-content p {
+        font-size: .92rem;
+        line-height: 1.75;
+    }
+
+    /* Button */
+
+    .projects-overview-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+    }
+
+    /* Statistics */
+
+    .projects-overview-stats {
+        padding: 0;
+    }
+
+    .project-overview-stat {
+        width: 100%;
+        gap: 15px;
+        padding: 14px 15px;
+        margin-bottom: 12px;
+        border-right-width: 4px;
+        box-shadow: -3px 4px 8px rgba(0, 0, 0, .15);
+    }
+
+    .project-overview-stat:hover {
+        transform: translateX(4px);
+    }
+
+    .project-overview-stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.6rem;
+    }
+
+    .project-overview-stat strong {
+        font-size: 1.45rem;
+    }
+
+    .project-overview-stat span {
+        font-size: .72rem;
+    }
+
+}
+
+
+/* ===================== SMALL PHONES ===================== */
+
+@media (max-width: 575.98px) {
+
+    .projects-overview-title {
+        font-size: 1.5rem;
+    }
+
+    .projects-overview-content p {
+        font-size: .88rem;
+        line-height: 1.7;
+    }
+
+    .projects-overview-btn {
+        font-size: .75rem;
+        padding: 11px 18px;
+    }
+
+    .project-overview-stat {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .project-overview-stat-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.4rem;
+    }
+
+    .project-overview-stat strong {
+        font-size: 1.3rem;
+    }
+
+    .project-overview-stat span {
+        font-size: .68rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   KEY SERVICES - RESPONSIVE
+   ========================================================= */
+
+/* ---------- Tablets ---------- */
+@media (max-width: 991.98px) {
+
+    .vmv-card {
+        padding: 30px 25px;
+    }
+
+    .vmv-card h4 {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .vmv-card i {
+        width: 58px;
+        height: 58px;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .mission-list li {
+        padding-left: 32px;
+        margin-bottom: 12px;
+        line-height: 1.7;
+        font-size: .95rem;
+    }
+
+    /* Prevent cards from rotating off-screen */
+    .vmv-card:hover {
+        transform: translateY(-8px) !important;
+    }
+
+    .vmv-card:hover i {
+        transform: rotate(15deg);
+    }
+}
+
+
+/* ---------- Mobile ---------- */
+@media (max-width: 767.98px) {
+
+    .vmv-card {
+        padding: 28px 20px;
+        border-radius: 8px;
+    }
+
+    .vmv-card h4 {
+        font-size: 1.15rem;
+        line-height: 1.4;
+        margin-bottom: 18px;
+    }
+
+    .vmv-card i {
+        width: 55px;
+        height: 55px;
+        font-size: 27px;
+        margin-bottom: 18px;
+    }
+
+    .mission-list {
+        margin-top: 10px;
+    }
+
+    .mission-list li {
+        padding-left: 30px;
+        margin-bottom: 12px;
+        font-size: .9rem;
+        line-height: 1.65;
+    }
+
+    .mission-list li::before {
+        font-size: 1.1rem;
+        top: 0;
+    }
+
+    /*
+       Disable the large rotation on phones.
+       This prevents horizontal overflow.
+    */
+    .vmv-card:hover {
+        transform: translateY(-5px) !important;
+    }
+
+    .vmv-card:hover i {
+        transform: rotate(10deg);
+    }
+
+    /*
+       Keep text readable when the green hover
+       background appears.
+    */
+    .vmv-card:hover .mission-list li {
+        color: white;
+    }
+}
+
+
+/* ---------- Small Phones ---------- */
+@media (max-width: 575.98px) {
+
+    .vmv-card {
+        padding: 25px 18px;
+    }
+
+    .vmv-card h4 {
+        font-size: 1.05rem;
+    }
+
+    .vmv-card i {
+        width: 52px;
+        height: 52px;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .mission-list li {
+        padding-left: 27px;
+        font-size: .85rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .mission-list li::before {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   FEATURED PROJECTS - RESPONSIVE
+   ========================================================= */
+
+
+/* ===================== TABLETS ===================== */
+@media (max-width: 991.98px) {
+
+    /* ---------- Main Featured Project ---------- */
+
+    .featured-project-main {
+        border-radius: 10px;
+    }
+
+    .featured-project-image {
+        min-height: 350px;
+        height: 350px;
+    }
+
+    .featured-project-content {
+        padding: 35px;
+    }
+
+    .featured-project-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .featured-project-content p {
+        font-size: .85rem;
+        line-height: 1.75;
+    }
+
+    .project-details {
+        gap: 30px;
+    }
+
+
+    /* ---------- Small Project Cards ---------- */
+
+    .featured-small-image {
+        height: 220px;
+    }
+
+    .featured-small-content {
+        padding: 22px;
+    }
+
+    .featured-small-content h3 {
+        font-size: 1rem;
+    }
+
+    .featured-small-content p {
+        font-size: .78rem;
+    }
+}
+
+
+/* ===================== MOBILE ===================== */
+@media (max-width: 767.98px) {
+
+    /* ---------- Main Featured Project ---------- */
+
+    .featured-project-main {
+        border-radius: 10px;
+    }
+
+    /*
+       The Bootstrap row changes naturally from
+       image + content to image above content.
+    */
+    .featured-project-image {
+        min-height: 280px;
+        height: 280px;
+    }
+
+    .featured-project-content {
+        padding: 28px 24px;
+    }
+
+    .featured-project-content h3 {
+        font-size: 1.35rem;
+        line-height: 1.35;
+    }
+
+    .featured-project-content p {
+        font-size: .82rem;
+        line-height: 1.75;
+        margin-bottom: 20px;
+    }
+
+
+    /* ---------- Project Category ---------- */
+
+    .project-category {
+        font-size: .62rem;
+        letter-spacing: 1.2px;
+    }
+
+
+    /* ---------- Location ---------- */
+
+    .project-location {
+        font-size: .7rem;
+        margin-bottom: 15px;
+    }
+
+
+    /* ---------- Project Details ---------- */
+
+    .project-details {
+        gap: 25px;
+        padding: 15px 0;
+        margin-bottom: 20px;
+    }
+
+    .project-details span {
+        font-size: .58rem;
+    }
+
+    .project-details strong {
+        font-size: .72rem;
+    }
+
+
+    /* ---------- View Button ---------- */
+
+    .project-view-btn {
+        padding: 10px 18px;
+        font-size: .7rem;
+    }
+
+
+    /* ---------- Small Project Cards ---------- */
+
+    .featured-project-small {
+        border-radius: 9px;
+    }
+
+    .featured-small-image {
+        height: 230px;
+    }
+
+    .featured-small-content {
+        padding: 22px;
+    }
+
+    .featured-small-content h3 {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .featured-small-content p {
+        font-size: .76rem;
+        line-height: 1.7;
+    }
+
+    .project-view-link {
+        font-size: .7rem;
+    }
+
+
+    /* ---------- Status ---------- */
+
+    .project-status {
+        padding: 6px 12px;
+        font-size: .58rem;
+    }
+
+    .featured-project-overlay {
+        top: 15px;
+        left: 15px;
+    }
+
+    .featured-small-image .project-status {
+        top: 12px;
+        left: 12px;
+    }
+
+
+    /* ---------- View All ---------- */
+
+    .projects-view-all {
+        margin-top: 35px;
+    }
+
+    .projects-view-all .btn {
+        padding: 12px 22px;
+        font-size: .7rem;
+    }
+
+
+    /*
+       Avoid excessive movement on touch devices.
+    */
+    .featured-project-main:hover {
+        transform: translateY(-3px);
+    }
+
+    .featured-project-small:hover {
+        transform: translateY(-4px);
+    }
+}
+
+
+/* ===================== SMALL PHONES ===================== */
+@media (max-width: 575.98px) {
+
+    /* ---------- Main Image ---------- */
+
+    .featured-project-image {
+        min-height: 230px;
+        height: 230px;
+    }
+
+    .featured-project-content {
+        padding: 24px 18px;
+    }
+
+    .featured-project-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .featured-project-content p {
+        font-size: .78rem;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- Project Details ---------- */
+
+    .project-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .project-details div {
+        min-width: 0;
+    }
+
+
+    /* ---------- Small Cards ---------- */
+
+    .featured-small-image {
+        height: 210px;
+    }
+
+    .featured-small-content {
+        padding: 20px 18px;
+    }
+
+    .featured-small-content h3 {
+        font-size: .98rem;
+    }
+
+    .featured-small-content p {
+        font-size: .74rem;
+    }
+
+
+    /* ---------- Buttons ---------- */
+
+    .project-view-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .projects-view-all .btn {
+        width: 100%;
+        max-width: 260px;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   PROJECT PORTFOLIO RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ===================== LARGE TABLETS ===================== */
+
+@media (max-width: 1199.98px) {
+
+    .project-filter-wrapper {
+        gap: 8px;
+        margin-bottom: 40px;
+    }
+
+    .project-filter {
+        padding: 9px 17px;
+        font-size: .68rem;
+    }
+
+    .portfolio-project-image {
+        height: 220px;
+    }
+
+    .portfolio-project-content {
+        padding: 22px;
+    }
+
+    .portfolio-project-content h3 {
+        font-size: 1rem;
+    }
+
+}
+
+
+/* ===================== TABLETS ===================== */
+
+@media (max-width: 991.98px) {
+
+    /* Section spacing */
+
+    .project-portfolio-section {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+
+    /* Filter */
+
+    .project-filter-wrapper {
+        gap: 10px;
+        margin-bottom: 35px;
+        padding: 0 10px;
+    }
+
+    .project-filter {
+        padding: 10px 17px;
+        font-size: .68rem;
+    }
+
+
+    /* Project cards */
+
+    .portfolio-project-image {
+        height: 230px;
+    }
+
+    .portfolio-project-content {
+        padding: 24px;
+    }
+
+    .portfolio-project-content h3 {
+        font-size: 1.05rem;
+    }
+
+    .portfolio-project-content p {
+        font-size: .75rem;
+    }
+
+
+    /* View icon */
+
+    .portfolio-project-view {
+        width: 48px;
+        height: 48px;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 767.98px) {
+
+    /* Section */
+
+    .project-portfolio-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+    /* Section heading */
+
+    .project-portfolio-section .section-title {
+        font-size: 1.8rem;
+    }
+
+    .project-portfolio-section .section-subtitle {
+        font-size: .68rem;
+    }
+
+
+    /* =====================
+       FILTER BUTTONS
+       ===================== */
+
+    .project-filter-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .project-filter {
+        width: 100%;
+        padding: 10px 8px;
+        font-size: .65rem;
+        white-space: normal;
+        line-height: 1.3;
+    }
+
+    .project-filter:hover {
+        transform: none;
+    }
+
+
+    /* =====================
+       PROJECT CARD
+       ===================== */
+
+    .portfolio-project-card {
+        border-radius: 9px;
+    }
+
+    .portfolio-project-card:hover {
+        transform: translateY(-5px);
+    }
+
+
+    /* =====================
+       PROJECT IMAGE
+       ===================== */
+
+    .portfolio-project-image {
+        height: 220px;
+    }
+
+
+    /* =====================
+       STATUS
+       ===================== */
+
+    .portfolio-project-status {
+        top: 12px;
+        left: 12px;
+        padding: 6px 11px;
+        font-size: .58rem;
+    }
+
+
+    /* =====================
+       CONTENT
+       ===================== */
+
+    .portfolio-project-content {
+        padding: 22px;
+    }
+
+    .portfolio-project-category {
+        font-size: .58rem;
+        letter-spacing: 1.1px;
+    }
+
+    .portfolio-project-content h3 {
+        font-size: 1.05rem;
+        margin-bottom: 9px;
+    }
+
+    .portfolio-project-location {
+        font-size: .67rem;
+    }
+
+    .portfolio-project-content p {
+        font-size: .74rem;
+        line-height: 1.75;
+        margin-bottom: 16px;
+    }
+
+
+    /* =====================
+       PROJECT LINK
+       ===================== */
+
+    .portfolio-project-link {
+        font-size: .68rem;
+    }
+
+
+    /* =====================
+       OVERLAY
+       ===================== */
+
+    .portfolio-project-view {
+        width: 46px;
+        height: 46px;
+        font-size: 1rem;
+    }
+
+
+    /* =====================
+       LOAD MORE
+       ===================== */
+
+    .project-load-more {
+        margin-top: 35px;
+    }
+
+    .project-load-btn {
+        width: auto;
+        max-width: 100%;
+        padding: 11px 20px;
+        font-size: .68rem;
+    }
+
+}
+
+
+/* ===================== SMALL MOBILE ===================== */
+
+@media (max-width: 575.98px) {
+
+    /* Section */
+
+    .project-portfolio-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
+    /* Heading */
+
+    .project-portfolio-section .section-title {
+        font-size: 1.6rem;
+    }
+
+
+    /* =====================
+       FILTER
+       ===================== */
+
+    .project-filter-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+        margin-bottom: 25px;
+    }
+
+    .project-filter {
+        min-height: 42px;
+        padding: 8px 6px;
+        font-size: .61rem;
+    }
+
+
+    /* =====================
+       PROJECT IMAGE
+       ===================== */
+
+    .portfolio-project-image {
+        height: 200px;
+    }
+
+
+    /* =====================
+       CONTENT
+       ===================== */
+
+    .portfolio-project-content {
+        padding: 20px;
+    }
+
+    .portfolio-project-category {
+        font-size: .56rem;
+    }
+
+    .portfolio-project-content h3 {
+        font-size: 1rem;
+    }
+
+    .portfolio-project-content p {
+        font-size: .72rem;
+        line-height: 1.7;
+    }
+
+
+    /* =====================
+       PROJECT STATUS
+       ===================== */
+
+    .portfolio-project-status {
+        top: 10px;
+        left: 10px;
+        padding: 5px 10px;
+        font-size: .55rem;
+    }
+
+
+    /* =====================
+       LOAD MORE
+       ===================== */
+
+    .project-load-btn {
+        padding: 10px 18px;
+        font-size: .65rem;
+    }
+
+}
+
+
+/* ===================== EXTRA SMALL PHONES ===================== */
+
+@media (max-width: 380px) {
+
+    .project-portfolio-section .section-title {
+        font-size: 1.45rem;
+    }
+
+    .project-filter-wrapper {
+        gap: 6px;
+    }
+
+    .project-filter {
+        font-size: .58rem;
+        padding: 8px 4px;
+    }
+
+    .portfolio-project-image {
+        height: 185px;
+    }
+
+    .portfolio-project-content {
+        padding: 18px;
+    }
+
+    .portfolio-project-content h3 {
+        font-size: .95rem;
+    }
+
+    .portfolio-project-content p {
+        font-size: .7rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   PROJECT LIFECYCLE — RESPONSIVE
+   ========================================================= */
+
+
+/* ===================== TABLET ===================== */
+
+@media (max-width: 1199.98px) {
+
+    .project-lifecycle {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 70px;
+        column-gap: 20px;
+    }
+
+    /* Change the horizontal line into a vertical/row layout */
+    .project-lifecycle::before {
+        display: none;
+    }
+
+    .lifecycle-step {
+        padding: 0 15px;
+    }
+
+    .lifecycle-icon {
+        width: 78px;
+        height: 78px;
+        font-size: 1.5rem;
+    }
+
+    .lifecycle-content h3 {
+        font-size: .9rem;
+    }
+
+    .lifecycle-content p {
+        font-size: .7rem;
+    }
+
+    .lifecycle-number {
+        top: -18px;
+        right: 15px;
+        font-size: 2rem;
+    }
+}
+
+
+/* ===================== SMALL TABLET ===================== */
+
+@media (max-width: 991.98px) {
+
+    .project-lifecycle {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 25px;
+        margin-top: 45px;
+    }
+
+    .lifecycle-step {
+        padding: 0 20px;
+    }
+
+    .lifecycle-icon {
+        width: 82px;
+        height: 82px;
+        margin-bottom: 20px;
+    }
+
+    .lifecycle-content h3 {
+        min-height: auto;
+        font-size: 1rem;
+    }
+
+    .lifecycle-content p {
+        font-size: .75rem;
+        line-height: 1.75;
+    }
+
+    .lifecycle-stage {
+        font-size: .6rem;
+    }
+
+    .lifecycle-number {
+        font-size: 2.2rem;
+        top: -20px;
+        right: 20px;
+    }
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 767.98px) {
+
+    .project-lifecycle {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 40px;
+        padding-left: 15px;
+    }
+
+    /* Vertical timeline line */
+    .project-lifecycle::before {
+        display: block;
+        top: 40px;
+        bottom: 40px;
+        left: 56px;
+        right: auto;
+        width: 3px;
+        height: auto;
+        background: #dfe7e1;
+    }
+
+    .lifecycle-step {
+        display: grid;
+        grid-template-columns: 85px 1fr;
+        column-gap: 20px;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 50px;
+        align-items: start;
+    }
+
+    .lifecycle-step:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Icon moves to the left side */
+    .lifecycle-icon {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+
+        width: 70px;
+        height: 70px;
+        margin: 0;
+
+        border-width: 4px;
+
+        font-size: 1.4rem;
+        z-index: 2;
+    }
+
+    /* Content */
+    .lifecycle-content {
+        grid-column: 2;
+        grid-row: 1;
+        padding: 0;
+    }
+
+    .lifecycle-stage {
+        margin-bottom: 5px;
+        font-size: .58rem;
+    }
+
+    .lifecycle-content h3 {
+        min-height: auto;
+        margin-bottom: 8px;
+        font-size: 1rem;
+        line-height: 1.35;
+    }
+
+    .lifecycle-content p {
+        margin-bottom: 0;
+        font-size: .75rem;
+        line-height: 1.7;
+    }
+
+    /* Number */
+    .lifecycle-number {
+        top: -12px;
+        left: 55px;
+        right: auto;
+        z-index: 3;
+
+        font-size: 1.8rem;
+    }
+}
+
+
+/* ===================== SMALL MOBILE ===================== */
+
+@media (max-width: 575.98px) {
+
+    .project-lifecycle {
+        padding-left: 5px;
+    }
+
+    .project-lifecycle::before {
+        left: 46px;
+        top: 35px;
+        bottom: 35px;
+    }
+
+    .lifecycle-step {
+        grid-template-columns: 70px 1fr;
+        column-gap: 18px;
+        margin-bottom: 45px;
+    }
+
+    .lifecycle-icon {
+        width: 62px;
+        height: 62px;
+
+        font-size: 1.25rem;
+
+        border-width: 3px;
+
+        box-shadow:
+            0 0 0 2px #1f5e2f,
+            0 6px 15px rgba(0,0,0,.1);
+    }
+
+    .lifecycle-number {
+        left: 43px;
+        top: -10px;
+        font-size: 1.5rem;
+    }
+
+    .lifecycle-stage {
+        font-size: .55rem;
+        letter-spacing: 1px;
+    }
+
+    .lifecycle-content h3 {
+        font-size: .92rem;
+        margin-bottom: 7px;
+    }
+
+    .lifecycle-content p {
+        font-size: .7rem;
+        line-height: 1.65;
+    }
+}
+
+
+/* ===================== VERY SMALL PHONES ===================== */
+
+@media (max-width: 380px) {
+
+    .project-lifecycle {
+        padding-left: 0;
+    }
+
+    .project-lifecycle::before {
+        left: 40px;
+    }
+
+    .lifecycle-step {
+        grid-template-columns: 60px 1fr;
+        column-gap: 15px;
+    }
+
+    .lifecycle-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.1rem;
+    }
+
+    .lifecycle-number {
+        left: 37px;
+        top: -9px;
+        font-size: 1.3rem;
+    }
+
+    .lifecycle-content h3 {
+        font-size: .85rem;
+    }
+
+    .lifecycle-content p {
+        font-size: .67rem;
+    }
+}

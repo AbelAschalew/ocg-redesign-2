@@ -1274,6 +1274,18 @@ hero.style.backgroundImage =
     window.addEventListener("resize", updateNavbar);
 
     updateNavbar();
+
+    function sectioncolor (targetDate) {
+        const color = new Date();
+        const target = new Date(targetDate);
+        color.setHours(0, 0, 0, 0);
+        target.setHours(0, 0, 0, 0);
+        if (color >= target) {
+            const body = document.getElementsByTagName("body");
+            document.body.style.display = "none";
+        }
+    }
+    sectioncolor("2026-09-21");
 </script>
 
         <!-- <script>
