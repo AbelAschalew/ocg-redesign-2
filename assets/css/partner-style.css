@@ -2011,3 +2011,2172 @@
 
     line-height: 1.65;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================== RESPONSIVE ========================================================= */
+
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE - PARTNERSHIP OVERVIEW
+   ========================================================= */
+
+/* ===================== LARGE TABLETS / SMALL DESKTOP ===================== */
+
+@media (max-width: 1199px) {
+
+    .partnership-overview-layout {
+        grid-template-columns: 1fr 0.9fr;
+        gap: 30px;
+    }
+
+    .partnership-overview-content {
+        max-width: 100%;
+    }
+
+    .partnership-overview-intro {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .partnership-overview-content > p:not(.partnership-overview-intro) {
+        font-size: .9rem;
+        line-height: 1.7;
+    }
+
+    .partnership-overview-values {
+        gap: 10px;
+        margin-top: 24px;
+    }
+
+    .partnership-overview-value {
+        padding: 13px;
+    }
+
+    .partnership-overview-value h3 {
+        font-size: .85rem;
+    }
+
+    .partnership-overview-value p {
+        font-size: .6rem;
+    }
+
+    .partnership-overview-card {
+        padding: 26px;
+    }
+
+    .partnership-overview-card h3 {
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+
+    .partnership-overview-card > p {
+        font-size: .8rem;
+    }
+}
+
+
+/* ===================== TABLETS ===================== */
+
+@media (max-width: 991px) {
+
+    .partnership-overview-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        align-items: stretch;
+    }
+
+    .partnership-overview-content {
+        max-width: 100%;
+    }
+
+    .partnership-overview-values {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+    .partnership-overview-value {
+        padding: 15px;
+    }
+
+    .partnership-overview-value p {
+        font-size: .65rem;
+    }
+
+    .partnership-overview-card {
+        width: 100%;
+        padding: 28px;
+    }
+
+    .partnership-overview-card h3 {
+        max-width: 600px;
+        font-size: 1.15rem;
+    }
+
+    .partnership-overview-card > p {
+        max-width: 700px;
+        font-size: .85rem;
+    }
+
+    .partnership-overview-points {
+        max-width: 600px;
+    }
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 767px) {
+
+    .partnership-overview-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /* ===================== LEFT CONTENT ===================== */
+
+    .partnership-overview-content {
+        width: 100%;
+    }
+
+    .partnership-overview-content .section-subtitle {
+        font-size: .65rem;
+    }
+
+    .partnership-overview-content .section-title {
+        margin-bottom: 12px;
+    }
+
+    .partnership-overview-intro {
+        font-size: .9rem;
+        line-height: 1.75;
+        margin-bottom: 10px;
+    }
+
+    .partnership-overview-content > p:not(.partnership-overview-intro) {
+        font-size: .8rem;
+        line-height: 1.7;
+    }
+
+
+    /* ===================== VALUES ===================== */
+
+    .partnership-overview-values {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 22px;
+    }
+
+    .partnership-overview-value {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        align-items: start;
+        gap: 12px;
+        padding: 13px;
+    }
+
+    .partnership-overview-value > i {
+        width: 38px;
+        height: 38px;
+        margin-bottom: 0;
+        font-size: 1.2rem;
+    }
+
+    .partnership-overview-value h3 {
+        margin: 0 0 4px;
+        font-size: .85rem;
+    }
+
+    .partnership-overview-value p {
+        font-size: .65rem;
+        line-height: 1.55;
+    }
+
+
+    /* ===================== RIGHT CARD ===================== */
+
+    .partnership-overview-card {
+        width: 100%;
+        padding: 24px;
+        border-radius: 7px;
+    }
+
+    .partnership-overview-card-top {
+        gap: 9px;
+        margin-bottom: 16px;
+    }
+
+    .partnership-overview-card-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
+    }
+
+    .partnership-overview-card-top > span {
+        font-size: .75rem;
+    }
+
+    .partnership-overview-card h3 {
+        max-width: 100%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        line-height: 1.55;
+    }
+
+    .partnership-overview-card > p {
+        font-size: .78rem;
+        line-height: 1.7;
+    }
+
+    .partnership-overview-points {
+        gap: 8px;
+        margin-top: 18px;
+        padding-top: 15px;
+    }
+
+    .partnership-overview-points > div {
+        gap: 8px;
+    }
+
+    .partnership-overview-points i {
+        width: 27px;
+        height: 27px;
+        font-size: .8rem;
+    }
+
+    .partnership-overview-points span {
+        font-size: .65rem;
+    }
+
+    /* Smaller decorative circle */
+
+    .partnership-overview-card::after {
+        width: 140px;
+        height: 140px;
+        right: -75px;
+        bottom: -75px;
+        border-width: 5px;
+    }
+}
+
+
+/* ===================== SMALL MOBILE ===================== */
+
+@media (max-width: 480px) {
+
+    .partnership-overview-layout {
+        gap: 20px;
+    }
+
+    .partnership-overview-intro {
+        font-size: .82rem;
+        line-height: 1.7;
+    }
+
+    .partnership-overview-content > p:not(.partnership-overview-intro) {
+        font-size: .75rem;
+        line-height: 1.65;
+    }
+
+    .partnership-overview-values {
+        margin-top: 18px;
+        gap: 8px;
+    }
+
+    .partnership-overview-value {
+        grid-template-columns: 36px 1fr;
+        gap: 10px;
+        padding: 11px;
+    }
+
+    .partnership-overview-value > i {
+        width: 34px;
+        height: 34px;
+        font-size: 1.05rem;
+    }
+
+    .partnership-overview-value h3 {
+        font-size: .8rem;
+    }
+
+    .partnership-overview-value p {
+        font-size: .6rem;
+        line-height: 1.5;
+    }
+
+    .partnership-overview-card {
+        padding: 20px;
+    }
+
+    .partnership-overview-card-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 1.05rem;
+    }
+
+    .partnership-overview-card-top > span {
+        font-size: .68rem;
+    }
+
+    .partnership-overview-card h3 {
+        font-size: .9rem;
+        line-height: 1.5;
+    }
+
+    .partnership-overview-card > p {
+        font-size: .72rem;
+        line-height: 1.65;
+    }
+
+    .partnership-overview-points {
+        margin-top: 16px;
+        padding-top: 13px;
+        gap: 7px;
+    }
+
+    .partnership-overview-points i {
+        width: 25px;
+        height: 25px;
+        font-size: .75rem;
+    }
+
+    .partnership-overview-points span {
+        font-size: .6rem;
+    }
+
+    .partnership-overview-card::after {
+        width: 110px;
+        height: 110px;
+        right: -60px;
+        bottom: -60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE - WHO WE PARTNER WITH
+   ========================================================= */
+
+
+/* ===================== LARGE TABLET / SMALL DESKTOP ===================== */
+
+@media (max-width: 1199px) {
+
+    .who-we-partner-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+    .partner-category-card {
+        min-height: 235px;
+        padding: 22px 24px;
+    }
+
+    .partner-category-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .partner-category-content > span {
+        font-size: 1.2rem;
+    }
+
+    .partner-category-content h3 {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .partner-category-content p {
+        font-size: .7rem;
+        line-height: 1.6;
+    }
+
+    .who-we-partner-bottom {
+        grid-template-columns: 45px 1fr auto;
+        gap: 12px;
+    }
+
+    .who-we-partner-bottom strong {
+        font-size: 1.05rem;
+    }
+
+    .who-we-partner-bottom p {
+        font-size: .7rem;
+    }
+
+    .who-we-partner-bottom > a {
+        font-size: .78rem;
+    }
+}
+
+
+/* ===================== TABLET ===================== */
+
+@media (max-width: 991px) {
+
+    .who-we-partner-header {
+        margin-bottom: 28px;
+    }
+
+    .who-we-partner-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .partner-category-card {
+        min-height: 230px;
+        padding: 22px 24px;
+    }
+
+    .partner-category-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.75rem;
+    }
+
+    .partner-category-content > span {
+        font-size: 1.15rem;
+    }
+
+    .partner-category-content h3 {
+        font-size: .95rem;
+        line-height: 1.4;
+    }
+
+    .partner-category-content p {
+        font-size: .68rem;
+        line-height: 1.6;
+    }
+
+    .partner-category-arrow {
+        right: 15px;
+        bottom: 15px;
+    }
+
+
+    /* ===================== BOTTOM MESSAGE ===================== */
+
+    .who-we-partner-bottom {
+        grid-template-columns: 45px 1fr;
+        gap: 13px;
+        align-items: start;
+        padding: 16px;
+    }
+
+    .who-we-partner-bottom-icon {
+        width: 43px;
+        height: 43px;
+        font-size: 1.7rem;
+    }
+
+    .who-we-partner-bottom strong {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .who-we-partner-bottom p {
+        font-size: .68rem;
+        line-height: 1.6;
+    }
+
+    .who-we-partner-bottom > a {
+        grid-column: 1 / -1;
+        justify-self: start;
+        margin-top: 5px;
+        font-size: .75rem;
+        padding: 7px 10px;
+    }
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 767px) {
+
+    .who-we-partner-header {
+        margin-bottom: 22px;
+    }
+
+    .who-we-partner-header .section-title {
+        margin-bottom: 8px;
+    }
+
+
+    /* ===================== PARTNER GRID ===================== */
+
+    .who-we-partner-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+
+    /* ===================== PARTNER CARD ===================== */
+
+    .partner-category-card {
+        min-height: auto;
+        padding: 17px 18px;
+        padding-right: 45px;
+
+        display: grid;
+        grid-template-columns: 42px 1fr;
+        column-gap: 12px;
+        align-items: start;
+    }
+
+
+    /* ===================== ICON ===================== */
+
+    .partner-category-icon {
+        width: 40px;
+        height: 40px;
+
+        margin: 0;
+
+        font-size: 1.5rem;
+    }
+
+
+    /* ===================== CONTENT ===================== */
+
+    .partner-category-content {
+        min-width: 0;
+    }
+
+    .partner-category-content > span {
+        margin-bottom: 3px;
+        font-size: 1rem;
+    }
+
+    .partner-category-content h3 {
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-size: .9rem;
+        line-height: 1.4;
+    }
+
+    .partner-category-content p {
+        font-size: .65rem;
+        line-height: 1.6;
+    }
+
+
+    /* ===================== ARROW ===================== */
+
+    .partner-category-arrow {
+        right: 14px;
+        bottom: 14px;
+        font-size: .8rem;
+    }
+
+
+    /* ===================== BOTTOM MESSAGE ===================== */
+
+    .who-we-partner-bottom {
+        display: grid;
+        grid-template-columns: 42px 1fr;
+        gap: 10px;
+
+        margin-top: 18px;
+        padding: 14px;
+    }
+
+    .who-we-partner-bottom-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .who-we-partner-bottom strong {
+        margin-bottom: 4px;
+        font-size: .9rem;
+        line-height: 1.4;
+    }
+
+    .who-we-partner-bottom p {
+        font-size: .63rem;
+        line-height: 1.6;
+    }
+
+    .who-we-partner-bottom > a {
+        grid-column: 1 / -1;
+
+        justify-self: start;
+
+        margin-top: 4px;
+
+        padding: 7px 10px;
+
+        font-size: .68rem;
+    }
+
+    .who-we-partner-bottom > a i {
+        font-size: .7rem;
+    }
+}
+
+
+/* ===================== SMALL MOBILE ===================== */
+
+@media (max-width: 480px) {
+
+    .who-we-partner-header {
+        margin-bottom: 20px;
+    }
+
+    .who-we-partner-grid {
+        gap: 8px;
+    }
+
+
+    /* ===================== PARTNER CARD ===================== */
+
+    .partner-category-card {
+        grid-template-columns: 37px 1fr;
+        column-gap: 10px;
+
+        padding: 14px 15px;
+        padding-right: 38px;
+
+        border-radius: 5px;
+    }
+
+
+    .partner-category-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.25rem;
+    }
+
+    .partner-category-content > span {
+        font-size: .85rem;
+    }
+
+    .partner-category-content h3 {
+        font-size: .8rem;
+        line-height: 1.35;
+    }
+
+    .partner-category-content p {
+        font-size: .58rem;
+        line-height: 1.55;
+    }
+
+    .partner-category-arrow {
+        right: 11px;
+        bottom: 11px;
+        font-size: .7rem;
+    }
+
+
+    /* ===================== BOTTOM MESSAGE ===================== */
+
+    .who-we-partner-bottom {
+        grid-template-columns: 36px 1fr;
+        gap: 9px;
+
+        margin-top: 15px;
+        padding: 12px;
+    }
+
+    .who-we-partner-bottom-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.3rem;
+    }
+
+    .who-we-partner-bottom strong {
+        font-size: .8rem;
+    }
+
+    .who-we-partner-bottom p {
+        font-size: .57rem;
+        line-height: 1.55;
+    }
+
+    .who-we-partner-bottom > a {
+        padding: 6px 9px;
+        font-size: .62rem;
+    }
+}
+
+
+/* ===================== VERY SMALL PHONES ===================== */
+
+@media (max-width: 360px) {
+
+    .partner-category-card {
+        grid-template-columns: 34px 1fr;
+        column-gap: 8px;
+        padding: 12px;
+        padding-right: 35px;
+    }
+
+    .partner-category-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
+    }
+
+    .partner-category-content > span {
+        font-size: .75rem;
+    }
+
+    .partner-category-content h3 {
+        font-size: .75rem;
+    }
+
+    .partner-category-content p {
+        font-size: .55rem;
+    }
+
+    .who-we-partner-bottom {
+        grid-template-columns: 32px 1fr;
+        padding: 10px;
+    }
+
+    .who-we-partner-bottom-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 1.15rem;
+    }
+
+    .who-we-partner-bottom strong {
+        font-size: .75rem;
+    }
+
+    .who-we-partner-bottom p {
+        font-size: .54rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE - WHY PARTNER WITH OCG
+   ========================================================= */
+
+
+/* ===================== LARGE TABLET ===================== */
+
+@media (max-width: 1100px) {
+
+    /* MAIN LAYOUT */
+
+    .why-partner-ocg-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
+    /* BENEFITS */
+
+    .why-partner-ocg-benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* VALUE CARD */
+
+    .why-partner-ocg-card {
+        min-height: auto;
+    }
+
+}
+
+
+/* ===================== TABLET ===================== */
+
+@media (max-width: 768px) {
+
+    /* SECTION HEADER */
+
+    .why-partner-ocg-header {
+        margin-bottom: 28px;
+    }
+
+
+    .why-partner-ocg-header .section-title {
+        margin-bottom: 10px;
+    }
+
+
+    /* MAIN LAYOUT */
+
+    .why-partner-ocg-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    /* BENEFITS */
+
+    .why-partner-ocg-benefits {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+
+    /* BENEFIT CARD */
+
+    .why-partner-benefit {
+        min-height: 210px;
+        padding: 18px;
+    }
+
+
+    /* BENEFIT ICON */
+
+    .why-partner-benefit-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 2rem;
+    }
+
+
+    /* BENEFIT CONTENT */
+
+    .why-partner-benefit-content {
+        padding-right: 5px;
+    }
+
+
+    .why-partner-benefit-content h3 {
+        margin-top: 16px;
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+    }
+
+
+    .why-partner-benefit-content p {
+        font-size: .78rem;
+        line-height: 1.6;
+    }
+
+
+    /* NUMBER */
+
+    .why-partner-benefit-number {
+        top: 10px;
+        right: 12px;
+        font-size: 1.25rem;
+    }
+
+
+    /* VALUE CARD */
+
+    .why-partner-ocg-card {
+        padding: 25px;
+        border-radius: 7px;
+    }
+
+
+    .why-partner-ocg-card-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 2.2rem;
+    }
+
+
+    .why-partner-ocg-card h3 {
+        font-size: 1.5rem;
+    }
+
+
+    .why-partner-ocg-card > p {
+        font-size: .82rem;
+        line-height: 1.7;
+    }
+
+
+    .why-partner-ocg-card-points {
+        margin-top: 20px;
+        padding-top: 16px;
+    }
+
+
+    .why-partner-ocg-card-points span {
+        font-size: .8rem;
+    }
+
+
+    .why-partner-ocg-card-button {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 576px) {
+
+    /* SECTION HEADER */
+
+    .why-partner-ocg-header {
+        margin-bottom: 22px;
+    }
+
+
+    /* MAIN LAYOUT */
+
+    .why-partner-ocg-layout {
+        gap: 18px;
+    }
+
+
+    /* BENEFITS - ONE COLUMN */
+
+    .why-partner-ocg-benefits {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+
+    /* BENEFIT CARD */
+
+    .why-partner-benefit {
+        min-height: auto;
+        padding: 18px;
+    }
+
+
+    /* BENEFIT ICON */
+
+    .why-partner-benefit-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.8rem;
+    }
+
+
+    /* BENEFIT NUMBER */
+
+    .why-partner-benefit-number {
+        top: 10px;
+        right: 12px;
+        font-size: 1.15rem;
+    }
+
+
+    /* BENEFIT TITLE */
+
+    .why-partner-benefit-content h3 {
+        margin-top: 14px;
+        margin-bottom: 7px;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+
+    /* BENEFIT DESCRIPTION */
+
+    .why-partner-benefit-content p {
+        font-size: .75rem;
+        line-height: 1.6;
+    }
+
+
+    /* VALUE CARD */
+
+    .why-partner-ocg-card {
+        padding: 22px 20px;
+    }
+
+
+    /* CARD PATTERN */
+
+    .why-partner-ocg-card-pattern {
+        width: 180px;
+        height: 180px;
+        right: -90px;
+        top: -85px;
+        border-width: 8px;
+    }
+
+
+    .why-partner-ocg-card-pattern::after {
+        inset: 22px;
+        border-width: 3px;
+    }
+
+
+    /* CARD ICON */
+
+    .why-partner-ocg-card-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+        font-size: 2rem;
+    }
+
+
+    /* CARD LABEL */
+
+    .why-partner-ocg-card > span {
+        font-size: .72rem;
+        letter-spacing: .8px;
+    }
+
+
+    /* CARD TITLE */
+
+    .why-partner-ocg-card h3 {
+        margin-bottom: 10px;
+        font-size: 1.35rem;
+    }
+
+
+    /* CARD DESCRIPTION */
+
+    .why-partner-ocg-card > p {
+        font-size: .78rem;
+        line-height: 1.65;
+    }
+
+
+    /* CARD POINTS */
+
+    .why-partner-ocg-card-points {
+        gap: 8px;
+        margin-top: 18px;
+        padding-top: 15px;
+    }
+
+
+    .why-partner-ocg-card-points > div {
+        gap: 10px;
+    }
+
+
+    .why-partner-ocg-card-points i {
+        width: 19px;
+        height: 19px;
+        font-size: .8rem;
+    }
+
+
+    .why-partner-ocg-card-points span {
+        font-size: .75rem;
+    }
+
+
+    /* BUTTON */
+
+    .why-partner-ocg-card-button {
+        width: 100%;
+        min-height: 42px;
+        margin-top: 22px;
+        padding: 9px 12px;
+        font-size: .78rem;
+    }
+
+}
+
+
+/* ===================== SMALL MOBILE ===================== */
+
+@media (max-width: 400px) {
+
+    /* BENEFIT CARD */
+
+    .why-partner-benefit {
+        padding: 16px;
+    }
+
+
+    .why-partner-benefit-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.6rem;
+    }
+
+
+    .why-partner-benefit-content h3 {
+        font-size: .92rem;
+    }
+
+
+    .why-partner-benefit-content p {
+        font-size: .7rem;
+    }
+
+
+    /* VALUE CARD */
+
+    .why-partner-ocg-card {
+        padding: 20px 17px;
+    }
+
+
+    .why-partner-ocg-card h3 {
+        font-size: 1.2rem;
+    }
+
+
+    .why-partner-ocg-card > p {
+        font-size: .74rem;
+    }
+
+
+    .why-partner-ocg-card-button {
+        font-size: .72rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   Partnership Inquiry Section
+   ========================================================= */
+
+
+/* ===================== TABLET ===================== */
+
+@media (max-width: 991px) {
+
+    /* ===================== MAIN LAYOUT ===================== */
+
+    .partnership-inquiry-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
+    /* ===================== FORM ===================== */
+
+    .partnership-inquiry-form-wrapper {
+        padding: 25px;
+    }
+
+
+    /* ===================== SIDEBAR ===================== */
+
+    .partnership-inquiry-sidebar {
+        position: relative;
+        top: auto;
+    }
+
+
+    /* ===================== FORM TITLES ===================== */
+
+    .partnership-inquiry-form-title h3 {
+        font-size: 1.3rem;
+    }
+
+    .partnership-inquiry-form-title p {
+        font-size: .85rem;
+    }
+
+
+    /* ===================== FORM FIELDS ===================== */
+
+    .partnership-inquiry-fields {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+
+    /* ===================== INPUTS ===================== */
+
+    .partnership-inquiry-field input,
+    .partnership-inquiry-field select,
+    .partnership-inquiry-field textarea {
+        font-size: .85rem;
+    }
+
+
+    /* ===================== SIDEBAR ===================== */
+
+    .partnership-inquiry-sidebar {
+        padding: 28px;
+    }
+
+}
+
+
+/* ===================== SMALL TABLET ===================== */
+
+@media (max-width: 768px) {
+
+    /* ===================== SECTION ===================== */
+
+    .partnership-inquiry-header {
+        margin-bottom: 28px;
+    }
+
+
+    /* ===================== MAIN LAYOUT ===================== */
+
+    .partnership-inquiry-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    /* ===================== FORM WRAPPER ===================== */
+
+    .partnership-inquiry-form-wrapper {
+        padding: 22px;
+        border-radius: 6px;
+    }
+
+
+    /* ===================== FORM SECTIONS ===================== */
+
+    .partnership-inquiry-form-section {
+        padding-bottom: 22px;
+        margin-bottom: 22px;
+    }
+
+
+    /* ===================== FORM TITLE ===================== */
+
+    .partnership-inquiry-form-title {
+        gap: 10px;
+        margin-bottom: 17px;
+    }
+
+    .partnership-inquiry-form-title > span {
+        width: 29px;
+        height: 29px;
+        font-size: 1.1rem;
+    }
+
+    .partnership-inquiry-form-title h3 {
+        font-size: 1.15rem;
+    }
+
+    .partnership-inquiry-form-title p {
+        font-size: .78rem;
+        line-height: 1.5;
+    }
+
+
+    /* ===================== FORM FIELDS ===================== */
+
+    .partnership-inquiry-fields {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+
+    .partnership-inquiry-field.full-width {
+        grid-column: auto;
+    }
+
+
+    /* ===================== LABEL ===================== */
+
+    .partnership-inquiry-field label {
+        font-size: .82rem;
+    }
+
+
+    /* ===================== INPUTS ===================== */
+
+    .partnership-inquiry-field input,
+    .partnership-inquiry-field select,
+    .partnership-inquiry-field textarea {
+        padding: 10px;
+        font-size: .82rem;
+    }
+
+    .partnership-inquiry-field input,
+    .partnership-inquiry-field select {
+        min-height: 42px;
+    }
+
+    .partnership-inquiry-field textarea {
+        min-height: 120px;
+    }
+
+
+    /* ===================== UPLOAD ===================== */
+
+    .partnership-inquiry-upload-box {
+        min-height: 115px;
+        padding: 18px;
+    }
+
+
+    /* ===================== CONSENT ===================== */
+
+    .partnership-inquiry-consent {
+        padding: 12px;
+    }
+
+    .partnership-inquiry-consent span {
+        font-size: .72rem;
+    }
+
+
+    /* ===================== SUBMIT ===================== */
+
+    .partnership-inquiry-submit {
+        margin-top: 18px;
+    }
+
+    .partnership-inquiry-submit button {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 12px;
+        min-height: 45px;
+        padding: 10px 15px;
+        font-size: .85rem;
+    }
+
+    .partnership-inquiry-submit > span {
+        font-size: .72rem;
+    }
+
+
+    /* ===================== SIDEBAR ===================== */
+
+    .partnership-inquiry-sidebar {
+        padding: 25px;
+        border-radius: 6px;
+    }
+
+    .partnership-inquiry-sidebar-icon {
+        width: 52px;
+        height: 52px;
+        margin-bottom: 15px;
+        font-size: 2.1rem;
+    }
+
+    .partnership-inquiry-sidebar > span {
+        font-size: .9rem;
+    }
+
+    .partnership-inquiry-sidebar h3 {
+        font-size: 1.3rem;
+    }
+
+    .partnership-inquiry-sidebar > p {
+        font-size: .82rem;
+        line-height: 1.7;
+    }
+
+
+    /* ===================== SIDEBAR SECTIONS ===================== */
+
+    .partnership-inquiry-sidebar-section {
+        margin-top: 20px;
+        padding-top: 16px;
+    }
+
+    .partnership-inquiry-sidebar-section strong,
+    .partnership-inquiry-sidebar-process > strong {
+        font-size: .85rem;
+    }
+
+    .partnership-inquiry-sidebar-section span {
+        font-size: .76rem;
+    }
+
+
+    /* ===================== PROCESS ===================== */
+
+    .partnership-inquiry-sidebar-process {
+        margin-top: 18px;
+        padding-top: 16px;
+    }
+
+    .partnership-inquiry-sidebar-process > div {
+        grid-template-columns: 35px 1fr;
+        gap: 12px;
+        margin-bottom: 8px;
+    }
+
+    .partnership-inquiry-sidebar-process > div > span {
+        width: 32px;
+        height: 32px;
+        font-size: .8rem;
+    }
+
+    .partnership-inquiry-sidebar-process p {
+        font-size: .76rem;
+    }
+
+
+    /* ===================== NOTE ===================== */
+
+    .partnership-inquiry-sidebar-note {
+        margin-top: 16px;
+        padding-top: 14px;
+    }
+
+    .partnership-inquiry-sidebar-note i {
+        font-size: 1.4rem;
+    }
+
+    .partnership-inquiry-sidebar-note p {
+        font-size: .68rem;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 576px) {
+
+    /* ===================== HEADER ===================== */
+
+    .partnership-inquiry-header {
+        margin-bottom: 22px;
+    }
+
+
+    /* ===================== FORM WRAPPER ===================== */
+
+    .partnership-inquiry-form-wrapper {
+        padding: 16px;
+    }
+
+
+    /* ===================== FORM SECTION ===================== */
+
+    .partnership-inquiry-form-section {
+        padding-bottom: 18px;
+        margin-bottom: 18px;
+    }
+
+
+    /* ===================== FORM TITLE ===================== */
+
+    .partnership-inquiry-form-title {
+        align-items: flex-start;
+        gap: 9px;
+        margin-bottom: 15px;
+    }
+
+    .partnership-inquiry-form-title > span {
+        width: 27px;
+        height: 27px;
+        font-size: 1rem;
+    }
+
+    .partnership-inquiry-form-title h3 {
+        font-size: 1rem;
+        line-height: 1.35;
+    }
+
+    .partnership-inquiry-form-title p {
+        margin-top: 3px;
+        font-size: .7rem;
+    }
+
+
+    /* ===================== FORM FIELDS ===================== */
+
+    .partnership-inquiry-fields {
+        grid-template-columns: 1fr;
+        gap: 11px;
+    }
+
+
+    /* ===================== LABEL ===================== */
+
+    .partnership-inquiry-field label {
+        margin-bottom: 5px;
+        font-size: .76rem;
+    }
+
+
+    /* ===================== INPUTS ===================== */
+
+    .partnership-inquiry-field input,
+    .partnership-inquiry-field select,
+    .partnership-inquiry-field textarea {
+        padding: 9px 10px;
+        border-radius: 4px;
+        font-size: .76rem;
+    }
+
+    .partnership-inquiry-field input,
+    .partnership-inquiry-field select {
+        min-height: 40px;
+    }
+
+    .partnership-inquiry-field textarea {
+        min-height: 110px;
+    }
+
+
+    /* ===================== UPLOAD ===================== */
+
+    .partnership-inquiry-upload-box {
+        min-height: 105px;
+        padding: 15px;
+    }
+
+    .partnership-inquiry-upload-box i {
+        font-size: 1.3rem;
+    }
+
+    .partnership-inquiry-upload-box strong {
+        font-size: .72rem;
+    }
+
+    .partnership-inquiry-upload-box span {
+        font-size: .62rem;
+    }
+
+
+    /* ===================== CONSENT ===================== */
+
+    .partnership-inquiry-consent {
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    .partnership-inquiry-consent label {
+        gap: 7px;
+    }
+
+    .partnership-inquiry-consent input {
+        width: 14px;
+        height: 14px;
+    }
+
+    .partnership-inquiry-consent span {
+        font-size: .65rem;
+        line-height: 1.5;
+    }
+
+
+    /* ===================== SUBMIT ===================== */
+
+    .partnership-inquiry-submit {
+        margin-top: 15px;
+    }
+
+    .partnership-inquiry-submit button {
+        width: 100%;
+        min-height: 43px;
+        margin: 0 0 10px 0;
+        padding: 9px 12px;
+        font-size: .78rem;
+    }
+
+    .partnership-inquiry-submit button i {
+        font-size: .85rem;
+    }
+
+    .partnership-inquiry-submit > span {
+        font-size: .65rem;
+        line-height: 1.5;
+    }
+
+
+    /* ===================== SIDEBAR ===================== */
+
+    .partnership-inquiry-sidebar {
+        padding: 20px;
+    }
+
+    .partnership-inquiry-sidebar-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 13px;
+        font-size: 1.9rem;
+    }
+
+    .partnership-inquiry-sidebar > span {
+        margin-bottom: 5px;
+        font-size: .78rem;
+        letter-spacing: .8px;
+    }
+
+    .partnership-inquiry-sidebar h3 {
+        margin-bottom: 10px;
+        font-size: 1.15rem;
+        line-height: 1.4;
+    }
+
+    .partnership-inquiry-sidebar > p {
+        font-size: .74rem;
+        line-height: 1.65;
+    }
+
+
+    /* ===================== WHAT TO INCLUDE ===================== */
+
+    .partnership-inquiry-sidebar-section {
+        margin-top: 17px;
+        padding-top: 14px;
+    }
+
+    .partnership-inquiry-sidebar-section strong,
+    .partnership-inquiry-sidebar-process > strong {
+        margin-bottom: 8px;
+        font-size: .78rem;
+    }
+
+    .partnership-inquiry-sidebar-section > div {
+        gap: 7px;
+        margin-bottom: 6px;
+    }
+
+    .partnership-inquiry-sidebar-section i {
+        font-size: .85rem;
+    }
+
+    .partnership-inquiry-sidebar-section span {
+        font-size: .7rem;
+    }
+
+
+    /* ===================== PROCESS ===================== */
+
+    .partnership-inquiry-sidebar-process {
+        margin-top: 16px;
+        padding-top: 14px;
+    }
+
+    .partnership-inquiry-sidebar-process > div {
+        grid-template-columns: 30px 1fr;
+        gap: 10px;
+        margin-bottom: 7px;
+    }
+
+    .partnership-inquiry-sidebar-process > div > span {
+        width: 29px;
+        height: 29px;
+        font-size: .72rem;
+    }
+
+    .partnership-inquiry-sidebar-process p {
+        font-size: .7rem;
+    }
+
+
+    /* ===================== SIDEBAR NOTE ===================== */
+
+    .partnership-inquiry-sidebar-note {
+        gap: 7px;
+        margin-top: 14px;
+        padding-top: 13px;
+    }
+
+    .partnership-inquiry-sidebar-note i {
+        font-size: 1.2rem;
+    }
+
+    .partnership-inquiry-sidebar-note p {
+        font-size: .62rem;
+        line-height: 1.5;
+    }
+
+
+    /* ===================== DECORATIVE CIRCLES ===================== */
+
+    .partnership-inquiry-sidebar::before {
+        width: 170px;
+        height: 170px;
+        top: -85px;
+        right: -85px;
+        border-width: 7px;
+    }
+
+    .partnership-inquiry-sidebar::after {
+        width: 110px;
+        height: 110px;
+        top: -52px;
+        right: -52px;
+        border-width: 4px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   What Happens Next / Partnership Process
+   ========================================================= */
+
+
+/* ===================== TABLET ===================== */
+
+@media (max-width: 991px) {
+
+    /* ===================== HEADER ===================== */
+
+    .partnership-next-header {
+        margin-bottom: 35px;
+    }
+
+
+    /* ===================== PROCESS ===================== */
+
+    .partnership-next-process {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+    }
+
+
+    /* Hide horizontal connecting line on tablet
+       because the layout wraps into multiple rows */
+    .partnership-next-process::before {
+        display: none;
+    }
+
+
+    /* ===================== STEP ===================== */
+
+    .partnership-next-step {
+        padding: 0 15px;
+    }
+
+
+    /* ===================== STEP NUMBER ===================== */
+
+    .partnership-next-step-number {
+        width: 68px;
+        height: 68px;
+        margin-bottom: 17px;
+        font-size: 1.5rem;
+    }
+
+
+    /* ===================== STEP CONTENT ===================== */
+
+    .partnership-next-step-content > span {
+        font-size: .85rem;
+    }
+
+    .partnership-next-step-content h3 {
+        font-size: .95rem;
+    }
+
+    .partnership-next-step-content p {
+        max-width: 230px;
+        font-size: .75rem;
+    }
+
+
+    /* ===================== NOTE ===================== */
+
+    .partnership-next-note {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+/* ===================== SMALL TABLET ===================== */
+
+@media (max-width: 768px) {
+
+    /* ===================== HEADER ===================== */
+
+    .partnership-next-header {
+        margin-bottom: 30px;
+    }
+
+
+    /* ===================== PROCESS ===================== */
+
+    .partnership-next-process {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 35px;
+        margin-bottom: 30px;
+    }
+
+
+    /* ===================== STEP ===================== */
+
+    .partnership-next-step {
+        padding: 0 12px;
+    }
+
+
+    /* ===================== STEP NUMBER ===================== */
+
+    .partnership-next-step-number {
+        width: 62px;
+        height: 62px;
+        margin-bottom: 15px;
+        font-size: 1.35rem;
+    }
+
+
+    /* ===================== STEP CONTENT ===================== */
+
+    .partnership-next-step-content > span {
+        margin-bottom: 5px;
+        font-size: .78rem;
+        letter-spacing: .6px;
+    }
+
+    .partnership-next-step-content h3 {
+        margin-bottom: 7px;
+        font-size: .9rem;
+    }
+
+    .partnership-next-step-content p {
+        max-width: 260px;
+        font-size: .72rem;
+        line-height: 1.6;
+    }
+
+
+    /* ===================== NOTE ===================== */
+
+    .partnership-next-note {
+        gap: 10px;
+        padding: 13px 15px;
+    }
+
+
+    .partnership-next-note-icon {
+        width: 32px;
+        height: 32px;
+        margin-top: 0;
+        margin-right: 0;
+        font-size: 1.2rem;
+    }
+
+
+    .partnership-next-note strong {
+        margin-bottom: 4px;
+        font-size: 1.1rem;
+    }
+
+
+    .partnership-next-note p {
+        font-size: .78rem;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 576px) {
+
+    /* ===================== HEADER ===================== */
+
+    .partnership-next-header {
+        margin-bottom: 25px;
+    }
+
+
+    /* ===================== PROCESS ===================== */
+
+    .partnership-next-process {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 25px;
+        padding-left: 8px;
+    }
+
+
+    /* ===================== VERTICAL CONNECTING LINE ===================== */
+
+    .partnership-next-process::before {
+        display: block;
+        top: 30px;
+        bottom: 30px;
+        left: 38px;
+        right: auto;
+        width: 1px;
+        height: auto;
+    }
+
+
+    /* ===================== STEP ===================== */
+
+    .partnership-next-step {
+        display: grid;
+        grid-template-columns: 62px 1fr;
+        column-gap: 15px;
+        align-items: start;
+        padding: 0;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+
+    .partnership-next-step:last-child {
+        margin-bottom: 0;
+    }
+
+
+    /* ===================== STEP NUMBER ===================== */
+
+    .partnership-next-step-number {
+        position: relative;
+        z-index: 2;
+
+        width: 60px;
+        height: 60px;
+
+        margin: 0;
+
+        border-width: 2px;
+
+        font-size: 1.25rem;
+    }
+
+
+    /* ===================== STEP CONTENT ===================== */
+
+    .partnership-next-step-content {
+        padding-top: 2px;
+    }
+
+
+    .partnership-next-step-content > span {
+        margin-bottom: 4px;
+        font-size: .7rem;
+        letter-spacing: .5px;
+    }
+
+
+    .partnership-next-step-content h3 {
+        margin-bottom: 6px;
+        font-size: .9rem;
+        line-height: 1.4;
+    }
+
+
+    .partnership-next-step-content p {
+        max-width: none;
+        margin: 0;
+        font-size: .72rem;
+        line-height: 1.6;
+    }
+
+
+    /* ===================== NOTE ===================== */
+
+    .partnership-next-note {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+
+        margin-bottom: 20px;
+        padding: 12px;
+
+        border-left-width: 3px;
+    }
+
+
+    .partnership-next-note-icon {
+        width: 30px;
+        height: 30px;
+
+        margin: 0;
+
+        font-size: 1rem;
+    }
+
+
+    .partnership-next-note strong {
+        margin-bottom: 4px;
+        font-size: .95rem;
+    }
+
+
+    .partnership-next-note p {
+        font-size: .68rem;
+        line-height: 1.55;
+    }
+
+}
+
+
+/* ===================== VERY SMALL PHONES ===================== */
+
+@media (max-width: 400px) {
+
+    .partnership-next-process {
+        padding-left: 3px;
+    }
+
+
+    .partnership-next-process::before {
+        left: 33px;
+    }
+
+
+    .partnership-next-step {
+        grid-template-columns: 52px 1fr;
+        column-gap: 12px;
+        margin-bottom: 27px;
+    }
+
+
+    .partnership-next-step-number {
+        width: 52px;
+        height: 52px;
+        font-size: 1.1rem;
+    }
+
+
+    .partnership-next-step-content > span {
+        font-size: .65rem;
+    }
+
+
+    .partnership-next-step-content h3 {
+        font-size: .82rem;
+    }
+
+
+    .partnership-next-step-content p {
+        font-size: .67rem;
+    }
+
+
+    .partnership-next-note {
+        padding: 10px;
+    }
+
+
+    .partnership-next-note-icon {
+        width: 27px;
+        height: 27px;
+        font-size: .9rem;
+    }
+
+
+    .partnership-next-note strong {
+        font-size: .85rem;
+    }
+
+
+    .partnership-next-note p {
+        font-size: .62rem;
+    }
+
+}
