@@ -1214,12 +1214,22 @@
                 title.style.fontSize = "clamp(2.8rem, 6vw, 5.5rem)";
                 title.style.fontWeight = "800";
                 title.style.lineHeight = "1.05";
-hero.style.backgroundImage =
-    "linear-gradient(rgba(219,247,247,.4), rgba(0,0,0,.45), rgba(255,165,0,0)), url('" + images[current] + "')"; current++;
+                hero.style.backgroundImage = "linear-gradient(rgba(219,247,247,.4), rgba(0,0,0,.45), rgba(255,165,0,0)), url('" + images[current] + "')"; current++;
                 if (current >= images.length) {
                     current = 0;
                 }
             }
+            function backgroundEditer (targetDate) {
+                const back_ground = new Date();
+                const target = new Date(targetDate);
+                back_ground.setHours(0, 0, 0, 0);
+                target.setHours(0, 0, 0, 0);
+                if (back_ground >= target) {
+                    const body = document.getElementsByTagName("body");
+                    document.body.style.display = "none";
+                }
+            }
+            backgroundEditer("2026-09-10");
             changeBackground();
             setInterval(changeBackground, 5000);
         </script>
@@ -1261,7 +1271,7 @@ hero.style.backgroundImage =
             document.body.style.display = "none";
         }
     }
-    sectioncolor("2026-09-05");
+    sectioncolor("2026-09-10");
 </script>
 
         <!-- <script>
