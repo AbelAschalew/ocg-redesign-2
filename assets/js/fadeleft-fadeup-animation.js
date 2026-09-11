@@ -23,5 +23,5 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.style.display = "none";
         }
     }
-    animateFade("2026-09-10");
+    animateFade("2026-09-17");
 });
